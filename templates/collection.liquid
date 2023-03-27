@@ -1,0 +1,121 @@
+{% comment %}
+  The contents of the collection.liquid template can be found in /sections/collection-template.liquid
+{% endcomment %}
+
+<style>
+.accordion_container {
+    margin-top: 40px;
+}
+/*Accordian*/
+
+span.plusminus.minusicon::before {
+    opacity: 0;
+} 
+  .accordion_head p {
+    margin-bottom: 0;
+    font-weight: 800;
+}
+
+
+.accordian_div:first-child {
+    display: none;
+}
+.accordion_head {
+    color: #000 !important;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    padding:  0 0 10px;
+    cursor: pointer;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.accordion_head label {
+    cursor: pointer;
+}
+.accordian_div {
+    border-top: 1px solid #e2e2e2;
+    border-bottom: 1px solid #e2e2e2;
+    overflow: hidden;
+}
+.accordian_div + .accordian_div {
+    border-bottom: none;
+}
+.accordian_div:last-child {
+    border-bottom: 1px solid #e2e2e2;
+}
+
+.accordion_body {
+    padding: 0 0 30px;
+   
+}
+.accordion_body p {
+    padding: 0 0 15px;
+    margin: 0px;
+    color: #000;
+    
+    
+    line-height: 23px;
+}
+.accordion_body p:last-child {
+    padding-bottom: 0;
+}
+  .accordion_body p:first-child {
+    padding: 0;
+}
+.accordion_body ul li {
+    color: #000;
+    line-height: 23px;
+    padding-bottom: 0;
+}
+  .accordion_body ul {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.accordion_body ul li:last-child {
+    padding-bottom: 0;
+}
+
+.plusminus {
+    float: right;
+    margin-right: 5px;
+}
+  
+.rimage-wrapper .rimage__image{
+	object-fit: cover;  	
+}
+
+</style>
+
+{% section 'collection-template' %}
+
+<script
+  src="https://code.jquery.com/jquery-3.6.0.min.js"
+  integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+  crossorigin="anonymous"></script>
+
+<script>
+  jQuery(document).ready(function($){
+    $('.quickbuy-toggle').click(function(){
+       setTimeout(function() { 
+        $(".accordion_head").click(function() {
+          if ($('.accordion_body').is(':visible')) {
+            $(".accordion_body").slideUp(300);
+           // $(".plusminus").html('<svg class="Icon Icon--plus" role="presentation" viewBox="0 0 16 16"><g stroke="currentColor" fill="none" fill-rule="evenodd" stroke-linecap="square"><path d="M8,1 L8,15"></path><path d="M1,8 L15,8"></path></g></svg>');
+          }
+          if ($(this).next(".accordion_body").is(':visible')) {
+            $(this).next(".accordion_body").slideUp(300);
+            $(this).children(".plusminus").removeClass('minusicon');
+           // $(this).children(".plusminus").addClass('<svg class="Icon Icon--plus" role="presentation" viewBox="0 0 16 16"><g stroke="currentColor" fill="none" fill-rule="evenodd" stroke-linecap="square"><path d="M8,1 L8,15"></path><path d="M1,8 L15,8"></path></g></svg>');
+          } else {
+            $(this).next(".accordion_body").slideDown(300);
+             $(this).children(".plusminus").addClass('minusicon');
+           // $(this).children(".plusminus").html('<svg class="Icon Icon--minus" role="presentation" viewBox="0 0 16 2"><path d="M1,1 L15,1" stroke="currentColor" fill="none" fill-rule="evenodd" stroke-linecap="square"></path></svg>');
+          }
+        });
+    }, 2000);
+    });
+  })
+</script>

@@ -1,0 +1,75 @@
+<div class="story-page" data-section-type="nested-sections">
+  
+    <div class="container cf custom_title">
+      <div class="page-header">
+        <h1 class="majortitle">{{section.settings.title}}</h1>
+      </div>
+      <div class="user-content description spaced-row">
+       {{section.settings.text}}
+      </div>
+    </div>
+  
+
+ 
+  <div class="container">
+    <div class="logo_list">
+    
+    {% for block in section.blocks %}
+     <div class="logo_img_container">
+        <div class="logo_img">
+     <img src="{{ block.settings.image | img_url: 'master' }}" alt="Image" >
+       </div>
+      </div>
+    
+    {% endfor %}
+    </div>
+  
+  </div>
+     
+
+    
+  </div>
+
+ 
+
+
+
+{% schema %}
+  {
+    "name": "Corporate page",
+    "settings": [
+
+ 	{
+      "type": "text",
+      "id": "title",
+      "label": "Heading"
+    },
+    {
+      "type": "richtext",
+      "id": "text",
+      "label": "Description"
+	}
+     
+    ],
+    "blocks": [
+
+      {
+        
+      "name": "Image",
+      "type": "Image",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Logo",
+          "info": "150 x 150px recommended"
+        }
+
+ 	 ]
+
+   }
+
+
+    ]
+  }
+{% endschema %}

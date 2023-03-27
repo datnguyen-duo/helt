@@ -1,0 +1,51 @@
+<div class="article">
+  <div class="container cf" data-cc-animate>
+    <div class="page-header cf">
+      <h1 class="majortitle">{{ page.title }}</h1>
+    </div>
+    <div class="rte">
+      {{ page.content }}
+    </div>
+  </div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+
+
+
+<script>
+$(document).ready(function () {
+    // Read the cookie and if it's defined scroll to id
+    var scroll = $.cookie('scroll');
+    if(scroll){
+        scrollToID(scroll, 1000);
+        $.removeCookie('scroll');
+    }
+
+    // Handle event onclick, setting the cookie when the href != #
+    $('.start_btn').click(function (e) {
+        e.preventDefault();
+         var id = $(this).data('id');
+      		//alert(id);
+        var href = $(this).attr('https://www.heltstudio.com/pages/teamorder#shopify-section-corporate-contact-form');
+        if(href === '#'){
+            scrollToID(id, 1000);
+        }else{
+            $.cookie('scroll', id);
+            window.location.href = 'https://www.heltstudio.com/pages/teamorder#shopify-section-corporate-contact-form';
+        }
+    });
+
+    // scrollToID function
+    function scrollToID(id, speed) {
+      
+        var offSet = 70;
+        var obj = $('#' + id);
+        if(obj.length){
+          var offs = obj.offset();
+          var targetOffset = offs.top - offSet;
+          $('html,body').animate({ scrollTop: targetOffset }, speed);
+        }
+    }
+});
+</script>
