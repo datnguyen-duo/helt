@@ -8994,6 +8994,9 @@ shopify-payment-terms {
 .collection-slider .product-block .image-cont img {
   max-height: none;
   max-width: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: 50% 0;
 }
 
 .collection-slider .product-list.carousel:not(.owl-carousel) {
