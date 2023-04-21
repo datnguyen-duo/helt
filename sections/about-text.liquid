@@ -1,0 +1,30 @@
+<div class="about-text-wrap">
+  <div class="text-content">
+    <h2>{{ section.settings.about_headline }}</h2>
+    <div class="description">
+      {{ section.settings.about_description }}
+    </div>
+  </div>
+</div>
+
+{% schema %}
+  {
+    "name": "About Text Description",
+    "settings": [
+      {
+        "type": "text",
+        "id": "about_headline",
+        "label": "Headline"
+      }, {
+        "type": "richtext",
+        "id": "about_description",
+        "label": "Description"
+      }
+    ],
+    "presets": [
+      {
+        "name": "About Text Description"
+      }
+    ]
+  }
+{% endschema %}

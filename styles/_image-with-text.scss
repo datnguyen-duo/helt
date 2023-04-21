@@ -1,0 +1,105 @@
+.image-with-text-wrap{
+    @media #{$s1000} {
+        margin-bottom: 120px;
+    }
+    
+    .container{
+        padding: 0;
+
+        @media #{$s1000} {
+            padding: 0 60px;
+            width: 100%;
+            max-width: 100%;
+        }
+
+        @media #{$s1600} {
+            padding: 0 120px;
+        }
+    }
+
+    .image-with-text{
+        display: flex;
+        flex-wrap: wrap;
+
+        .column{
+            width: 100%;
+
+            
+            @media #{$s1000} {
+                width: 50%;
+
+                .feature-text-paired{
+                    max-width: 700px;
+                    margin-left: 15%;
+                    margin-right: 0;
+                }
+
+                .image-overlap{
+                    max-width: 100%!important;
+
+                    .rimage-outer-wrapper{
+                        max-width: 100%!important;
+                    }
+                }
+            }
+        }
+
+        .column--order-push-desktop-text{
+            @media #{$s1000} {
+                .feature-text-paired{
+                    margin-right: 15%;
+                    margin-left: 0;
+                }
+            }
+        }
+        .column--order-push-desktop{
+            order: initial!important;
+            @media #{$s1000} {
+                order: 2!important;
+            }
+        }
+
+        .description-column{
+            padding: 0 25px;
+            margin-top: 20px;
+
+            @media #{$s1000} {
+                text-align: left;
+                padding: 0;
+                margin-top: 0;
+                display: flex;
+                align-items: center;
+            }
+            
+            .subheading{
+                font-size: 14px;
+                font-weight: 600;
+            }
+
+            h1{
+                font-size: 16px;
+                font-weight: 600;
+
+                @media #{$s1000} {
+                    font-size: 22px;
+                }
+                
+                @media #{$s1600} {
+                    font-size: 32px;
+                }
+            }
+
+            .rte{
+                font-size: 12px;
+
+                @media #{$s1000} {
+                    font-size: 14px;
+                }
+        
+                @media #{$s1600} {
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+}

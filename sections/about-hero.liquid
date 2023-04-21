@@ -1,0 +1,35 @@
+<div class="about-hero-wrap">
+  <img src="{{ section.settings.hero_image | image_url }}" alt="">
+  <div class="hero-content">
+    <h1>{{ section.settings.about_headline }}</h1>
+    <div class="description">
+      {{ section.settings.about_description }}
+    </div>
+  </div>
+</div>
+
+{% schema %}
+  {
+    "name": "About Hero",
+    "settings": [
+      {
+        "type": "image_picker",
+        "id": "hero_image",
+        "label": "Hero Image"
+      }, {
+        "type": "text",
+        "id": "about_headline",
+        "label": "Headline"
+      }, {
+        "type": "richtext",
+        "id": "about_description",
+        "label": "Description"
+      }
+    ],
+    "presets": [
+      {
+        "name": "About Hero"
+      }
+    ]
+  }
+{% endschema %}

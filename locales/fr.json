@@ -20,7 +20,7 @@
   "general": {
     "404": {
       "title": "404 - Page non trouvée",
-      "subtext_html": "Cette page n'est pas disponible. <a href=\"/\">Retourner au magasinage</a>"
+      "subtext_html": "Cette page n'est pas disponible. <a href=\"\/\">Retourner au magasinage<\/a>"
     },
     "meta": {
       "tags": "Mots clés \"{{ tags }}\"",
@@ -87,14 +87,14 @@
     "errors": {
       "address_error": "Vous ne trouvez pas cette adresse",
       "address_no_results": "Aucun résultat pour cette adresse",
-      "address_query_limit_html": "Vous avez dépassé la limite de Google utilisation de l'API. Envisager la mise à niveau à un <a href=\"https://developers.google.com/maps/premium/usage-limits\">régime spécial</a>.",
+      "address_query_limit_html": "Vous avez dépassé la limite de Google utilisation de l'API. Envisager la mise à niveau à un <a href=\"https:\/\/developers.google.com\/maps\/premium\/usage-limits\">régime spécial<\/a>.",
       "auth_error": "Il y avait un problème authentifier votre compte Google Maps."
     }
   },
   "cart": {
     "terms": {
       "confirmation": "Vous devez accepter les termes et conditions avant de continuer.",
-      "agreement_html": "J'accepte les <a href=\"{{ terms_url }}\" target=\"_blank\">termes et la politique de remboursement</a>"
+      "agreement_html": "J'accepte les <a href=\"{{ terms_url }}\" target=\"_blank\">termes et la politique de remboursement<\/a>"
     },
     "general": {
       "title": "Panier",
@@ -103,9 +103,9 @@
       "confirm_remove": "Voulez-vous vraiment supprimer cet élément?",
       "remove": "Retirer",
       "subtotal": "Sous-total",
-      "taxes_included_and_shipping_policy_html": "Taxes incluses. <a href=\"{{ link }}\">Frais de port</a> calculés à la caisse.",
+      "taxes_included_and_shipping_policy_html": "Taxes incluses. <a href=\"{{ link }}\">Frais de port<\/a> calculés à la caisse.",
       "taxes_included_but_shipping_at_checkout": "Taxes incluses et frais de port calculés à la caisse",
-      "taxes_and_shipping_policy_at_checkout_html": "Taxes et <a href=\"{{ link }}\">frais de port</a> calculés à la caisse",
+      "taxes_and_shipping_policy_at_checkout_html": "Taxes et <a href=\"{{ link }}\">frais de port<\/a> calculés à la caisse",
       "taxes_and_shipping_at_checkout": "Taxes et frais de port calculés à la caisse",
       "update": "Mettre à jour",
       "or": "ou",
@@ -142,13 +142,13 @@
     },
     "product": {
       "add_to_cart": "Ajouter au panier",
-      "unit_price_separator": " / ",
+      "unit_price_separator": " \/ ",
       "adding_to_cart": "Ajouter",
       "added_to_cart": "Ajoutée",
       "preorder": "Pré-commander",
       "view_in_space": "Afficher dans votre espace",
       "include_taxes": "Taxes incluses.",
-      "shipping_policy_html": "<a href=\"{{ link }}\">Frais d'expédition</a> calculés lors du passage à la caisse.",
+      "shipping_policy_html": "<a href=\"{{ link }}\">Frais d'expédition<\/a> calculés lors du passage à la caisse.",
       "reviews_link": "Avis",
       "vendor": "Distributeur",
       "sku": "SKU:",
@@ -312,7 +312,7 @@
       "link": "Accéder à la boutique à l'aide d'un mot de passe",
       "label": "Accéder à la boutique à l'aide d'un mot de passe:",
       "button": "Soumettre",
-      "admin_link_html": "Êtes-vous le propriétaire de la boutique? <a href=\"/admin\">Connectez-vous ici</a>"
+      "admin_link_html": "Êtes-vous le propriétaire de la boutique? <a href=\"\/admin\">Connectez-vous ici<\/a>"
     },
     "signup": {
       "success": "Nous vous ferons parvenir un courriel juste avant l'ouverture!"
@@ -323,10 +323,10 @@
   },
   "store_availability": {
     "general": {
-      "pick_up_available_at_html": "Ramassage disponible à <strong>{{ location_name }}</strong>",
+      "pick_up_available_at_html": "Ramassage disponible à <strong>{{ location_name }}<\/strong>",
       "view_store_info": "Afficher les informations de la boutique",
       "check_other_stores": "Vérifier la disponibilité dans d'autres boutiques",
-      "pick_up_unavailable_at_html": "Ramassage actuellement indisponible à <strong>{{ location_name }}</strong>",
+      "pick_up_unavailable_at_html": "Ramassage actuellement indisponible à <strong>{{ location_name }}<\/strong>",
       "miles": "mi",
       "kilometers": "km",
       "pick_up_available": "Ramassage disponible",

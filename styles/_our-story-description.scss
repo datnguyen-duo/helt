@@ -1,0 +1,42 @@
+.about-text-wrap{
+    max-width: 780px;
+    margin: auto;
+    
+    .text-content{
+        padding: 40px 25px;
+        text-align: center;
+
+        @media #{$s1000} {
+            padding: 140px 25px 120px 25px;
+        }
+
+        h2{
+            font-size: 14px;
+            font-weight: 600;
+            text-transform: none;
+
+            @media #{$s1000} {
+                font-size: 16px;
+            }
+
+            @media #{$s1600} {
+                font-size: 20px;
+            }
+        }
+
+        .description{
+            p{
+                font-size: 12px;
+                margin: 0;
+
+                @media #{$s1000} {
+                    font-size: 14px;
+                }
+
+                @media #{$s1600} {
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+}

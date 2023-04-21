@@ -45,6 +45,9 @@
               {{- 'layout.signup.submit' | t -}}
             </button>
           </div>
+          {% if section.settings.note %}
+            <div class="note">{{ section.settings.note }}</div>
+          {% endif %}
         {% endif %}
       {% endform %}
     </div>
@@ -67,6 +70,11 @@
         "id": "subheading",
         "label": "Subheading",
         "default": "<p>Promotions, new products and sales. Directly to your inbox.</p>"
+      },
+      {
+        "type": "richtext",
+        "id": "note",
+        "label": "Note"
       },
       {
         "type": "color",

@@ -1,0 +1,99 @@
+.featured-blog-container{
+    padding: 0;
+    background-color: #fff;
+    overflow: hidden;
+    max-width: 100%;
+
+    @media #{$s700} {
+        padding: 0 25px;
+    }
+    
+    @media #{$s1000} {
+        padding: 0 45px;
+        width: 100%;
+        max-width: 100%;
+        margin-bottom: 120px;
+    }
+
+    @media #{$s1600} {
+        padding: 0 105px;
+    }
+
+    h1{
+        @media #{$s1000} {
+            font-size: 22px;
+        }
+        
+        @media #{$s1600} {
+            font-size: 32px;
+            margin-bottom: 40px;
+        }
+    }
+    
+    .articles-list{
+        .slick-track{
+            display: flex !important;
+            
+            padding-bottom: 30px;
+        }
+
+        .slick-slide {
+            margin: 0 8px;
+            height: inherit!important;
+
+            @media #{$s1000} {
+                margin: 0 15px;
+            }
+        }
+    
+        .slick-list {
+            margin: 0 -16px;
+
+            @media #{$s1000} {
+                margin: 0px;
+            }
+        }
+    
+        .single-article{
+            box-shadow: 0px 0px 30px #00000015;
+
+            .single-article-holder{
+                .article-info{
+                    padding: 25px 20px;
+                    box-sizing: border-box;
+
+                    @media #{$s1000} {
+                        padding: 40px;
+                    }
+
+                    h3{
+                        font-size: 14px;
+                        margin-bottom: 5px;
+                        font-weight: 600;
+
+                        @media #{$s1000} {
+                            font-size: 16px;
+                        }
+        
+                        @media #{$s1600} {
+                            font-size: 20px;
+                        }
+                        
+                    }
+
+                    .rte{
+                        font-size: 12px;
+
+                        @media #{$s1000} {
+                            font-size: 14px;
+                        }
+        
+                        @media #{$s1600} {
+                            font-size: 16px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

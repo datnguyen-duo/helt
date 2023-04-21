@@ -1,8 +1,10 @@
-<div class="{% if section.settings.use_alt_bg %}use-alt-bg fully-padded-row--medium{% else %}fully-spaced-row--medium{% endif %}">
+<div class="image-with-text-wrap {% if section.settings.use_alt_bg %}use-alt-bg fully-padded-row--medium{% else %}fully-spaced-row--medium{% endif %}">
   <div class="container">
-    <div class="flexible-layout valign-middle">
-      <div class="column column--half {% if section.settings.image_position == 'right' %}column--order-push-desktop{% endif %}">
-        {% if section.settings.button_link != blank %}<a class="block-link" href="{{ section.settings.button_link }}">{% endif %}
+    <div class="image-with-text">
+      <div class="column image-column column--half {% if section.settings.image_position == 'right' %}column--order-push-desktop{% endif %}">
+        {% if section.settings.button_link != blank %}
+          <a class="block-link" href="{{ section.settings.button_link }}">
+          {% endif %}
           <div class="image-overlap" style="max-width: {{ section.settings.image_width }}px">
             <div class="image-overlap__image image-overlap__image-1">
               {%- if section.settings.image == blank -%}
@@ -22,17 +24,19 @@
               </div>
             {%- endif -%}
           </div>
-        {% if section.settings.button_link != blank %}</a>{% endif %}
+          {% if section.settings.button_link != blank %}
+          </a>
+        {% endif %}
       </div>
 
-      <div class="column column--half align-{{ section.settings.text_alignment }}" data-cc-animate>
+      <div class="column description-column column--half align-{{ section.settings.text_alignment }} {% if section.settings.image_position == 'right' %}column--order-push-desktop-text{% endif %}" data-cc-animate>
         <div class="feature-text-paired">
           {%- if section.settings.subheading != blank -%}
             <div class="subheading subheading--over">{{ section.settings.subheading | escape }}</div>
           {%- endif -%}
 
           {% if section.settings.title != blank %}
-          <h1 class="majortitle in-content">{{ section.settings.title | escape }}</h1>
+            <h1 class="majortitle in-content">{{ section.settings.title | escape }}</h1>
           {% endif %}
 
           <div class="rte">{{ section.settings.text }}</div>
@@ -78,31 +82,26 @@
         "type": "text",
         "id": "subheading",
         "label": "Subheading"
-      },
-      {
+      }, {
         "type": "text",
         "id": "title",
         "label": "Heading",
         "default": "Image with text"
-      },
-      {
+      }, {
         "type": "richtext",
         "id": "text",
         "label": "Text",
         "default": "<p>Pair large text with an image to give focus to your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>"
-      },
-	    {
+      }, {
         "type": "text",
         "id": "button_label",
         "label": "Button",
         "default": "Read more"
-      },
-      {
+      }, {
         "type": "url",
         "id": "button_link",
         "label": "Button link"
-      },
-      {
+      }, {
         "type": "select",
         "id": "button_style",
         "label": "Button style",
@@ -111,18 +110,15 @@
           {
             "label": "Button - primary",
             "value": "primary"
-          },
-          {
+          }, {
             "label": "Button - secondary",
             "value": "secondary"
-          },
-          {
+          }, {
             "label": "Link",
             "value": "link"
           }
         ]
-      },
-      {
+      }, {
         "type": "select",
         "id": "image_position",
         "label": "Image alignment",
@@ -130,14 +126,12 @@
           {
             "value": "left",
             "label": "Left"
-          },
-          {
+          }, {
             "value": "right",
             "label": "Right"
           }
         ]
-      },
-      {
+      }, {
         "type": "select",
         "id": "text_alignment",
         "label": "Text alignment",
@@ -145,18 +139,15 @@
           {
             "value": "left",
             "label": "Left"
-          },
-          {
+          }, {
             "value": "center",
             "label": "Center"
-          },
-          {
+          }, {
             "value": "right",
             "label": "Right"
           }
         ]
-      },
-      {
+      }, {
         "type": "checkbox",
         "id": "use_alt_bg",
         "label": "Use alternate section color",
@@ -165,9 +156,9 @@
     ],
     "presets": [
       {
-      "name": "Image with text",
-          "category": "Image",
-          "settings": {}
+        "name": "Image with text",
+        "category": "Image",
+        "settings": {}
       }
     ]
   }

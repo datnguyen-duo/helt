@@ -1,4 +1,4 @@
-<div class="{% unless section.settings.full_width %}article{% endunless %} {% if section.settings.use_alt_bg %}use-alt-bg fully-padded-row--{{ section.settings.height }}{% else %}fully-spaced-row--{{ section.settings.height }}{% endif %}" data-cc-animate>
+<div class="richtext-container {% unless section.settings.full_width %}article{% endunless %} {% if section.settings.use_alt_bg %}use-alt-bg fully-padded-row--{{ section.settings.height }}{% else %}fully-spaced-row--{{ section.settings.height }}{% endif %}" data-cc-animate>
   <div class="container">
     <div class="align-{{ section.settings.text_alignment }}">
       {%- if section.settings.subheading != blank -%}
@@ -47,13 +47,11 @@
         "type": "text",
         "id": "button_label",
         "label": "Button"
-      },
-      {
+      }, {
         "type": "url",
         "id": "button_link",
         "label": "Button link"
-      },
-      {
+      }, {
         "type": "select",
         "id": "button_style",
         "label": "Button style",
@@ -62,18 +60,15 @@
           {
             "label": "Button - primary",
             "value": "primary"
-          },
-          {
+          }, {
             "label": "Button - secondary",
             "value": "secondary"
-          },
-          {
+          }, {
             "label": "Link",
             "value": "link"
           }
         ]
-      },
-      {
+      }, {
         "type": "select",
         "id": "height",
         "label": "Section height",
@@ -82,18 +77,15 @@
           {
             "value": "small",
             "label": "Small"
-          },
-          {
+          }, {
             "value": "medium",
             "label": "Medium"
-          },
-          {
+          }, {
             "value": "large",
             "label": "Large"
           }
         ]
-      },
-      {
+      }, {
         "type": "select",
         "id": "text_alignment",
         "label": "Text alignment",
@@ -102,30 +94,25 @@
           {
             "value": "left",
             "label": "Left"
-          },
-          {
+          }, {
             "value": "center",
             "label": "Center"
-          },
-          {
+          }, {
             "value": "right",
             "label": "Right"
           }
         ]
-      },
-      {
+      }, {
         "type": "checkbox",
         "id": "enlarge_text",
         "label": "Enlarge text",
         "default": false
-      },
-      {
+      }, {
         "type": "checkbox",
         "id": "full_width",
         "label": "Wide display",
         "default": false
-      },
-      {
+      }, {
         "type": "checkbox",
         "id": "use_alt_bg",
         "label": "Use alternate section color",

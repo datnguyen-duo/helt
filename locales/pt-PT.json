@@ -87,14 +87,14 @@
     "errors": {
       "address_error": "Não é possível localizar o endereço",
       "address_no_results": "Nenhum resultado para este endereço",
-      "address_query_limit_html": "Você excedeu a cota de uso da API do Google. Considere a atualização para um <a href=\"https://developers.google.com/maps/premium/usage-limits\">Plano Premium</a>.",
+      "address_query_limit_html": "Você excedeu a cota de uso da API do Google. Considere a atualização para um <a href=\"https:\/\/developers.google.com\/maps\/premium\/usage-limits\">Plano Premium<\/a>.",
       "auth_error": "Houve um problema autenticação de sua conta do Google Maps."
     }
   },
   "cart": {
     "terms": {
       "confirmation": "Você deve concordar com os termos e condições antes de continuar.",
-      "agreement_html": "Eu concordo com os <a href=\"{{ terms_url }}\" target=\"_blank\">termos e política de reembolso</a>"
+      "agreement_html": "Eu concordo com os <a href=\"{{ terms_url }}\" target=\"_blank\">termos e política de reembolso<\/a>"
     },
     "general": {
       "title": "Carrinho de compras",
@@ -103,9 +103,9 @@
       "confirm_remove": "Tem certeza de que deseja remover este item?",
       "remove": "Eliminar",
       "subtotal": "Subtotal",
-      "taxes_included_and_shipping_policy_html": "Imposto incluído. <a href=\"{{ link }}\">Envio</a> calculado na finalização da compra.",
+      "taxes_included_and_shipping_policy_html": "Imposto incluído. <a href=\"{{ link }}\">Envio<\/a> calculado na finalização da compra.",
       "taxes_included_but_shipping_at_checkout": "Imposto incluído e envio calculado na finalização da compra",
-      "taxes_and_shipping_policy_at_checkout_html": "Impostos e <a href=\"{{ link }}\">envio</a> calculados na finalização da compra",
+      "taxes_and_shipping_policy_at_checkout_html": "Impostos e <a href=\"{{ link }}\">envio<\/a> calculados na finalização da compra",
       "taxes_and_shipping_at_checkout": "Impostos e envio calculados na finalização da compra",
       "update": "Atualizar carrinho",
       "or": "ou",
@@ -126,8 +126,8 @@
       "button_hide": "Ocultar calculadora de envio",
       "button_show": "Calcular o envio",
       "country": "País",
-      "province": "Província/Estado",
-      "zip": "Código postal/CEP",
+      "province": "Província\/Estado",
+      "zip": "Código postal\/CEP",
       "submit": "Calcular o envio",
       "multiple_rates": "Taxas de envio disponíveis, a partir de",
       "single_rate": "Existe uma taxa de envio disponível para",
@@ -142,13 +142,13 @@
     },
     "product": {
       "add_to_cart": "Adicionar ao carrinho",
-      "unit_price_separator": " / ",
+      "unit_price_separator": " \/ ",
       "adding_to_cart": "Adicionando",
       "added_to_cart": "Adicionado",
       "preorder": "Pedido antecipado",
       "view_in_space": "Ver no seu espaço",
       "include_taxes": "Imposto incluído.",
-      "shipping_policy_html": "<a href=\"{{ link }}\">Envio</a> calculado na finalização da compra.",
+      "shipping_policy_html": "<a href=\"{{ link }}\">Envio<\/a> calculado na finalização da compra.",
       "reviews_link": "Link de comentários",
       "vendor": "Fornecedor",
       "sku": "SKU:",
@@ -312,7 +312,7 @@
       "link": "Entre usando a palavra-passe",
       "label": "Entre usando a palavra-passe:",
       "button": "Entrar",
-      "admin_link_html": "É o(a) dono(a) da loja? <a href=\"/admin\">Entre aqui</a>"
+      "admin_link_html": "É o(a) dono(a) da loja? <a href=\"\/admin\">Entre aqui<\/a>"
     },
     "signup": {
       "success": "Nós lhe enviaremos um e-mail logo antes de lançar a loja!"
@@ -323,10 +323,10 @@
   },
   "store_availability": {
     "general": {
-      "pick_up_available_at_html": "Recolha disponível em <strong>{{ location_name }}</strong>",
+      "pick_up_available_at_html": "Recolha disponível em <strong>{{ location_name }}<\/strong>",
       "view_store_info": "Ver informações da loja",
       "check_other_stores": "Verificar a disponibilidade noutras lojas",
-      "pick_up_unavailable_at_html": "Recolha atualmente indisponível em <strong>{{ location_name }}</strong>",
+      "pick_up_unavailable_at_html": "Recolha atualmente indisponível em <strong>{{ location_name }}<\/strong>",
       "miles": "mi",
       "kilometers": "km",
       "pick_up_available": "Recolha disponível",
@@ -371,8 +371,8 @@
       "address2": "Endereço 2",
       "city": "Cidade",
       "country": "País",
-      "province": "Província/Estado",
-      "zip": "Código postal/CEP",
+      "province": "Província\/Estado",
+      "zip": "Código postal\/CEP",
       "phone": "Telefone",
       "set_default": "Definir como endereço padrão",
       "add": "Adicionar endereço",

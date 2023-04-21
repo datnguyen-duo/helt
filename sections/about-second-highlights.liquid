@@ -1,0 +1,56 @@
+<div class="about-second-highlights-wrap">
+  <div class="about-second-highlights-content">
+    <p class="main-description">{{ section.settings.highlight_main_description }}</p>
+    <div class="all-highlights">
+      {% for block in section.blocks %}
+        <div class="single-highlight">
+          <div class="image-holder">
+            <img src="{{ block.settings.single_image | image_url }}" alt="">
+          </div>
+          <div class="highlight-info">
+            <h2>{{ block.settings.highlight_headline }}</h2>
+            <p>{{ block.settings.highlight_description }}</p>
+          </div>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+</div>
+{% schema %}
+  {
+    "name": "About Second Highlights",
+    "settings": [
+      {
+        "type": "textarea",
+        "id": "highlight_main_description",
+        "label": "Description"
+      }
+    ],
+    "blocks": [
+      {
+        "type": "image_picker",
+        "name": "Single Highlight",
+        "settings": [
+          {
+            "type": "image_picker",
+            "id": "single_image",
+            "label": "Image"
+          }, {
+            "type": "text",
+            "id": "highlight_headline",
+            "label": "Headline"
+          }, {
+            "type": "textarea",
+            "id": "highlight_description",
+            "label": "Description"
+          }
+        ]
+      }
+    ],
+    "presets": [
+      {
+        "name": "About Second Highlights"
+      }
+    ]
+  }
+{% endschema %}

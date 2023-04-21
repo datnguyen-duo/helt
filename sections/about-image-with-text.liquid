@@ -1,0 +1,34 @@
+<div class="about-image-with-text-wrap">
+  <div class="about-image-with-text-content">
+    <div class="image-holder">
+      <img src="{{ section.settings.about_image | image_url }}" alt="">
+    </div>
+    <div class="text-content">
+      <div class="description">
+        {{ section.settings.about_text }}
+      </div>
+    </div>
+  </div>
+</div>
+
+{% schema %}
+  {
+    "name": "About Image Description",
+    "settings": [
+      {
+        "type": "image_picker",
+        "id": "about_image",
+        "label": "Hero Image"
+      }, {
+        "type": "richtext",
+        "id": "about_text",
+        "label": "Description"
+      }
+    ],
+    "presets": [
+      {
+        "name": "About Image Description"
+      }
+    ]
+  }
+{% endschema %}

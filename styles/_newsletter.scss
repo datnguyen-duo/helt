@@ -1,0 +1,116 @@
+#section-id-newsletter{
+    color: #545454;
+
+    .container .lightly-spaced-row{
+        @media #{$s1100} {
+            max-width: 100%!important;
+        }
+    }
+
+    .container{
+        padding: 55px 25px;
+
+        @media #{$s1100} {
+            padding: 120px 25px;
+        }
+
+        h1{
+            color: #545454;
+            font-size: 16px;
+            font-weight: 600;
+            margin-bottom: 10px;
+
+            @media #{$s1000} {
+                font-size: 22px;
+            }
+            
+            @media #{$s1600} {
+                font-size: 40px;
+            }
+        }
+
+        .lightly-spaced-row{
+            margin: auto;
+            margin-bottom: 30px;
+            max-width: 360px;
+
+            p{
+                color: #545454;
+                font-size: 14px;
+                font-weight: 600;
+
+                @media #{$s1000} {
+                    font-size: 16px;
+                }
+                
+                @media #{$s1600} {
+                    font-size: 20px;
+                }
+            }
+        }
+
+        .note{
+            max-width: 260px;
+            margin: auto;
+            margin-top: 20px;
+
+            @media #{$s1100} {
+                max-width: 100%;
+            }
+            
+            p, a{
+                font-size: 10px;
+                font-weight: normal;
+
+                @media #{$s1000} {
+                    font-size: 12px;
+                }
+                
+                @media #{$s1600} {
+                    font-size: 14px;
+                }
+            }
+
+            a{
+                text-decoration: underline;
+            }
+        }
+
+        .signup-form__inline-container{
+            input{
+                padding: 10px;
+                font-size: 12px;
+                margin-bottom: 10px;
+
+                @media #{$s770} {
+                    margin-bottom: 0;
+                }
+
+                @media #{$s1100} {
+                    width: 500px;
+                }
+
+                @media #{$s1600} {
+                    width: 700px;
+                }
+            }
+
+            button{
+                width: 100%;
+                font-weight: 600;
+                font-size: 12px;
+                padding: 10px;
+
+                @media #{$s770} {
+                    width: auto;
+                }
+
+                @media #{$s1100} {
+                    width: 150px;
+                    margin-left: 20px;
+                }
+            }
+        }
+        
+    }
+}

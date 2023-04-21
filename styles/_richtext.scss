@@ -1,0 +1,52 @@
+.richtext-container{
+    @media #{$s1100} {
+        margin: 160px 0;
+    }
+    
+    .container{
+        @media #{$s1100} {
+            max-width: 860px;
+        }
+
+        .subheading{
+            font-weight: 600;
+            font-size: 14px;
+            text-transform: none;
+    
+            @media #{$s1000} {
+                font-size: 16px;
+            }
+    
+            @media #{$s1600} {
+                font-size: 20px;
+            }
+        }
+    
+        h1, h2{
+            font-size: 16px;
+            font-weight: 600;
+
+            @media #{$s1000} {
+                font-size: 22px;
+            }
+            
+            @media #{$s1600} {
+                font-size: 32px;
+            }
+        }
+        
+        .rte{
+            p{
+                font-size: 12px!important;
+        
+                @media #{$s1000} {
+                    font-size: 14px!important;
+                }
+        
+                @media #{$s1600} {
+                    font-size: 16px!important;
+                }
+            }
+        }
+    }
+}
