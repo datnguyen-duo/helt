@@ -7,28 +7,33 @@
       <span>{{ section.settings.sectionheadline | escape }}</span>
     </h2>
 
-    <div class="gallery-wrapper">
-      {%- for block in section.blocks -%}
-        <div class="single-item">
-          <div class="image-holder">
-            <img
-              src="{{ block.settings.image | img_url: '1024x1024' }}"
-              alt="{{ block.settings.image.alt | escape }}"
-              class="rimage__image">
+    <div class="arrows-holder">
+      <div class="single-arrow previous-gallery"></div>
+      <div class="single-arrow next-gallery"></div>
+    </div>
+  </div>
 
-            <a href="{{ block.settings.link }}" class="view-collection button btn btn--secondary">{{ block.settings.button_label }}</a>
-          </div>
-          <div class="single-item-info">
-            <h3>{{ block.settings.headline }}</h3>
-            <div class="rte">
-              <p>
-                {{ block.settings.description }}
-              </p>
-            </div>
+  <div class="gallery-wrapper">
+    {%- for block in section.blocks -%}
+      <div class="single-item">
+        <div class="image-holder">
+          <img
+            src="{{ block.settings.image | img_url: '1024x1024' }}"
+            alt="{{ block.settings.image.alt | escape }}"
+            class="rimage__image">
+
+          <a href="{{ block.settings.link }}" class="view-collection button btn btn--secondary">{{ block.settings.button_label }}</a>
+        </div>
+        <div class="single-item-info">
+          <h3>{{ block.settings.headline }}</h3>
+          <div class="rte">
+            <p>
+              {{ block.settings.description }}
+            </p>
           </div>
         </div>
-      {%- endfor -%}
-    </div>
+      </div>
+    {%- endfor -%}
   </div>
 
 </div>

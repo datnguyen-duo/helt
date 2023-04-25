@@ -15,8 +15,17 @@
     @media #{$s1600} {
         padding-left: 120px;
     }
+    .headline-holder{
+        margin-bottom: 15px;
+
+        @media #{$s1100} {
+            margin-bottom: 30px;
+        }
+    }
 
     h2{
+        margin: 0;
+
         @media #{$s1000} {
             font-size: 22px;
             text-align: left;
@@ -24,7 +33,49 @@
         
         @media #{$s1600} {
             font-size: 32px;
+        }
+    }
+
+    .headline-holder{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        @media #{$s770} {
+            justify-content: space-between;
+        }
+
+        @media #{$s1100} {
+            padding-right: 120px;
+        }
+        
+        @media #{$s1600} {
             margin-bottom: 40px;
+        }
+
+        .arrows-holder{
+            align-items: center;
+            display: none;
+
+            @media #{$s1100} {
+                display: flex;
+            }
+
+            .single-arrow{
+                box-shadow: 0px 0px 6px #00000029;
+                background-color: #fff;
+                width: 50px;
+                height: 50px;
+                border-radius: 100px;
+
+                &.next-gallery{
+                    margin-left: 20px;
+                }
+
+                &.slick-disabled{
+                    opacity: 0.5;
+                }
+            }
         }
     }
 
