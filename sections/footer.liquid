@@ -1,0 +1,502 @@
+<style>
+  .section-footer__text .item {
+    margin-top: 10px;
+  }
+  .phone-mail span {
+    position: absolute;
+    margin-top: -3px;
+    margin-left: 10px;
+  }
+
+  .section-footer__badge {
+    display: flex;
+  }
+
+  .section-footer__badge .item {
+    margin: auto 20px auto 0;
+  }
+  .section-footer__badge .item img {
+    width: auto;
+    height: auto;
+  }
+</style>
+<div data-section-type="footer">
+  {% if section.blocks != blank %}
+    <div class="footer-container">
+      <div class="section-footer__row section-footer__row--blocks" data-num-blocks="{{ section.blocks.size }}">
+        {% for block in section.blocks %}
+          {% if block.type == 'menu' %}
+            <div class="section-footer__row__col section-footer__menu-block">
+              {% if block.settings.title != blank %}
+                {%- assign title_word_count = block.settings.title | split: ' ' | size -%}
+                <h6 class="section-footer__title{% if title_word_count < 4 %} no-wrap{% endif %}">
+                  {{- block.settings.title | escape -}}
+                </h6>
+              {% endif %}
+
+              {% if block.settings.menu != blank %}
+                <ul
+                  class="section-footer__menu-block__menu"
+                  role="navigation"
+                  aria-label="{{ 'layout.footer.navigation_aria_label' | t | escape }}">
+                  {% for link in linklists[block.settings.menu].links %}
+                    <li>
+                      <a href="{{ link.url }}" {% if link.title.size < 25 %}class="no-wrap"{% endif %}>
+                        {{- link.title -}}
+                      </a>
+                    </li>
+                  {% endfor %}
+                </ul>
+              {% endif %}
+            </div>
+
+          {% elsif block.type == 'text' %}
+            <div class="section-footer__row__col section-footer__text-block {% if block.settings.text != blank %}section-footer__text-block--with-text{% endif %}">
+              {% if block.settings.title != blank %}
+                {%- assign title_word_count = block.settings.title | split: ' ' | size -%}
+                <h6 class="section-footer__title{% if title_word_count < 4 %} no-wrap{% endif %}">
+                  {{- block.settings.title | escape -}}
+                </h6>
+              {% endif %}
+
+              {% if block.settings.text != blank %}
+                <div class="section-footer__text">
+                  {{- block.settings.text -}}
+                </div>
+              {% endif %}
+
+              {% if block.settings.image != blank %}
+                <span class="section-footer__text-block__image">
+                  {%- capture double_image_width -%}
+                    {{ block.settings.image_width | times: 2 }}x{%- endcapture -%}
+                  <div class="rimage-outer-wrapper" style="width: {{ block.settings.image_width }}px">
+                    <div class="rimage-wrapper lazyload--placeholder" style="padding-top:{{ 1 | divided_by: block.settings.image.aspect_ratio | times: 100 }}%">
+                      <img
+                        class="rimage__image lazyload fade-in"
+                        data-src="{{ block.settings.image | img_url: double_image_width }}"
+                        alt="{{ shop.name | escape }}" />
+                    </div>
+                  </div>
+                </span>
+              {% endif %}
+
+              <div class="section-footer__text">
+                <div class="item">
+                  <a href="tel:+{{block.settings.phone-text}}" class="phone-mail"><img src="{{block.settings.phone_logo | img_url: '20px'}}" alt="phone">
+                    <span>
+                      {{ block.settings.phone-text }}</span>
+                  </a>
+                </div>
+                <div class="item">
+                  <a href="mailto: {{block.settings.mail-text}}" class="phone-mail"><img src="{{block.settings.mail_logo | img_url: '20px'}}" alt="mail">
+                    <span>
+                      {{ block.settings.mail-text }}</span>
+                  </a>
+                </div>
+              </div>
+              {% comment %}
+                {% if block.settings.badge_one != blank and block.settings.badge_two != blank %}
+                <div class="section-footer__badge">
+                <div class="item">
+                <img
+                src="{{block.settings.badge_one | img_url: '250x'}}"
+                alt="{{block.settings.badge_one.alt}}"
+                loading="lazy">
+                </div>
+                <div class="item">
+                <img
+                src="{{block.settings.badge_two | img_url: '250x'}}"
+                alt="{{block.settings.badge_two.alt}}"
+                loading="lazy">
+                </div>
+                </div>
+                {% endif %}
+
+                {% render 'social-icons', icon_setting: settings.social_custom_icon, icon_size: icon_size, container_class: container_class %}
+              {% endcomment %}
+            </div>
+
+          {% elsif block.type == 'newsletter' %}
+            <div class="section-footer__row__col section-footer__newsletter-block">
+              {% if block.settings.title != blank %}
+                {%- assign title_word_count = block.settings.title | split: ' ' | size -%}
+                <h6 class="section-footer__title{% if title_word_count < 4 %} no-wrap{% endif %}">
+                  {{- block.settings.title | escape -}}
+                </h6>
+              {% endif %}
+
+              {% if block.settings.text != blank %}
+                <div class="section-footer__text">
+                  {{ block.settings.text }}
+                </div>
+              {% endif %}
+
+              <div class="signup-form">
+
+                {% comment %}
+                  {% form 'customer', id: 'footer_newsletter_signup' %}
+                  {% if form.posted_successfully? %}
+                  <div class="section-footer__newsletter-block__message signup-form__response signup-form__response--success">
+                  <h6>{{ 'layout.signup.post_success' | t }}</h6>
+                  </div>
+                  {% else %}
+                  {% if form.errors %}
+                  {% for field in form.errors %}
+                  <p class="section-footer__newsletter-block__message--error signup-form__response signup-form__response--error">
+                  {{ field | capitalize }} - {{ form.errors.messages[field] }}
+                  </p>
+                  {% endfor %}
+                  {% endif %}
+                  <input type="hidden" name="contact[tags]" value="prospect,newsletter"/>
+                  <p>
+                  <input type="email"
+                  placeholder="{{ 'layout.signup.placeholder' | t }}"
+                  class="signup-form__email"
+                  value=""
+                  name="contact[email]"
+                  aria-label="{{ 'layout.signup.input_label' | t | escape }}" />
+                  </p>
+                  <button class="button signup-form__button" type="submit">
+                  {{- 'layout.signup.submit' | t -}}
+                  </button>
+                  {% endif %}
+                  {% endform %}
+                {% endcomment %}
+
+
+                <!-- Begin Mailchimp Signup Form -->
+
+                  <div id="mc_embed_signup"> <form
+                    action="https://heltstudio.us1.list-manage.com/subscribe/post?u=f7a686658293c1b6e962fd5bf&amp;id=bff1ad652a"
+                    method="post"
+                    id="mc-embedded-subscribe-form"
+                    name="mc-embedded-subscribe-form"
+                    class="validate"
+                    target="_blank"
+                    novalidate>
+                    <div id="mc_embed_signup_scroll">
+                      <p>
+                        <input
+                          type="email"
+                          value=""
+                          name="EMAIL"
+                          class="email signup-form__email"
+                          id="mce-EMAIL"
+                          placeholder="{{ 'layout.signup.placeholder' | t }}"
+                          required>
+                      </p>
+                      <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                      <div style="position: absolute; left: -5000px;" aria-hidden="true"><input
+                          type="text"
+                          name="b_f7a686658293c1b6e962fd5bf_bff1ad652a"
+                          tabindex="-1"
+                          value=""></div>
+                      <div class="clear"><input
+                          type="submit"
+                          value=" {{- 'layout.signup.submit' | t -}}"
+                          name="subscribe"
+                          id="mc-embedded-subscribe"
+                          class="button signup-form__button"></div>
+                    </div>
+                  </form>
+                </div>
+
+                <!--End mc_embed_signup-->
+
+              </div>
+
+              {% if block.settings.show_social_icons != blank %}
+                <div class="section-footer__newsletter-block__social">
+                  {% capture icon_size %}
+                    {% if block.settings.soc_icons_large %}x46{% else %}x30{% endif %}
+                  {% endcapture %}
+                  {% capture container_class %}
+                    {% if block.settings.soc_icons_large %}social-links--large
+                  {% else %}
+                    {% endif %}
+                  {% endcapture %}
+                  {% render 'social-icons', icon_setting: settings.social_custom_icon, icon_size: icon_size, container_class: container_class %}
+                </div>
+              {% endif %}
+
+
+            </div>
+          {% endif %}
+        {% endfor %}
+        <div class="section-footer__row__col icons-and-badge">
+          <div class="icons-block desktop">
+            {% render 'social-icons', icon_setting: settings.social_custom_icon, icon_size: icon_size, container_class: container_class %}
+            {% if section.settings.show_payment_icons %}
+              <div class="section-footer__payment-icons">
+                {% assign enabled_payment_types = 'klarna,american_express,apple_pay,diners_club,discover,jcb,master,paypal,visa' | remove: ' ' | split: ',' %}
+                {% for type in enabled_payment_types %}
+
+                  {{ type | payment_type_svg_tag: class: 'section-footer__payment-icon' }}
+                {% endfor %}
+              </div>
+            {% endif %}
+          </div>
+
+          {% for block in section.blocks %}
+            {% if block.settings.badge_one != blank and block.settings.badge_two != blank %}
+              <div class="badge-section">
+                <div class="item">
+                  <img
+                    src="{{block.settings.badge_one | img_url: '250x'}}"
+                    alt="{{block.settings.badge_one.alt}}"
+                    loading="lazy">
+                </div>
+                <div class="item">
+                  <img
+                    src="{{block.settings.badge_two | img_url: '250x'}}"
+                    alt="{{block.settings.badge_two.alt}}"
+                    loading="lazy">
+                </div>
+              </div>
+            {% endif %}
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+  {% endif %}
+
+  {%- assign showing_localization = false -%}
+  {%- if section.settings.show_locale_selector and shop.published_locales.size > 1 -%}
+    {%- assign showing_localization = true -%}{%- endif -%}
+  {%- if section.settings.show_currency_selector and shop.enabled_currencies.size > 1 -%}
+    {%- assign showing_localization = true -%}{%- endif -%}
+  <div class="footer-container bottom-footer-content {% if showing_localization %}section-footer__row-container--with-localization{% endif %}">
+    <div class="section-footer__row section-footer__row-lower">
+      {% if section.settings.lower_menu != blank %}
+        <div class="section-footer__row__col">
+          <div class="section-footer__lower-menu">
+            <ul
+              class="section-footer__lower-menu__list"
+              role="navigation"
+              aria-label="{{ 'layout.footer.navigation_aria_label' | t | escape }}">
+              {% for link in linklists[section.settings.lower_menu].links %}
+                <li>
+                  <a href="{{ link.url }}">
+                    {{- link.title -}}
+                  </a>
+                </li>
+              {% endfor %}
+            </ul>
+          </div>
+        </div>
+      {% endif %}
+      <div class="section-footer__row__col copyright-section">
+        {% if section.settings.show_locale_selector or section.settings.show_currency_selector %}
+          <div class="section-footer__localization">
+            {% render 'localization', input_prefix: 'footer' %}
+          </div>
+        {% endif %}
+        <div class="copyright-wrap">
+          <div class="copyright">
+            <span class="copy">&copy; {{ "now" | date: "%Y" }}
+              <a href="{{ routes.root_url }}">{{ shop.name }}</a>.</span>
+            {{ powered_by_link }}
+          </div>
+          {% for block in section.blocks %}
+            {% if block.settings.badge_one != blank and block.settings.badge_two != blank %}
+              <div class="badge-section mobile">
+                <div class="item">
+                  <img
+                    src="{{block.settings.badge_one | img_url: '250x'}}"
+                    alt="{{block.settings.badge_one.alt}}"
+                    loading="lazy">
+                </div>
+                <div class="item">
+                  <img
+                    src="{{block.settings.badge_two | img_url: '250x'}}"
+                    alt="{{block.settings.badge_two.alt}}"
+                    loading="lazy">
+                </div>
+              </div>
+            {% endif %}
+          {% endfor %}
+        </div>
+        <div class="icons-block mobile">
+          {% render 'social-icons', icon_setting: settings.social_custom_icon, icon_size: icon_size, container_class: container_class %}
+          {% if section.settings.show_payment_icons %}
+            <div class="section-footer__payment-icons">
+              {% assign enabled_payment_types = 'klarna,american_express,apple_pay,diners_club,discover,jcb,master,paypal,visa' | remove: ' ' | split: ',' %}
+              {% for type in enabled_payment_types %}
+
+                {{ type | payment_type_svg_tag: class: 'section-footer__payment-icon' }}
+              {% endfor %}
+            </div>
+          {% endif %}
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+{% schema %}
+  {
+    "name": "Footer",
+    "class": "section-footer",
+    "max_blocks": 4,
+    "settings": [
+      {
+        "type": "link_list",
+        "id": "lower_menu",
+        "label": "Lower footer menu"
+      },
+      {
+        "type": "header",
+        "content": "Social media links",
+        "info": "These are shown inside text and newsletter blocks. Add to the footer and enable inside."
+      },
+      {
+        "type": "header",
+        "content": "Payment methods"
+      },
+      {
+        "type": "checkbox",
+        "id": "show_payment_icons",
+        "label": "Show payment icons",
+        "default": true
+      }, {
+        "type": "header",
+        "content": "Language selector",
+        "info": "To add a language, go to your [language settings.](/admin/settings/languages)"
+      }, {
+        "type": "checkbox",
+        "id": "show_locale_selector",
+        "label": "Show language selector",
+        "default": true
+      }, {
+        "type": "header",
+        "content": "Currency selector",
+        "info": "To add a currency, go to your [payment settings.](/admin/settings/payments)"
+      }, {
+        "type": "checkbox",
+        "id": "show_currency_selector",
+        "label": "Show currency selector",
+        "default": true
+      }
+    ],
+    "blocks": [
+      {
+        "type": "menu",
+        "name": "Links",
+        "settings": [
+          {
+            "type": "text",
+            "id": "title",
+            "label": "Heading",
+            "default": "Quick links"
+          }, {
+            "type": "link_list",
+            "id": "menu",
+            "label": "Menu",
+            "info": "This menu won't show dropdown items",
+            "default": "footer"
+          }
+        ]
+      }, {
+        "type": "text",
+        "name": "Text and social media",
+        "settings": [
+          {
+            "type": "text",
+            "id": "title",
+            "label": "Heading",
+            "default": "Talk about your store"
+          },
+          {
+            "type": "image_picker",
+            "id": "phone_logo",
+            "label": "Phone logo"
+          },
+          {
+            "type": "image_picker",
+            "id": "mail_logo",
+            "label": "Mail logo"
+          },
+          {
+            "type": "text",
+            "id": "phone-text",
+            "label": "Phone Number"
+          }, {
+            "type": "text",
+            "id": "mail-text",
+            "label": "Email Address"
+          }, {
+            "type": "richtext",
+            "id": "text",
+            "label": "Text",
+            "default": "<p>Share store details, promotions, or brand content with your customers.</p>"
+          }, {
+            "type": "image_picker",
+            "id": "image",
+            "label": "Image"
+          }, {
+            "type": "range",
+            "id": "image_width",
+            "min": 30,
+            "max": 200,
+            "step": 5,
+            "unit": "px",
+            "label": "Footer image width",
+            "default": 100
+          }, {
+            "type": "checkbox",
+            "id": "show_social_icons",
+            "label": "Show social media links",
+            "default": true
+          }, {
+            "type": "checkbox",
+            "id": "soc_icons_large",
+            "label": "Use large social media icons",
+            "default": false
+          }, {
+            "type": "image_picker",
+            "id": "badge_one",
+            "label": "Please upload badge 1"
+          }, {
+            "type": "image_picker",
+            "id": "badge_two",
+            "label": "Please upload badge 2"
+          }
+        ]
+      }, {
+        "type": "newsletter",
+        "limit": 1,
+        "name": "Newsletter",
+        "settings": [
+          {
+            "type": "text",
+            "id": "title",
+            "label": "Heading",
+            "default": "Newsletter"
+          },
+          {
+            "type": "richtext",
+            "id": "text",
+            "label": "Text",
+            "default": "<p>Sign up for exclusive offers, original stories, activism awareness, events and more.</p>"
+          },
+          {
+            "type": "paragraph",
+            "content": "Customers who subscribe will have their email address added to the “accepts marketing” [customer list](/admin/customers?query=&accepts_marketing=1)"
+          },
+          {
+            "type": "checkbox",
+            "id": "show_social_icons",
+            "label": "Show social media links",
+            "default": true
+          }, {
+            "type": "checkbox",
+            "id": "soc_icons_large",
+            "label": "Use large social media icons",
+            "default": false
+          }
+        ]
+      }
+    ]
+  }
+{% endschema %}

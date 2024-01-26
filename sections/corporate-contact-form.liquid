@@ -1,0 +1,150 @@
+<div data-id="Welcome" id="contactform" class="story-page{% unless section.settings.show_page_content %}{% endunless %}" data-section-type="nested-sections">
+  
+    <div class="container cf custom_title">
+      <div class="page-header">
+        <h1 class="majortitle">{{section.settings.title}}</h1>
+      </div>
+      <div class="user-content description spaced-row">
+       {{section.settings.text}}
+      </div>
+    </div>
+  
+  
+  
+ 
+  <div class="container">
+   
+  <div class="spaced-row">
+    
+    <div id="template" class="custom_form {% if page.content != blank %}layout-column-half-right righty-form{% else %}small-form{% endif %}">
+      {% form 'contact' %}
+        {% if form.posted_successfully? %}
+          <p class="success_msg"><strong>{{ 'contact.form.post_success' | t }}</strong></p>
+        {% else %}
+
+        
+
+          {% if form.errors %}
+            <ul class="errors">
+              {% for field in form.errors %}
+                <li>{{ field | replace: 'body','Message' | capitalize }} - {{ form.errors.messages[field] }}</li>
+              {% endfor %}
+            </ul>
+          {% endif %}
+
+      <div class="full_row">
+          <div class="input-row">
+            <label for="contact_fname">First Name*</label>
+            <input type="text" class="required" id="contact_fname" name="contact[firstName]" required/>
+          </div>
+      
+      <div class="input-row">
+            <label for="contact_lname">Last Name</label>
+            <input type="text" class="required" id="contact_lname" name="contact[lastName]" />
+          </div>
+      </div>
+      
+      
+          <div class="input-row">
+            <label for="contact_email">Email*</label>
+            <input type="email" class="required" id="contact_email" class="email" name="contact[email]" required/>
+          </div>
+      
+      <div class="input-row">
+            <label for="contact_phone">Phone*</label>
+            <input type="number" class="required" id="contact_phone"  name="contact[phone]" required/>
+          </div>
+      
+      
+       <div class="full_row">
+          <div class="input-row">
+            <label for="contact_cname">Company Name *</label>
+            <input type="text" class="required" id="contact_cname" name="contact[companyName]" required/>
+          </div>
+      
+      <div class="input-row">
+            <label for="contact_company">Size of Company* </label>
+        <div class="select_box">
+        	<select class="required" id="contact_company" name="contact[companySize]" required>
+        
+              <option value="">Please Select</option>
+              <option value="5-15">5-15</option>
+              <option value="16-30">16-30</option>
+              <option value="31-50">31-50</option>
+              <option value="51-100">51-100</option>
+              <option value="100-1000">100-1000</option>
+              <option value="1000+">1000+</option>
+        </select>
+          
+        
+        </div>
+          </div>
+      </div>
+      
+      
+          <div class="input-row">
+            <label for="message">Tell us a little about your uniform needs:* </label>
+            <textarea id="message" class="required" name="contact[detail]" required></textarea>
+          </div>
+      
+      <div class="input-row">
+            <label for="about">How did you hear about us? *</label>
+            <input type="text" class="required" id="about" name="contact[about]" required/>
+          </div>
+          <div class="action_bottom">
+            <input class="submit_btn" type="submit" value="Submit" />
+          </div>
+
+        {% endif %}
+      {% endform %}
+    </div>
+  </div>
+
+    
+  </div>
+     
+
+    
+  </div>
+
+
+
+{% schema %}
+  {
+    "name": "Corporate Contact page",
+    "settings": [
+
+ 	{
+      "type": "text",
+      "id": "title",
+      "label": "Heading"
+    },
+    {
+      "type": "richtext",
+      "id": "text",
+      "label": "Description"
+	}
+     
+    ],
+    "blocks": [
+
+      {
+        
+      "name": "Image",
+      "type": "Image",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Logo",
+          "info": "150 x 150px recommended"
+        }
+
+ 	 ]
+
+   }
+
+
+    ]
+  }
+{% endschema %}

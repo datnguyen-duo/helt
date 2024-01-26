@@ -1,0 +1,3839 @@
+{
+  "presets": {
+    "Chantilly": {
+      "use_fullwidth_layout": false,
+      "font_col_base": "#787a7c",
+      "font_col_link": "#c16452",
+      "font_col_link_hover": "#964233",
+      "font_col_heads": "#171717",
+      "font_col_shoptitle": "#171717",
+      "font_col_sale": "#e53d3d",
+      "btn_col": "#212b36",
+      "btn_col_alt": "#c16452",
+      "btn_col_txt": "#ffffff",
+      "btn_alt_bg": "#ffffff",
+      "btn_alt_txt": "#212b36",
+      "bg_col": "#ffffff",
+      "bg_image": "",
+      "bg_method": "repeatxy",
+      "head_bg_col": "#ffffff",
+      "head_txt_col": "#171717",
+      "head_nav_div_col": "#dfe3e8",
+      "font_col_nav": "#787a7c",
+      "font_col_nav_hov": "#c16452",
+      "panel_nav_bg": "#ffffff",
+      "nav_featured_col": "#b61d0f",
+      "not_shade_bg": "#f4f6f8",
+      "head_not_col_bg": "#f4f6f8",
+      "head_not_col_txt1": "#171717",
+      "head_not_col_txt2": "#e29384",
+      "image_overlay_text": "#ffffff",
+      "image_overlay_bg": "#000000",
+      "image_overlay_opacity": 12,
+      "alt_bg_col": "#f7f1f0",
+      "alt_bg_text_col": "#343434",
+      "prod_thumb_detail_bg": "#f7f1f0",
+      "prod_thumb_detail_col": "#171717",
+      "prod_thumb_detail_col_a": "#c16452",
+      "prod_over_redu_bg": "#c20000",
+      "prod_over_low_bg": "#09728c",
+      "prod_over_new_text": "#ffffff",
+      "prod_over_new_bg": "#de9d9a",
+      "prod_label_sale_text": "#c20000",
+      "prod_label_sold_text": "#171717",
+      "prod_label_pre_text": "#3ea36a",
+      "cross_page_promo_bg": "#f7f1f0",
+      "cross_page_promo_color": "#171717",
+      "foot_bg_col": "#f4dfdb",
+      "foot_text_col": "#676869",
+      "foot_heading_col": "#171717",
+      "foot_divider_col": "#ecd6d1",
+      "type_heading_font": "serif",
+      "capitalize_headings": false,
+      "type_base_font": "futura_n4",
+      "type_nav_font": "futura_n5",
+      "type_logo_font": "futura_n4",
+      "font_size_heading_int": 32,
+      "font_size_base_int": 15,
+      "font_size_nav_int": 14,
+      "font_size_logo_int": 24,
+      "button_style": "caps",
+      "coll_grid_image_shape": "portrait-45",
+      "coll_grid_image_position": "center center",
+      "coll_grid_show_count": true,
+      "prod_thumb_shape": "portrait-23",
+      "prod_thumb_hover_image": true,
+      "prod_thumb_options_names": "Color, Size",
+      "quickbuy_style": "button",
+      "qb_show_description": true,
+      "enable_payment_button": true,
+      "prod_block_label_loc": "top left",
+      "prod_stock_warn_show": true,
+      "prod_stock_warn_limit_int": 5,
+      "prod_sale_show": true,
+      "prod_sold_out_show": true,
+      "variant_style": "listed",
+      "swatch_enabled": true,
+      "swatch_option_name": "Color",
+      "swatch_images": true,
+      "search_type": "product,article,page",
+      "enable_live_search": true,
+      "live_search_show_vendor": false,
+      "live_search_show_price": false,
+      "live_search_search_meta": false,
+      "cart_type": "drawer",
+      "sections": {
+        "header": {
+          "type": "header",
+          "settings": {
+            "logo_img_width_int": 160,
+            "enable_sticky": true,
+            "menu_layout": "inline-menu-left"
+          }
+        },
+        "cross-page-promos": {
+          "type": "cross-page-promos",
+          "blocks": {
+            "1478526632862": {
+              "type": "icon",
+              "settings": {
+                "icon": "delivery",
+                "text": "Free shipping"
+              }
+            },
+            "1478526645605": {
+              "type": "icon",
+              "settings": {
+                "icon": "label",
+                "text": "New styles"
+              }
+            },
+            "1478526647261": {
+              "type": "icon",
+              "settings": {
+                "icon": "gift",
+                "text": "Gift cards"
+              }
+            },
+            "1478527611164": {
+              "type": "icon",
+              "settings": {
+                "icon": "star",
+                "text": "5.0 Trustpilot rating"
+              }
+            }
+          },
+          "block_order": [
+            "1478526632862",
+            "1478526645605",
+            "1478526647261",
+            "1478527611164"
+          ],
+          "settings": {
+            "visibility": "all"
+          }
+        },
+        "1480591889144": {
+          "type": "featured-collection",
+          "settings": {
+            "show_vendor": false,
+            "enable_carousel": true,
+            "grid": 4,
+            "rows": 1,
+            "use_alt_bg": true,
+            "show_view_all": true,
+            "full_width": false
+          }
+        },
+        "1521034575223": {
+          "type": "image-with-text",
+          "settings": {
+            "image_width": 640,
+            "button_style": "secondary",
+            "image_position": "right",
+            "text_alignment": "left",
+            "use_alt_bg": false
+          }
+        },
+        "1521035976582": {
+          "type": "image-with-text",
+          "settings": {
+            "image_width": 700,
+            "button_style": "secondary",
+            "image_position": "left",
+            "text_alignment": "left",
+            "use_alt_bg": false
+          }
+        },
+        "footer": {
+          "type": "footer",
+          "blocks": {
+            "1601374680247": {
+              "type": "text",
+              "settings": {
+                "image_width": 150,
+                "show_social_icons": true,
+                "soc_icons_large": false
+              }
+            },
+            "1601374650582": {
+              "type": "menu",
+              "settings": {
+                "menu": "footer"
+              }
+            },
+            "1601374580731": {
+              "type": "newsletter",
+              "settings": {
+                "show_social_icons": true,
+                "soc_icons_large": false
+              }
+            }
+          },
+          "block_order": [
+            "1601374680247",
+            "1601374650582",
+            "1601374580731"
+          ],
+          "settings": {
+            "show_payment_icons": true,
+            "show_locale_selector": true,
+            "show_currency_selector": true
+          }
+        },
+        "collection-template": {
+          "type": "collection-template",
+          "settings": {
+            "show_image_behind_heading": true,
+            "heading_image_height": "large",
+            "coll_num_per_page_int": 24,
+            "grid": 3,
+            "show_vendor": false,
+            "coll_desc_pos": "above",
+            "ajax_products": true,
+            "coll_show_sort": true,
+            "coll_show_feat": false,
+            "tag_filtering": "tag_groups",
+            "collapse_tag_sidebar_by_default": false,
+            "subcoll_style": "gallery",
+            "subcoll_gall_shape": "l-21",
+            "image_position": "center center",
+            "subcoll_gall_enable_margin": true,
+            "subcoll_gall_full_width": false,
+            "subcoll_gall_overlay_style": "full",
+            "subcoll_gall_text_alignment": "bottom left",
+            "subcoll_gall_mobile_layout": "2"
+          }
+        },
+        "product-template": {
+          "type": "product-template",
+          "settings": {
+            "show_tax_and_shipping": false,
+            "show_vendor": true,
+            "show_sku": false,
+            "show_quantity_selector": true,
+            "enable_payment_button": true,
+            "show_pickup_availability": true,
+            "show_backorder_text": true,
+            "show_inventory_notice": false,
+            "inventory_notice_threshold": 10,
+            "inventory_transfers_enable": true,
+            "show_sharing_links": true,
+            "gallery_size": "medium",
+            "prod_gall_thumbs_under": "under",
+            "enable_zoom": true,
+            "enable_video_looping": false,
+            "description_location": "beside"
+          }
+        },
+        "product-recommendations": {
+          "type": "product-recommendations",
+          "settings": {
+            "show_product_recommendations": true,
+            "show_vendor": false,
+            "grid": 4
+          }
+        },
+        "page-story-template": {
+          "type": "page-story-template",
+          "blocks": {
+            "1594910075303": {
+              "type": "image-with-text-overlay",
+              "settings": {
+                "image_position": "center center",
+                "height": "adapt",
+                "height_desktop": 600,
+                "height_mobile": 500,
+                "title_size": 54,
+                "enlarge_text": true,
+                "text_alignment": "center center",
+                "full_width": false,
+                "mobile_overlay_under": false,
+                "overlay_style": "box"
+              }
+            },
+            "1594910315975": {
+              "type": "rich-text",
+              "settings": {
+                "button_style": "primary",
+                "height": "medium",
+                "text_alignment": "center",
+                "enlarge_text": false,
+                "full_width": false,
+                "use_alt_bg": false
+              }
+            },
+            "1594911200272": {
+              "type": "image-with-text",
+              "settings": {
+                "image_width": 700,
+                "button_style": "primary",
+                "image_position": "right",
+                "text_alignment": "center",
+                "use_alt_bg": false
+              }
+            },
+            "1594911344727": {
+              "type": "image-with-text",
+              "settings": {
+                "image_width": 700,
+                "button_style": "primary",
+                "image_position": "left",
+                "text_alignment": "left",
+                "use_alt_bg": false
+              }
+            },
+            "1594910353145": {
+              "type": "rich-text",
+              "settings": {
+                "button_style": "primary",
+                "height": "medium",
+                "text_alignment": "center",
+                "enlarge_text": true,
+                "full_width": false,
+                "use_alt_bg": false
+              }
+            },
+            "1594910439848": {
+              "type": "image-with-text-overlay",
+              "settings": {
+                "image_position": "center center",
+                "height": "adapt",
+                "height_desktop": 600,
+                "height_mobile": 500,
+                "title_size": 60,
+                "enlarge_text": true,
+                "text_alignment": "center center",
+                "full_width": false,
+                "mobile_overlay_under": false,
+                "overlay_style": "full"
+              }
+            }
+          },
+          "block_order": [
+            "1594910075303",
+            "1594910315975",
+            "1594911200272",
+            "1594911344727",
+            "1594910353145",
+            "1594910439848"
+          ],
+          "settings": {
+            "show_page_content": false
+          }
+        },
+        "announcement-bar": {
+          "type": "announcement-bar",
+          "settings": {
+            "announcement_show": true,
+            "announcement_bar_col": "#f7f1f0",
+            "announcement_text_col": "#212121",
+            "show_social_icons": true,
+            "show_locale_selector": true,
+            "show_currency_selector": true
+          }
+        },
+        "store-messages": {
+          "type": "store-messages",
+          "settings": {
+            "head_not_home_only": false,
+            "head_not_mob_show": false
+          }
+        },
+        "popup": {
+          "type": "popup",
+          "settings": {
+            "mode": "enabled",
+            "popup_delay_seconds": 6,
+            "popup_dismiss_for_days": 2,
+            "position": "center",
+            "show_newsletter": true,
+            "show_social_icons": true
+          }
+        },
+        "16117511238528a364": {
+          "type": "testimonials",
+          "blocks": {
+            "16117511238528a364-0": {
+              "type": "testimonial",
+              "settings": {
+                "star_rating": 5
+              }
+            },
+            "16117511238528a364-1": {
+              "type": "testimonial",
+              "settings": {
+                "star_rating": 5
+              }
+            }
+          },
+          "block_order": [
+            "16117511238528a364-0",
+            "16117511238528a364-1"
+          ],
+          "settings": {
+            "layout": "image-right",
+            "image_shape": "landscape",
+            "use_alt_bg": true
+          }
+        },
+        "blog-template": {
+          "type": "blog-template",
+          "settings": {
+            "layout": "columns",
+            "show_date": true,
+            "show_author": true,
+            "show_article_tags": true,
+            "show_sharing_icons": true,
+            "show_rss_icon": true,
+            "crop_image": true,
+            "crop_style": "16-9"
+          }
+        },
+        "article-template": {
+          "type": "article-template",
+          "settings": {
+            "show_featured_image": true,
+            "show_date": true,
+            "show_author": true,
+            "show_article_tags": true,
+            "show_sharing_icons": true
+          }
+        },
+        "16172860000b0cd55f": {
+          "type": "slideshow",
+          "blocks": {
+            "cdc6b122-75ae-40ee-8067-7774074e2ccb": {
+              "type": "image",
+              "settings": {
+                "title_size": 74,
+                "enlarge_text": true,
+                "text_alignment": "bottom left"
+              }
+            },
+            "16172860000b0cd55f-0": {
+              "type": "image",
+              "settings": {
+                "title_size": 74,
+                "enlarge_text": true,
+                "text_alignment": "bottom left"
+              }
+            },
+            "16172860000b0cd55f-1": {
+              "type": "image",
+              "settings": {
+                "title_size": 74,
+                "enlarge_text": true,
+                "text_alignment": "bottom left"
+              }
+            }
+          },
+          "block_order": [
+            "cdc6b122-75ae-40ee-8067-7774074e2ccb",
+            "16172860000b0cd55f-0",
+            "16172860000b0cd55f-1"
+          ],
+          "settings": {
+            "height": "fixed",
+            "height_desktop": 800,
+            "height_mobile": 500,
+            "full_width": true,
+            "mobile_overlay_under": false,
+            "overlay_style": "full",
+            "slide_transition": "fade",
+            "slide_navigation": "arrows",
+            "autoplay": true,
+            "autoplay_speed": 7
+          }
+        },
+        "1617287715bc7ff3c2": {
+          "type": "rich-text",
+          "settings": {
+            "button_style": "primary",
+            "height": "small",
+            "text_alignment": "center",
+            "enlarge_text": true,
+            "full_width": false,
+            "use_alt_bg": false
+          }
+        },
+        "1617291721c3d3e73d": {
+          "type": "background-video",
+          "settings": {
+            "title_size": 56,
+            "enlarge_text": true,
+            "text_alignment": "center center",
+            "height_desktop": 720,
+            "height_mobile": 500,
+            "full_width": true,
+            "overlay_style": "full"
+          }
+        },
+        "1617292342c63ff855": {
+          "type": "text-columns-with-images",
+          "blocks": {
+            "1617292342c63ff855-1": {
+              "type": "text_block",
+              "settings": {
+                "image_width": 700
+              }
+            },
+            "1617292342c63ff855-0": {
+              "type": "text_block",
+              "settings": {
+                "image_width": 700
+              }
+            },
+            "b1086ec6-bafc-4093-9ed5-2e8e87ac77ac": {
+              "type": "text_block",
+              "settings": {
+                "image_width": 700
+              }
+            }
+          },
+          "block_order": [
+            "1617292342c63ff855-1",
+            "1617292342c63ff855-0",
+            "b1086ec6-bafc-4093-9ed5-2e8e87ac77ac"
+          ],
+          "settings": {
+            "title": "",
+            "text_alignment": "center",
+            "button_style": "primary",
+            "use_alt_bg": false
+          }
+        },
+        "1617293273c37b524b": {
+          "type": "rich-text",
+          "settings": {
+            "button_style": "primary",
+            "height": "medium",
+            "text_alignment": "center",
+            "enlarge_text": false,
+            "full_width": false,
+            "use_alt_bg": true
+          }
+        },
+        "1617297526d84ec27b": {
+          "type": "gallery",
+          "blocks": {
+            "1617297526d84ec27b-0": {
+              "type": "image",
+              "settings": {
+                "alignment": "center center",
+                "enlarge_image": false,
+                "text_alignment": "center center"
+              }
+            },
+            "5d30df20-9eb1-4e8d-b322-607a2d5ab579": {
+              "type": "image",
+              "settings": {
+                "alignment": "center center",
+                "enlarge_image": false,
+                "text_alignment": "center center"
+              }
+            },
+            "1617297526d84ec27b-1": {
+              "type": "image",
+              "settings": {
+                "alignment": "center center",
+                "enlarge_image": false,
+                "text_alignment": "center center"
+              }
+            },
+            "1617297526d84ec27b-2": {
+              "type": "image",
+              "settings": {
+                "alignment": "center center",
+                "enlarge_image": false,
+                "text_alignment": "center center"
+              }
+            }
+          },
+          "block_order": [
+            "1617297526d84ec27b-0",
+            "5d30df20-9eb1-4e8d-b322-607a2d5ab579",
+            "1617297526d84ec27b-1",
+            "1617297526d84ec27b-2"
+          ],
+          "settings": {
+            "grid": 4,
+            "desktop_image_height": 300,
+            "mobile_image_height": 400,
+            "enable_margin": false,
+            "full_width": true,
+            "use_alt_bg": false,
+            "enable_carousel": true,
+            "overlay_style": "full",
+            "button_style": "primary"
+          }
+        },
+        "1619015739944f86f6": {
+          "type": "gallery",
+          "blocks": {
+            "1619015739944f86f6-0": {
+              "type": "image",
+              "settings": {
+                "text_alignment": "center center"
+              }
+            },
+            "1619015739944f86f6-1": {
+              "type": "image",
+              "settings": {
+                "text_alignment": "center center"
+              }
+            },
+            "1619015739944f86f6-2": {
+              "type": "image",
+              "settings": {
+                "text_alignment": "center center"
+              }
+            },
+            "07a9021d-3e67-4f2a-a7dd-84903c7fe860": {
+              "type": "image",
+              "settings": {
+                "text_alignment": "center center"
+              }
+            }
+          },
+          "block_order": [
+            "1619015739944f86f6-0",
+            "1619015739944f86f6-1",
+            "1619015739944f86f6-2",
+            "07a9021d-3e67-4f2a-a7dd-84903c7fe860"
+          ],
+          "settings": {
+            "grid": 4,
+            "desktop_image_height": 500,
+            "mobile_image_height": 400,
+            "enable_margin": true,
+            "full_width": false,
+            "use_alt_bg": false,
+            "enable_carousel": true,
+            "overlay_style": "full",
+            "button_style": "secondary"
+          }
+        },
+        "16190803309fbfa316": {
+          "type": "logo-list",
+          "blocks": {
+            "59f32612-bd0d-4a8a-af82-f82bdb45132a": {
+              "type": "logo",
+              "settings": {
+                "image_width": 280
+              }
+            },
+            "65b67cd1-0661-4969-a2e0-26487ed80c19": {
+              "type": "logo",
+              "settings": {
+                "image_width": 280
+              }
+            },
+            "83c5d02d-8485-466a-b6a7-6898a3eabe05": {
+              "type": "logo",
+              "settings": {
+                "image_width": 280
+              }
+            }
+          },
+          "block_order": [
+            "59f32612-bd0d-4a8a-af82-f82bdb45132a",
+            "65b67cd1-0661-4969-a2e0-26487ed80c19",
+            "83c5d02d-8485-466a-b6a7-6898a3eabe05"
+          ],
+          "settings": {
+            "image_opacity": 100,
+            "use_alt_bg": false
+          }
+        }
+      },
+      "content_for_index": [
+        "16172860000b0cd55f",
+        "1617287715bc7ff3c2",
+        "1619015739944f86f6",
+        "1480591889144",
+        "1521035976582",
+        "16117511238528a364",
+        "1617292342c63ff855",
+        "1617291721c3d3e73d",
+        "1521034575223",
+        "1617293273c37b524b",
+        "16190803309fbfa316",
+        "1617297526d84ec27b"
+      ]
+    },
+    "Salt Yard": {
+      "use_fullwidth_layout": true,
+      "font_col_base": "#808284",
+      "font_col_link": "#171717",
+      "font_col_link_hover": "#171717",
+      "font_col_heads": "#171717",
+      "font_col_shoptitle": "#171717",
+      "font_col_sale": "#df5641",
+      "btn_col": "#4c4c4b",
+      "btn_col_alt": "#171717",
+      "btn_col_txt": "#ffffff",
+      "btn_alt_bg": "#ffffff",
+      "btn_alt_txt": "#4c4c4b",
+      "bg_col": "#ffffff",
+      "bg_image": "",
+      "bg_method": "repeatxy",
+      "head_bg_col": "#ffffff",
+      "head_txt_col": "#171717",
+      "head_nav_div_col": "#e2e2e2",
+      "font_col_nav": "#808284",
+      "font_col_nav_hov": "#171717",
+      "panel_nav_bg": "#ffffff",
+      "nav_featured_col": "#df5641",
+      "not_shade_bg": "#f7f7f8",
+      "head_not_col_bg": "#ebebeb",
+      "head_not_col_txt1": "#171717",
+      "head_not_col_txt2": "#4c4c4b",
+      "image_overlay_text": "#ffffff",
+      "image_overlay_bg": "#171717",
+      "image_overlay_opacity": 10,
+      "alt_bg_col": "#f7f7f8",
+      "alt_bg_text_col": "#171717",
+      "prod_thumb_detail_bg": "#f7f7f8",
+      "prod_thumb_detail_col": "#808284",
+      "prod_thumb_detail_col_a": "#171717",
+      "prod_over_redu_text": "#df5641",
+      "prod_over_redu_bg": "#ffffff",
+      "prod_over_low_bg": "#4c4c4b",
+      "prod_over_new_text": "#808284",
+      "prod_over_new_bg": "#ffffff",
+      "prod_label_sale_text": "#df5641",
+      "prod_label_sold_text": "#171717",
+      "prod_label_pre_text": "#60a57e",
+      "cross_page_promo_bg": "#ffffff",
+      "cross_page_promo_color": "#171717",
+      "foot_bg_col": "#f7f7f8",
+      "foot_text_col": "#808284",
+      "foot_heading_col": "#171717",
+      "foot_divider_col": "#e4e4e4",
+      "type_heading_font": "basic_commercial_n4",
+      "capitalize_headings": false,
+      "type_base_font": "basic_commercial_n4",
+      "type_nav_font": "basic_commercial_n4",
+      "type_logo_font": "basic_commercial_n7",
+      "font_size_heading_int": 30,
+      "font_size_base_int": 14,
+      "font_size_nav_int": 14,
+      "font_size_logo_int": 24,
+      "button_style": "normal",
+      "prod_thumb_shape": "natural",
+      "prod_thumb_text_align": "left",
+      "prod_thumb_hover_image": true,
+      "quickbuy_style": "button",
+      "qb_show_description": true,
+      "enable_payment_button": true,
+      "prod_block_label_loc": "top left",
+      "prod_stock_warn_show": true,
+      "prod_stock_warn_limit_int": 10,
+      "prod_sale_show": true,
+      "prod_sold_out_show": true,
+      "variant_style": "listed",
+      "swatch_enabled": true,
+      "swatch_option_name": "Color",
+      "swatch_images": true,
+      "search_type": "product,article,page",
+      "enable_live_search": true,
+      "live_search_show_vendor": false,
+      "live_search_show_price": false,
+      "live_search_search_meta": false,
+      "cart_type": "drawer",
+      "sections": {
+        "cross-page-promos": {
+          "type": "cross-page-promos",
+          "blocks": {
+            "1478526632862": {
+              "type": "icon",
+              "settings": {
+                "icon": "delivery",
+                "text": "Free delivery!"
+              }
+            },
+            "1478526645605": {
+              "type": "icon",
+              "settings": {
+                "icon": "location",
+                "text": "Your nearest store"
+              }
+            },
+            "1478526647261": {
+              "type": "icon",
+              "settings": {
+                "icon": "gift",
+                "text": "Gift cards"
+              }
+            },
+            "1478527611164": {
+              "type": "icon",
+              "settings": {
+                "icon": "label",
+                "text": "Student discount"
+              }
+            }
+          },
+          "block_order": [
+            "1478526632862",
+            "1478526645605",
+            "1478526647261",
+            "1478527611164"
+          ],
+          "settings": {
+            "visibility": "all"
+          }
+        },
+        "1478606404805": {
+          "type": "featured-blog",
+          "settings": {
+            "post_limit": 3,
+            "show_author": true,
+            "show_date": true,
+            "crop_ratio": "1.78"
+          }
+        },
+        "1480591889144": {
+          "type": "featured-collection",
+          "settings": {
+            "show_vendor": false,
+            "enable_carousel": true,
+            "grid": 3,
+            "rows": 1,
+            "use_alt_bg": false,
+            "show_view_all": true,
+            "full_width": true
+          }
+        },
+        "1521035976582": {
+          "type": "image-with-text",
+          "settings": {
+            "image_width": 700,
+            "button_style": "primary",
+            "image_position": "left",
+            "text_alignment": "left",
+            "use_alt_bg": true
+          }
+        },
+        "1521040036892": {
+          "type": "map",
+          "settings": {
+            "color_bg": "#f7f7f8",
+            "full_width": true,
+            "show_pin": true,
+            "show_feature_image": true,
+            "api_key": "",
+            "map_style": "silver"
+          }
+        },
+        "1582890034959": {
+          "type": "rich-text",
+          "settings": {
+            "button_style": "primary",
+            "height": "medium",
+            "text_alignment": "center",
+            "enlarge_text": true,
+            "full_width": false,
+            "use_alt_bg": false
+          }
+        },
+        "1583244060103": {
+          "type": "featured-collection",
+          "settings": {
+            "show_vendor": false,
+            "enable_carousel": true,
+            "grid": 4,
+            "rows": 1,
+            "use_alt_bg": false,
+            "show_view_all": true,
+            "full_width": true
+          }
+        },
+        "footer": {
+          "type": "footer",
+          "blocks": {
+            "1601308717434": {
+              "type": "text",
+              "settings": {
+                "image_width": 150,
+                "show_social_icons": true,
+                "soc_icons_large": false
+              }
+            },
+            "1601308671932": {
+              "type": "menu",
+              "settings": {
+                "menu": "footer"
+              }
+            },
+            "1601308656020": {
+              "type": "newsletter",
+              "settings": {
+                "show_social_icons": false,
+                "soc_icons_large": false
+              }
+            }
+          },
+          "block_order": [
+            "1601308717434",
+            "1601308671932",
+            "1601308656020"
+          ],
+          "settings": {
+            "lower_menu": "",
+            "show_payment_icons": true,
+            "show_locale_selector": true,
+            "show_currency_selector": true
+          }
+        },
+        "1594970282022": {
+          "type": "gallery",
+          "blocks": {
+            "1594970282022-0": {
+              "type": "image",
+              "settings": {
+                "alignment": "center center",
+                "enlarge_image": false,
+                "text_alignment": "bottom left"
+              }
+            },
+            "1594970282022-1": {
+              "type": "image",
+              "settings": {
+                "alignment": "center center",
+                "enlarge_image": false,
+                "text_alignment": "bottom left"
+              }
+            },
+            "1594970282022-2": {
+              "type": "image",
+              "settings": {
+                "alignment": "center center",
+                "enlarge_image": false,
+                "text_alignment": "bottom left"
+              }
+            },
+            "2dd86b78-97bb-4755-bfa0-11df7ebdd780": {
+              "type": "image",
+              "settings": {
+                "alignment": "center center",
+                "enlarge_image": false,
+                "text_alignment": "bottom left"
+              }
+            }
+          },
+          "block_order": [
+            "1594970282022-0",
+            "1594970282022-1",
+            "1594970282022-2",
+            "2dd86b78-97bb-4755-bfa0-11df7ebdd780"
+          ],
+          "settings": {
+            "grid": 2,
+            "desktop_image_height": 740,
+            "mobile_image_height": 500,
+            "enable_margin": false,
+            "full_width": true,
+            "use_alt_bg": false,
+            "enable_carousel": true,
+            "overlay_style": "full",
+            "button_style": "link"
+          }
+        },
+        "product-template": {
+          "type": "product-template",
+          "settings": {
+            "show_tax_and_shipping": false,
+            "show_vendor": true,
+            "show_sku": false,
+            "show_quantity_selector": false,
+            "enable_payment_button": true,
+            "show_pickup_availability": true,
+            "show_backorder_text": true,
+            "show_inventory_notice": true,
+            "inventory_notice_threshold": 10,
+            "inventory_transfers_enable": true,
+            "show_sharing_links": true,
+            "description_location": "beside",
+            "gallery_size": "large",
+            "prod_gall_thumbs_under": "under",
+            "enable_zoom": true,
+            "enable_video_looping": false
+          }
+        },
+        "product-recommendations": {
+          "type": "product-recommendations",
+          "settings": {
+            "show_product_recommendations": true,
+            "show_vendor": false,
+            "grid": 4
+          }
+        },
+        "page-story-template": {
+          "type": "page-story-template",
+          "blocks": {
+            "1594986686939": {
+              "type": "image-with-text-overlay",
+              "settings": {
+                "image_position": "center center",
+                "height": "fixed",
+                "height_desktop": 720,
+                "height_mobile": 460,
+                "title_size": 80,
+                "enlarge_text": true,
+                "text_alignment": "center center",
+                "full_width": true,
+                "mobile_overlay_under": false,
+                "overlay_style": "full"
+              }
+            },
+            "1594975812470": {
+              "type": "rich-text",
+              "settings": {
+                "button_style": "primary",
+                "height": "medium",
+                "text_alignment": "center",
+                "enlarge_text": true,
+                "full_width": false,
+                "use_alt_bg": true
+              }
+            },
+            "1594975869081": {
+              "type": "image-with-text",
+              "settings": {
+                "image_width": 700,
+                "button_style": "secondary",
+                "image_position": "left",
+                "text_alignment": "left",
+                "use_alt_bg": false
+              }
+            },
+            "1594987479871": {
+              "type": "video",
+              "settings": {
+                "title_size": 80,
+                "enlarge_text": true,
+                "text_alignment": "bottom left",
+                "image_position": "center center",
+                "full_width": false,
+                "overlay_style": "no_background"
+              }
+            },
+            "1594990864949": {
+              "type": "image-with-text",
+              "settings": {
+                "image_width": 700,
+                "button_style": "secondary",
+                "image_position": "right",
+                "text_alignment": "left",
+                "use_alt_bg": false
+              }
+            },
+            "1594991967297": {
+              "type": "image-with-text",
+              "settings": {
+                "image_width": 700,
+                "button_style": "primary",
+                "image_position": "left",
+                "text_alignment": "center",
+                "use_alt_bg": true
+              }
+            }
+          },
+          "block_order": [
+            "1594986686939",
+            "1594975812470",
+            "1594975869081",
+            "1594987479871",
+            "1594990864949",
+            "1594991967297"
+          ],
+          "settings": {
+            "show_page_content": false
+          }
+        },
+        "1594980584619": {
+          "type": "background-video",
+          "settings": {
+            "title_size": 90,
+            "enlarge_text": true,
+            "text_alignment": "center center",
+            "height_desktop": 740,
+            "height_mobile": 580,
+            "full_width": true,
+            "overlay_style": "no_background"
+          }
+        },
+        "collection-template": {
+          "type": "collection-template",
+          "settings": {
+            "show_image_behind_heading": false,
+            "heading_image_height": "medium",
+            "coll_num_per_page_int": 24,
+            "grid": 3,
+            "ajax_products": true,
+            "show_vendor": false,
+            "coll_desc_pos": "below",
+            "coll_show_sort": true,
+            "coll_show_feat": false,
+            "tag_filtering": "tag_groups",
+            "collapse_tag_sidebar_by_default": false,
+            "subcoll_menu": "main-menu",
+            "subcoll_style": "gallery",
+            "subcoll_gall_shape": "l-64",
+            "image_position": "center center",
+            "subcoll_gall_enable_margin": false,
+            "subcoll_gall_full_width": true,
+            "subcoll_gall_overlay_style": "full",
+            "subcoll_gall_text_alignment": "bottom left",
+            "subcoll_gall_mobile_layout": "2"
+          }
+        },
+        "blog-template": {
+          "type": "blog-template",
+          "settings": {
+            "layout": "columns",
+            "show_date": true,
+            "show_author": true,
+            "show_article_tags": true,
+            "show_sharing_icons": true,
+            "show_rss_icon": true,
+            "crop_image": true,
+            "crop_style": "16-9"
+          }
+        },
+        "announcement-bar": {
+          "type": "announcement-bar",
+          "settings": {
+            "announcement_show": true,
+            "announcement_bar_col": "#202020",
+            "announcement_text_col": "#ffffff",
+            "show_social_icons": true,
+            "show_locale_selector": true,
+            "show_currency_selector": true
+          }
+        },
+        "header": {
+          "type": "header",
+          "settings": {
+            "logo_img_width_int": 150,
+            "enable_sticky": true,
+            "menu_layout": "inline-menu-left"
+          }
+        },
+        "store-messages": {
+          "type": "store-messages",
+          "blocks": {
+            "1601308104445": {
+              "type": "message",
+              "settings": {
+                "heading": "",
+                "subheading": "Free shipping on orders over $100"
+              }
+            },
+            "1601308125690": {
+              "type": "message",
+              "settings": {
+                "heading": "",
+                "subheading": "Free Click & Collect to US stores*"
+              }
+            },
+            "1601308127822": {
+              "type": "message",
+              "settings": {
+                "heading": "",
+                "subheading": "Free and easy domestic returns"
+              }
+            }
+          },
+          "block_order": [
+            "1601308104445",
+            "1601308125690",
+            "1601308127822"
+          ],
+          "settings": {
+            "head_not_home_only": false,
+            "head_not_mob_show": true,
+            "head_not_mob_text": "Free shipping on orders over $100"
+          }
+        },
+        "popup": {
+          "type": "popup",
+          "settings": {
+            "mode": "enabled",
+            "popup_delay_seconds": 6,
+            "popup_dismiss_for_days": 2,
+            "position": "center",
+            "show_newsletter": true,
+            "show_social_icons": true
+          }
+        },
+        "16115832006dc80dc9": {
+          "type": "testimonials",
+          "blocks": {
+            "16115832006dc80dc9-0": {
+              "type": "testimonial",
+              "settings": {
+                "star_rating": 5
+              }
+            },
+            "16115832006dc80dc9-1": {
+              "type": "testimonial",
+              "settings": {
+                "star_rating": 5
+              }
+            }
+          },
+          "block_order": [
+            "16115832006dc80dc9-0",
+            "16115832006dc80dc9-1"
+          ],
+          "settings": {
+            "layout": "image-right",
+            "image_shape": "square",
+            "use_alt_bg": true
+          }
+        },
+        "search-template": {
+          "type": "search-template",
+          "settings": {
+            "show_vendor": false,
+            "coll_num_per_page_int": 24,
+            "grid": 4
+          }
+        },
+        "161158693318e52003": {
+          "type": "text-columns-with-images",
+          "blocks": {
+            "161158693318e52003-1": {
+              "type": "text_block",
+              "settings": {
+                "enable_image": true,
+                "image_width": 700
+              }
+            },
+            "161158693318e52003-0": {
+              "type": "text_block",
+              "settings": {
+                "enable_image": true,
+                "image_width": 700
+              }
+            }
+          },
+          "block_order": [
+            "161158693318e52003-1",
+            "161158693318e52003-0"
+          ],
+          "settings": {
+            "title": "",
+            "text_alignment": "left",
+            "button_style": "primary",
+            "use_alt_bg": false
+          }
+        },
+        "1614871838b4f4ccd4": {
+          "type": "text-columns-with-images",
+          "blocks": {
+            "1614871838b4f4ccd4-0": {
+              "type": "text_block",
+              "settings": {
+                "enable_image": true,
+                "image_width": 700
+              }
+            },
+            "1614871838b4f4ccd4-1": {
+              "type": "text_block",
+              "settings": {
+                "enable_image": true,
+                "image_width": 700
+              }
+            },
+            "1614871838b4f4ccd4-2": {
+              "type": "text_block",
+              "settings": {
+                "enable_image": true,
+                "image_width": 700
+              }
+            }
+          },
+          "block_order": [
+            "1614871838b4f4ccd4-0",
+            "1614871838b4f4ccd4-1",
+            "1614871838b4f4ccd4-2"
+          ],
+          "settings": {
+            "title": "",
+            "text_alignment": "center",
+            "button_style": "primary",
+            "use_alt_bg": false
+          }
+        },
+        "1614873846ee4b328c": {
+          "type": "rich-text",
+          "settings": {
+            "button_style": "primary",
+            "height": "medium",
+            "text_alignment": "center",
+            "enlarge_text": true,
+            "full_width": false,
+            "use_alt_bg": false
+          }
+        },
+        "16148743091427bc38": {
+          "type": "image-with-text",
+          "settings": {
+            "image_width": 700,
+            "button_style": "primary",
+            "image_position": "left",
+            "text_alignment": "left",
+            "use_alt_bg": true
+          }
+        },
+        "article-template": {
+          "type": "article-template",
+          "settings": {
+            "show_featured_image": true,
+            "show_date": true,
+            "show_author": true,
+            "show_article_tags": true,
+            "show_sharing_icons": true
+          }
+        }
+      },
+      "content_for_index": [
+        "1594980584619",
+        "1582890034959",
+        "1614871838b4f4ccd4",
+        "16115832006dc80dc9",
+        "1480591889144",
+        "1594970282022",
+        "1614873846ee4b328c",
+        "161158693318e52003",
+        "1521035976582",
+        "1583244060103",
+        "16148743091427bc38",
+        "1478606404805",
+        "1521040036892"
+      ]
+    },
+    "Beatnik": {
+      "use_fullwidth_layout": true,
+      "font_col_base": "#637381",
+      "font_col_link": "#637381",
+      "font_col_link_hover": "#333029",
+      "font_col_heads": "#333029",
+      "font_col_shoptitle": "#333029",
+      "font_col_sale": "#df5641",
+      "btn_col": "#013299",
+      "btn_col_alt": "#000000",
+      "btn_col_txt": "#ffffff",
+      "btn_alt_bg": "#ffffff",
+      "btn_alt_txt": "#000000",
+      "bg_col": "#ffffff",
+      "bg_image": "",
+      "bg_method": "repeatxy",
+      "head_bg_col": "#ffffff",
+      "head_txt_col": "#232323",
+      "head_nav_div_col": "#e2e2e2",
+      "font_col_nav": "#555555",
+      "font_col_nav_hov": "#000000",
+      "panel_nav_bg": "#ffffff",
+      "nav_featured_col": "#df5641",
+      "not_shade_bg": "#f6f6f6",
+      "head_not_col_bg": "#f6f6f6",
+      "head_not_col_txt1": "#333029",
+      "head_not_col_txt2": "#555555",
+      "image_overlay_text": "#ffffff",
+      "image_overlay_bg": "#000000",
+      "image_overlay_opacity": 10,
+      "alt_bg_col": "#f6f6f6",
+      "alt_bg_text_col": "#333029",
+      "prod_thumb_detail_bg": "#f6f6f6",
+      "prod_thumb_detail_col": "#333029",
+      "prod_thumb_detail_col_a": "#637381",
+      "prod_over_redu_text": "#df5641",
+      "prod_over_redu_bg": "#ffffff",
+      "prod_over_low_text": "#637381",
+      "prod_over_low_bg": "#ffffff",
+      "prod_over_new_bg": "#013299",
+      "prod_label_sale_text": "#df5641",
+      "prod_label_pre_text": "#60a57e",
+      "cross_page_promo_bg": "#f6f6f6",
+      "cross_page_promo_color": "#333029",
+      "foot_bg_col": "#ffffff",
+      "foot_text_col": "#939393",
+      "foot_heading_col": "#000000",
+      "foot_divider_col": "#e0e0e0",
+      "type_heading_font": "gill_sans_nova_n6",
+      "capitalize_headings": true,
+      "type_base_font": "futura_n4",
+      "type_nav_font": "futura_n5",
+      "type_logo_font": "gill_sans_nova_n6",
+      "font_size_heading_int": 28,
+      "font_size_base_int": 15,
+      "font_size_nav_int": 14,
+      "font_size_logo_int": 28,
+      "button_style": "caps",
+      "prod_thumb_shape": "natural",
+      "prod_thumb_text_align": "left",
+      "prod_thumb_hover_image": true,
+      "quickbuy_style": "button",
+      "qb_show_description": true,
+      "enable_payment_button": true,
+      "prod_block_label_loc": "top left",
+      "prod_reduction_type": "percent",
+      "prod_stock_warn_show": true,
+      "prod_stock_warn_limit_int": 5,
+      "prod_new_method": "collection",
+      "prod_new_limit_int": 100,
+      "prod_sale_show": true,
+      "prod_sold_out_show": true,
+      "variant_style": "listed",
+      "swatch_enabled": true,
+      "swatch_option_name": "Color",
+      "swatch_images": true,
+      "search_type": "product,article,page",
+      "enable_live_search": true,
+      "live_search_show_vendor": false,
+      "live_search_show_price": false,
+      "live_search_search_meta": false,
+      "cart_type": "drawer",
+      "sections": {
+        "header": {
+          "type": "header",
+          "settings": {
+            "logo_img_width_int": 125,
+            "enable_sticky": true,
+            "menu_layout": "underneath"
+          }
+        },
+        "cross-page-promos": {
+          "type": "cross-page-promos",
+          "blocks": {
+            "1478526632862": {
+              "type": "icon",
+              "settings": {
+                "icon": "delivery",
+                "text": "Free delivery!"
+              }
+            },
+            "1478526645605": {
+              "type": "icon",
+              "settings": {
+                "icon": "location",
+                "text": "Your nearest store"
+              }
+            },
+            "1478526647261": {
+              "type": "icon",
+              "settings": {
+                "icon": "gift",
+                "text": "Gift cards"
+              }
+            },
+            "1478527611164": {
+              "type": "icon",
+              "settings": {
+                "icon": "label",
+                "text": "Student discount"
+              }
+            }
+          },
+          "block_order": [
+            "1478526632862",
+            "1478526645605",
+            "1478526647261",
+            "1478527611164"
+          ],
+          "settings": {
+            "visibility": "all"
+          }
+        },
+        "1478606404805": {
+          "type": "featured-blog",
+          "settings": {
+            "post_limit": 3,
+            "show_author": true,
+            "show_date": true,
+            "crop_ratio": "1.78"
+          }
+        },
+        "1478795901388": {
+          "type": "slideshow",
+          "blocks": {
+            "1478795901388-1": {
+              "type": "image",
+              "settings": {
+                "image_position": "bottom center",
+                "title_size": 96,
+                "enlarge_text": true,
+                "text_alignment": "bottom left"
+              }
+            },
+            "1594843344719": {
+              "type": "image",
+              "settings": {
+                "image_position": "center center",
+                "title_size": 96,
+                "enlarge_text": true,
+                "text_alignment": "top right"
+              }
+            },
+            "3a06e861-2d2a-4676-ba3f-428273e16149": {
+              "type": "image",
+              "settings": {
+                "image_position": "center center",
+                "title_size": 96,
+                "enlarge_text": true,
+                "text_alignment": "center center"
+              }
+            }
+          },
+          "block_order": [
+            "1478795901388-1",
+            "1594843344719",
+            "3a06e861-2d2a-4676-ba3f-428273e16149"
+          ],
+          "settings": {
+            "height": "fixed",
+            "height_desktop": 720,
+            "height_mobile": 260,
+            "full_width": true,
+            "mobile_overlay_under": true,
+            "overlay_style": "no_background",
+            "slide_transition": "fade",
+            "slide_navigation": "dots",
+            "autoplay": true,
+            "autoplay_speed": 5
+          }
+        },
+        "1480591889144": {
+          "type": "featured-collection",
+          "settings": {
+            "show_vendor": false,
+            "enable_carousel": true,
+            "grid": 3,
+            "rows": 1,
+            "use_alt_bg": false,
+            "show_view_all": true,
+            "full_width": true
+          }
+        },
+        "1521035976582": {
+          "type": "image-with-text",
+          "settings": {
+            "image_width": 700,
+            "button_style": "primary",
+            "image_position": "left",
+            "text_alignment": "left",
+            "use_alt_bg": true
+          }
+        },
+        "1521040036892": {
+          "type": "map",
+          "settings": {
+            "color_bg": "#153171",
+            "full_width": true,
+            "show_pin": true,
+            "show_feature_image": true,
+            "map_style": "silver"
+          }
+        },
+        "1582890034959": {
+          "type": "rich-text",
+          "settings": {
+            "button_style": "primary",
+            "height": "large",
+            "text_alignment": "center",
+            "enlarge_text": true,
+            "full_width": false,
+            "use_alt_bg": false
+          }
+        },
+        "footer": {
+          "type": "footer",
+          "blocks": {
+            "1601372812538": {
+              "type": "text",
+              "settings": {
+                "image_width": 55,
+                "show_social_icons": true,
+                "soc_icons_large": true
+              }
+            },
+            "1601372709037": {
+              "type": "menu",
+              "settings": {
+                "menu": "footer"
+              }
+            },
+            "1601372771635": {
+              "type": "newsletter",
+              "settings": {
+                "show_social_icons": true,
+                "soc_icons_large": false
+              }
+            }
+          },
+          "block_order": [
+            "1601372812538",
+            "1601372709037",
+            "1601372771635"
+          ],
+          "settings": {
+            "show_payment_icons": true,
+            "show_locale_selector": true,
+            "show_currency_selector": true
+          }
+        },
+        "product-template": {
+          "type": "product-template",
+          "settings": {
+            "show_tax_and_shipping": false,
+            "show_vendor": true,
+            "show_sku": false,
+            "show_quantity_selector": true,
+            "enable_payment_button": true,
+            "show_pickup_availability": true,
+            "show_backorder_text": true,
+            "show_inventory_notice": false,
+            "inventory_notice_threshold": 10,
+            "inventory_transfers_enable": true,
+            "show_sharing_links": true,
+            "gallery_size": "medium",
+            "prod_gall_thumbs_under": "under",
+            "enable_zoom": true,
+            "enable_video_looping": false,
+            "description_location": "beside"
+          }
+        },
+        "product-recommendations": {
+          "type": "product-recommendations",
+          "settings": {
+            "show_product_recommendations": true,
+            "show_vendor": false,
+            "grid": 4
+          }
+        },
+        "1594114653504": {
+          "type": "gallery",
+          "blocks": {
+            "1594114653504-1": {
+              "type": "image",
+              "settings": {
+                "alignment": "center center",
+                "enlarge_image": false,
+                "text_alignment": "bottom left"
+              }
+            },
+            "1594114653504-0": {
+              "type": "image",
+              "settings": {
+                "alignment": "center center",
+                "enlarge_image": false,
+                "text_alignment": "bottom left"
+              }
+            }
+          },
+          "block_order": [
+            "1594114653504-1",
+            "1594114653504-0"
+          ],
+          "settings": {
+            "grid": 3,
+            "desktop_image_height": 460,
+            "mobile_image_height": 410,
+            "enable_margin": true,
+            "full_width": false,
+            "use_alt_bg": false,
+            "enable_carousel": true,
+            "overlay_style": "box",
+            "button_style": "link"
+          }
+        },
+        "1594115419591": {
+          "type": "image-with-text",
+          "settings": {
+            "image_width": 700,
+            "button_style": "secondary",
+            "image_position": "right",
+            "text_alignment": "center",
+            "use_alt_bg": false
+          }
+        },
+        "1594117553907": {
+          "type": "text-columns-with-images",
+          "blocks": {
+            "1594117553907-0": {
+              "type": "text_block",
+              "settings": {
+                "enable_image": true,
+                "image_width": 700
+              }
+            },
+            "1594117553907-1": {
+              "type": "text_block",
+              "settings": {
+                "enable_image": true,
+                "image_width": 700
+              }
+            }
+          },
+          "block_order": [
+            "1594117553907-0",
+            "1594117553907-1"
+          ],
+          "settings": {
+            "title": "",
+            "text_alignment": "left",
+            "button_style": "link",
+            "use_alt_bg": false
+          }
+        },
+        "collection-template": {
+          "type": "collection-template",
+          "settings": {
+            "show_image_behind_heading": false,
+            "heading_image_height": "medium",
+            "coll_num_per_page_int": 24,
+            "grid": 4,
+            "show_vendor": false,
+            "coll_desc_pos": "below",
+            "ajax_products": true,
+            "coll_show_sort": true,
+            "coll_show_feat": false,
+            "subcoll_menu": "main-menu",
+            "subcoll_style": "buttons",
+            "subcoll_gall_shape": "sq",
+            "image_position": "center center",
+            "subcoll_gall_enable_margin": true,
+            "subcoll_gall_full_width": false,
+            "subcoll_gall_overlay_style": "full",
+            "subcoll_gall_text_alignment": "center center",
+            "subcoll_gall_mobile_layout": "2"
+          }
+        },
+        "1594812667022": {
+          "type": "background-video",
+          "settings": {
+            "title_size": 96,
+            "enlarge_text": true,
+            "text_alignment": "center center",
+            "height_desktop": 720,
+            "height_mobile": 460,
+            "full_width": true,
+            "overlay_style": "no_background"
+          }
+        },
+        "article-template": {
+          "type": "article-template",
+          "settings": {
+            "show_featured_image": true,
+            "show_date": true,
+            "show_author": true,
+            "show_article_tags": true,
+            "show_sharing_icons": true
+          }
+        },
+        "1594838654839": {
+          "type": "image-with-text",
+          "settings": {
+            "image_width": 700,
+            "button_style": "primary",
+            "image_position": "right",
+            "text_alignment": "center",
+            "use_alt_bg": true
+          }
+        },
+        "blog-template": {
+          "type": "blog-template",
+          "settings": {
+            "layout": "columns",
+            "show_date": true,
+            "show_author": true,
+            "show_article_tags": true,
+            "show_sharing_icons": true,
+            "show_rss_icon": true,
+            "crop_image": true,
+            "crop_style": "16-9"
+          }
+        },
+        "page-story-template": {
+          "type": "page-story-template",
+          "blocks": {
+            "1595243968279": {
+              "type": "image-with-text-overlay",
+              "settings": {
+                "image_position": "center right",
+                "height": "fixed",
+                "height_desktop": 720,
+                "height_mobile": 500,
+                "title_size": 96,
+                "enlarge_text": true,
+                "text_alignment": "center center",
+                "full_width": true,
+                "mobile_overlay_under": false,
+                "overlay_style": "full"
+              }
+            },
+            "1595244647710": {
+              "type": "rich-text",
+              "settings": {
+                "button_style": "primary",
+                "height": "medium",
+                "text_alignment": "center",
+                "enlarge_text": false,
+                "full_width": false,
+                "use_alt_bg": true
+              }
+            },
+            "1595245621044": {
+              "type": "image-with-text",
+              "settings": {
+                "image_width": 700,
+                "button_style": "primary",
+                "image_position": "left",
+                "text_alignment": "center",
+                "use_alt_bg": false
+              }
+            },
+            "1595249809664": {
+              "type": "image-with-text-overlay",
+              "settings": {
+                "image_position": "center center",
+                "height": "fixed",
+                "height_desktop": 720,
+                "height_mobile": 500,
+                "title_size": 60,
+                "enlarge_text": true,
+                "text_alignment": "center left",
+                "full_width": true,
+                "mobile_overlay_under": false,
+                "overlay_style": "full"
+              }
+            },
+            "1595248689359": {
+              "type": "image-with-text",
+              "settings": {
+                "image_width": 700,
+                "button_style": "primary",
+                "image_position": "left",
+                "text_alignment": "left",
+                "use_alt_bg": false
+              }
+            },
+            "1595250831561": {
+              "type": "rich-text",
+              "settings": {
+                "button_style": "primary",
+                "height": "medium",
+                "text_alignment": "center",
+                "enlarge_text": true,
+                "full_width": false,
+                "use_alt_bg": false
+              }
+            }
+          },
+          "block_order": [
+            "1595243968279",
+            "1595244647710",
+            "1595245621044",
+            "1595249809664",
+            "1595248689359",
+            "1595250831561"
+          ],
+          "settings": {
+            "show_page_content": false
+          }
+        },
+        "announcement-bar": {
+          "type": "announcement-bar",
+          "settings": {
+            "announcement_show": true,
+            "announcement_bar_col": "#001d7c",
+            "announcement_text_col": "#ffffff",
+            "show_social_icons": true,
+            "show_locale_selector": true,
+            "show_currency_selector": true
+          }
+        },
+        "store-messages": {
+          "type": "store-messages",
+          "settings": {
+            "head_not_home_only": false,
+            "head_not_mob_show": false,
+            "head_not_mob_text": ""
+          }
+        },
+        "popup": {
+          "type": "popup",
+          "settings": {
+            "mode": "enabled",
+            "popup_delay_seconds": 4,
+            "popup_dismiss_for_days": 2,
+            "position": "bottom-right",
+            "show_newsletter": true,
+            "show_social_icons": true
+          }
+        },
+        "16116734804c2e0585": {
+          "type": "testimonials",
+          "blocks": {
+            "16116734804c2e0585-0": {
+              "type": "testimonial",
+              "settings": {
+                "star_rating": 5
+              }
+            },
+            "16116734804c2e0585-1": {
+              "type": "testimonial",
+              "settings": {
+                "star_rating": 5
+              }
+            }
+          },
+          "block_order": [
+            "16116734804c2e0585-0",
+            "16116734804c2e0585-1"
+          ],
+          "settings": {
+            "layout": "image-right",
+            "image_shape": "landscape",
+            "use_alt_bg": true
+          }
+        }
+      },
+      "content_for_index": [
+        "1478795901388",
+        "1582890034959",
+        "1594114653504",
+        "1480591889144",
+        "1521035976582",
+        "1594115419591",
+        "1594812667022",
+        "1594117553907",
+        "1594838654839",
+        "1478606404805",
+        "16116734804c2e0585",
+        "1521040036892"
+      ]
+    },
+    "Duke": {
+      "use_fullwidth_layout": true,
+      "font_col_base": "#637381",
+      "font_col_link": "#637381",
+      "font_col_link_hover": "#000000",
+      "font_col_heads": "#000000",
+      "font_col_shoptitle": "#000000",
+      "font_col_sale": "#c4293d",
+      "btn_col": "#000000",
+      "btn_col_alt": "#212b36",
+      "btn_col_txt": "#ffffff",
+      "btn_alt_bg": "#ffffff",
+      "btn_alt_txt": "#000000",
+      "bg_col": "#ffffff",
+      "bg_image": "",
+      "bg_method": "repeatxy",
+      "head_bg_col": "#ffffff",
+      "head_txt_col": "#000000",
+      "head_nav_div_col": "#e2e2e2",
+      "font_col_nav": "#555555",
+      "font_col_nav_hov": "#000000",
+      "panel_nav_bg": "#ffffff",
+      "nav_featured_col": "#c4293d",
+      "not_shade_bg": "#fafafa",
+      "head_not_col_bg": "#f8f8f8",
+      "head_not_col_txt1": "#000000",
+      "head_not_col_txt2": "#555555",
+      "image_overlay_text": "#ffe802",
+      "image_overlay_bg": "#000000",
+      "image_overlay_opacity": 9,
+      "alt_bg_col": "#ffe802",
+      "alt_bg_text_col": "#000000",
+      "prod_thumb_detail_bg": "#f6f6f6",
+      "prod_thumb_detail_col": "#212b36",
+      "prod_thumb_detail_col_a": "#637381",
+      "prod_over_redu_text": "#c4293d",
+      "prod_over_redu_bg": "#ffffff",
+      "prod_over_low_text": "#808284",
+      "prod_over_low_bg": "#ffffff",
+      "prod_over_new_text": "#808284",
+      "prod_over_new_bg": "#ffffff",
+      "prod_label_sale_text": "#c4293d",
+      "prod_label_sold_text": "#000000",
+      "prod_label_pre_text": "#60a57e",
+      "cross_page_promo_bg": "#f8f8f8",
+      "cross_page_promo_color": "#212b36",
+      "foot_bg_col": "#ffffff",
+      "foot_text_col": "#939393",
+      "foot_heading_col": "#000000",
+      "foot_divider_col": "#eeeeee",
+      "type_heading_font": "helvetica_n7",
+      "capitalize_headings": true,
+      "type_base_font": "helvetica_n4",
+      "type_nav_font": "helvetica_n4",
+      "type_logo_font": "helvetica_n7",
+      "font_size_heading_int": 30,
+      "font_size_base_int": 14,
+      "font_size_nav_int": 14,
+      "font_size_logo_int": 24,
+      "button_style": "normal",
+      "prod_thumb_shape": "natural",
+      "prod_thumb_hover_image": true,
+      "qb_show_description": true,
+      "enable_payment_button": true,
+      "prod_block_label_loc": "top right",
+      "prod_stock_warn_show": true,
+      "prod_stock_warn_limit_int": 10,
+      "prod_new_method": "date",
+      "prod_new_limit_int": 100,
+      "prod_sale_show": true,
+      "prod_sold_out_show": true,
+      "variant_style": "listed",
+      "swatch_enabled": true,
+      "swatch_option_name": "Color",
+      "swatch_images": true,
+      "search_type": "product,article,page",
+      "enable_live_search": true,
+      "live_search_show_vendor": false,
+      "live_search_show_price": false,
+      "live_search_search_meta": false,
+      "cart_type": "drawer",
+      "sections": {
+        "header": {
+          "type": "header",
+          "settings": {
+            "logo_img_width_int": 75,
+            "enable_sticky": true,
+            "menu_layout": "inline-menu-center"
+          }
+        },
+        "cross-page-promos": {
+          "type": "cross-page-promos",
+          "blocks": {
+            "1478526632862": {
+              "type": "icon",
+              "settings": {
+                "icon": "delivery",
+                "text": "Free delivery!"
+              }
+            },
+            "1478526645605": {
+              "type": "icon",
+              "settings": {
+                "icon": "location",
+                "text": "Your nearest store"
+              }
+            },
+            "1478526647261": {
+              "type": "icon",
+              "settings": {
+                "icon": "gift",
+                "text": "Gift cards"
+              }
+            },
+            "1478527611164": {
+              "type": "icon",
+              "settings": {
+                "icon": "label",
+                "text": "Student discount"
+              }
+            }
+          },
+          "block_order": [
+            "1478526632862",
+            "1478526645605",
+            "1478526647261",
+            "1478527611164"
+          ],
+          "settings": {
+            "visibility": "all"
+          }
+        },
+        "1478795901388": {
+          "type": "slideshow",
+          "blocks": {
+            "1478795901388-1": {
+              "type": "image",
+              "settings": {
+                "image_position": "top left",
+                "title_size": 150,
+                "enlarge_text": true,
+                "text_alignment": "bottom left"
+              }
+            }
+          },
+          "block_order": [
+            "1478795901388-1"
+          ],
+          "settings": {
+            "height": "fixed",
+            "height_desktop": 760,
+            "height_mobile": 420,
+            "full_width": true,
+            "mobile_overlay_under": false,
+            "overlay_style": "no_background",
+            "slide_transition": "fade",
+            "slide_navigation": "none",
+            "autoplay": true,
+            "autoplay_speed": 7
+          }
+        },
+        "1480591889144": {
+          "type": "featured-collection",
+          "settings": {
+            "show_vendor": false,
+            "enable_carousel": true,
+            "grid": 3,
+            "rows": 1,
+            "use_alt_bg": false,
+            "show_view_all": true,
+            "full_width": true
+          }
+        },
+        "1521034575223": {
+          "type": "image-with-text",
+          "settings": {
+            "image_width": 700,
+            "button_style": "primary",
+            "image_position": "left",
+            "text_alignment": "left",
+            "use_alt_bg": true
+          }
+        },
+        "1521035976582": {
+          "type": "image-with-text",
+          "settings": {
+            "image_width": 700,
+            "button_style": "primary",
+            "image_position": "right",
+            "text_alignment": "left",
+            "use_alt_bg": true
+          }
+        },
+        "1583244060103": {
+          "type": "featured-collection",
+          "settings": {
+            "show_vendor": false,
+            "enable_carousel": false,
+            "grid": 3,
+            "rows": 2,
+            "use_alt_bg": false,
+            "show_view_all": true,
+            "full_width": false
+          }
+        },
+        "footer": {
+          "type": "footer",
+          "blocks": {
+            "1599638662124": {
+              "type": "text",
+              "settings": {
+                "image_width": 75,
+                "show_social_icons": true,
+                "soc_icons_large": false
+              }
+            },
+            "1599639374976": {
+              "type": "menu",
+              "settings": {
+                "menu": "footer"
+              }
+            },
+            "1599639431729": {
+              "type": "newsletter",
+              "settings": {
+                "show_social_icons": true,
+                "soc_icons_large": false
+              }
+            }
+          },
+          "block_order": [
+            "1599638662124",
+            "1599639374976",
+            "1599639431729"
+          ],
+          "settings": {
+            "lower_menu": "",
+            "show_payment_icons": true,
+            "show_locale_selector": true,
+            "show_currency_selector": true
+          }
+        },
+        "1595062506799": {
+          "type": "gallery",
+          "blocks": {
+            "1595062506799-0": {
+              "type": "image",
+              "settings": {
+                "alignment": "center center",
+                "enlarge_image": false,
+                "text_alignment": "bottom left"
+              }
+            },
+            "1595062506799-1": {
+              "type": "image",
+              "settings": {
+                "alignment": "top center",
+                "enlarge_image": false,
+                "text_alignment": "bottom left"
+              }
+            }
+          },
+          "block_order": [
+            "1595062506799-0",
+            "1595062506799-1"
+          ],
+          "settings": {
+            "grid": 3,
+            "desktop_image_height": 480,
+            "mobile_image_height": 480,
+            "enable_margin": true,
+            "full_width": false,
+            "use_alt_bg": false,
+            "enable_carousel": true,
+            "overlay_style": "box",
+            "button_style": "link"
+          }
+        },
+        "1595063270897": {
+          "type": "background-video",
+          "settings": {
+            "title_size": 150,
+            "enlarge_text": true,
+            "text_alignment": "top left",
+            "height_desktop": 800,
+            "height_mobile": 500,
+            "full_width": true,
+            "overlay_style": "no_background"
+          }
+        },
+        "1595065871135": {
+          "type": "gallery",
+          "blocks": {
+            "1595065871135-0": {
+              "type": "image",
+              "settings": {
+                "alignment": "center center",
+                "enlarge_image": false,
+                "text_alignment": "center center"
+              }
+            },
+            "1595065871135-1": {
+              "type": "image",
+              "settings": {
+                "alignment": "center center",
+                "enlarge_image": false,
+                "text_alignment": "center center"
+              }
+            },
+            "1595065871135-2": {
+              "type": "image",
+              "settings": {
+                "alignment": "center center",
+                "enlarge_image": false,
+                "text_alignment": "center center"
+              }
+            }
+          },
+          "block_order": [
+            "1595065871135-0",
+            "1595065871135-1",
+            "1595065871135-2"
+          ],
+          "settings": {
+            "grid": 3,
+            "desktop_image_height": 300,
+            "mobile_image_height": 400,
+            "enable_margin": true,
+            "full_width": false,
+            "use_alt_bg": false,
+            "enable_carousel": true,
+            "overlay_style": "full",
+            "button_style": "primary"
+          }
+        },
+        "product-template": {
+          "type": "product-template",
+          "settings": {
+            "show_tax_and_shipping": false,
+            "show_vendor": true,
+            "show_sku": false,
+            "show_quantity_selector": true,
+            "enable_payment_button": true,
+            "show_pickup_availability": true,
+            "show_backorder_text": true,
+            "show_inventory_notice": true,
+            "inventory_notice_threshold": 10,
+            "inventory_transfers_enable": true,
+            "show_sharing_links": true,
+            "gallery_size": "medium",
+            "prod_gall_thumbs_under": "beside",
+            "enable_zoom": true,
+            "enable_video_looping": false,
+            "description_location": "beside"
+          }
+        },
+        "product-recommendations": {
+          "type": "product-recommendations",
+          "settings": {
+            "show_product_recommendations": true,
+            "show_vendor": false,
+            "grid": 4
+          }
+        },
+        "1595067713114": {
+          "type": "gallery",
+          "blocks": {
+            "1595067713114-0": {
+              "type": "image",
+              "settings": {
+                "alignment": "center center",
+                "enlarge_image": false,
+                "text_alignment": "center center"
+              }
+            },
+            "1595067713114-1": {
+              "type": "image",
+              "settings": {
+                "alignment": "center center",
+                "enlarge_image": false,
+                "text_alignment": "center center"
+              }
+            },
+            "1595067713114-2": {
+              "type": "image",
+              "settings": {
+                "alignment": "center center",
+                "enlarge_image": false,
+                "text_alignment": "center center"
+              }
+            }
+          },
+          "block_order": [
+            "1595067713114-0",
+            "1595067713114-1",
+            "1595067713114-2"
+          ],
+          "settings": {
+            "grid": 3,
+            "desktop_image_height": 300,
+            "mobile_image_height": 400,
+            "enable_margin": false,
+            "full_width": true,
+            "use_alt_bg": false,
+            "enable_carousel": true,
+            "overlay_style": "full",
+            "button_style": "primary"
+          }
+        },
+        "collection-template": {
+          "type": "collection-template",
+          "settings": {
+            "show_image_behind_heading": true,
+            "heading_image_height": "huge",
+            "coll_num_per_page_int": 16,
+            "grid": 4,
+            "show_vendor": false,
+            "coll_desc_pos": "below",
+            "ajax_products": true,
+            "coll_show_sort": true,
+            "coll_show_feat": false,
+            "subcoll_style": "buttons",
+            "subcoll_gall_shape": "sq",
+            "image_position": "center center",
+            "subcoll_gall_enable_margin": true,
+            "subcoll_gall_full_width": false,
+            "subcoll_gall_overlay_style": "full",
+            "subcoll_gall_text_alignment": "center center",
+            "subcoll_gall_mobile_layout": "2"
+          }
+        },
+        "page-story-template": {
+          "type": "page-story-template",
+          "blocks": {
+            "1595319633270": {
+              "type": "video",
+              "settings": {
+                "title_size": 150,
+                "enlarge_text": true,
+                "text_alignment": "center center",
+                "image_position": "center center",
+                "full_width": true,
+                "overlay_style": "full"
+              }
+            },
+            "1595320256561": {
+              "type": "image-with-text",
+              "settings": {
+                "image_width": 700,
+                "button_style": "primary",
+                "image_position": "left",
+                "text_alignment": "left",
+                "use_alt_bg": false
+              }
+            },
+            "1595321461928": {
+              "type": "image-with-text",
+              "settings": {
+                "image_width": 700,
+                "button_style": "primary",
+                "image_position": "left",
+                "text_alignment": "left",
+                "use_alt_bg": true
+              }
+            },
+            "1595322081182": {
+              "type": "image-with-text-overlay",
+              "settings": {
+                "image_position": "center center",
+                "height": "fixed",
+                "height_desktop": 600,
+                "height_mobile": 500,
+                "title_size": 34,
+                "enlarge_text": false,
+                "text_alignment": "center right",
+                "full_width": true,
+                "mobile_overlay_under": false,
+                "overlay_style": "full"
+              }
+            }
+          },
+          "block_order": [
+            "1595319633270",
+            "1595320256561",
+            "1595321461928",
+            "1595322081182"
+          ],
+          "settings": {
+            "show_page_content": false
+          }
+        },
+        "announcement-bar": {
+          "type": "announcement-bar",
+          "settings": {
+            "announcement_show": true,
+            "announcement_bar_col": "#000000",
+            "announcement_text_col": "#ffffff",
+            "show_social_icons": true,
+            "show_locale_selector": true,
+            "show_currency_selector": true
+          }
+        },
+        "store-messages": {
+          "type": "store-messages",
+          "blocks": {
+            "1599495506123": {
+              "type": "message",
+              "settings": {
+                "heading": "FREE SHIPPING ON ORDERS $35+",
+                "subheading": ""
+              }
+            },
+            "1599495565638": {
+              "type": "message",
+              "settings": {
+                "heading": "FREE RETURNS",
+                "subheading": ""
+              }
+            },
+            "1599495573176": {
+              "type": "message",
+              "settings": {
+                "heading": "FREE STICKERS WITH ALL ORDERS",
+                "subheading": ""
+              }
+            }
+          },
+          "block_order": [
+            "1599495506123",
+            "1599495565638",
+            "1599495573176"
+          ],
+          "settings": {
+            "head_not_home_only": false,
+            "head_not_mob_show": true,
+            "head_not_mob_text": "FREE SHIPPING ON ORDERS $35+"
+          }
+        },
+        "search-template": {
+          "type": "search-template",
+          "settings": {
+            "show_vendor": false,
+            "coll_num_per_page_int": 24,
+            "grid": 4
+          }
+        },
+        "article-template": {
+          "type": "article-template",
+          "settings": {
+            "show_featured_image": true,
+            "show_date": true,
+            "show_author": true,
+            "show_article_tags": true,
+            "show_sharing_icons": true
+          }
+        },
+        "1605867395e9326332": {
+          "type": "featured-blog",
+          "settings": {
+            "post_limit": 3,
+            "show_author": true,
+            "show_date": true,
+            "crop_ratio": "1.78"
+          }
+        },
+        "popup": {
+          "type": "popup",
+          "settings": {
+            "mode": "enabled",
+            "popup_delay_seconds": 4,
+            "popup_dismiss_for_days": 2,
+            "position": "bottom-right",
+            "show_newsletter": true,
+            "show_social_icons": true
+          }
+        },
+        "1611656731e8ac3466": {
+          "type": "testimonials",
+          "blocks": {
+            "1611656731e8ac3466-0": {
+              "type": "testimonial",
+              "settings": {
+                "star_rating": 5
+              }
+            },
+            "1611656731e8ac3466-1": {
+              "type": "testimonial",
+              "settings": {
+                "star_rating": 5
+              }
+            }
+          },
+          "block_order": [
+            "1611656731e8ac3466-0",
+            "1611656731e8ac3466-1"
+          ],
+          "settings": {
+            "layout": "image-right",
+            "image_shape": "landscape",
+            "use_alt_bg": false
+          }
+        }
+      },
+      "content_for_index": [
+        "1478795901388",
+        "1595062506799",
+        "1480591889144",
+        "1521035976582",
+        "1595063270897",
+        "1583244060103",
+        "1611656731e8ac3466",
+        "1595065871135",
+        "1521034575223",
+        "1605867395e9326332",
+        "1595067713114"
+      ]
+    }
+  },
+  "current": {
+    "use_fullwidth_layout": true,
+    "font_col_base": "#555555",
+    "font_col_link": "#41527a",
+    "font_col_link_hover": "#d6b176",
+    "font_col_heads": "#555555",
+    "font_col_shoptitle": "#555555",
+    "font_col_sale": "#d6b176",
+    "btn_col": "#555555",
+    "btn_col_alt": "#454f5b",
+    "btn_col_txt": "#ffffff",
+    "btn_alt_bg": "#ffffff",
+    "btn_alt_txt": "#555555",
+    "bg_col": "#ffffff",
+    "bg_image": "",
+    "bg_method": "repeatxy",
+    "head_bg_col": "#ffffff",
+    "head_txt_col": "#555555",
+    "head_nav_div_col": "#e2e2e2",
+    "font_col_nav": "#555555",
+    "font_col_nav_hov": "#454f5b",
+    "panel_nav_bg": "#ffffff",
+    "nav_featured_col": "#d6b176",
+    "not_shade_bg": "#fafafa",
+    "head_not_col_bg": "#f1f1f1",
+    "head_not_col_txt1": "#555555",
+    "head_not_col_txt2": "#555555",
+    "image_overlay_text": "#ffffff",
+    "image_overlay_bg": "#555555",
+    "image_overlay_opacity": 12,
+    "alt_bg_col": "#f1f1f1",
+    "alt_bg_text_col": "#555555",
+    "prod_thumb_detail_bg": "#f0eeed",
+    "prod_thumb_detail_col": "#555555",
+    "prod_thumb_detail_col_a": "#637381",
+    "prod_over_redu_text": "#ffffff",
+    "prod_over_redu_bg": "#860001",
+    "prod_over_low_bg": "#09728c",
+    "prod_over_new_text": "#ffffff",
+    "prod_over_new_bg": "#555555",
+    "prod_label_sale_text": "#860001",
+    "prod_label_sold_text": "#555555",
+    "prod_label_pre_text": "#555555",
+    "cross_page_promo_bg": "#ffffff",
+    "cross_page_promo_color": "#555555",
+    "foot_bg_col": "#111111",
+    "foot_text_col": "#ffffff",
+    "foot_heading_col": "#ffffff",
+    "foot_divider_col": "#232323",
+    "type_heading_font": "montserrat_n7",
+    "capitalize_headings": true,
+    "type_base_font": "montserrat_n3",
+    "type_nav_font": "montserrat_n5",
+    "type_logo_font": "montserrat_n7",
+    "font_size_heading_int": 23,
+    "font_size_base_int": 14,
+    "font_size_nav_int": 12,
+    "font_size_logo_int": 24,
+    "button_style": "caps",
+    "coll_grid_image_shape": "portrait-45",
+    "coll_grid_image_position": "center center",
+    "coll_grid_show_count": true,
+    "prod_thumb_shape": "square",
+    "prod_thumb_text_align": "left",
+    "prod_thumb_hover_image": true,
+    "prod_thumb_options_names": "Color, Size",
+    "quickbuy_style": "button",
+    "qb_show_description": true,
+    "enable_payment_button": true,
+    "prod_block_label_loc": "top left",
+    "prod_stock_warn_show": true,
+    "prod_stock_warn_limit_int": 5,
+    "prod_new_show": false,
+    "prod_sale_show": true,
+    "prod_sold_out_show": true,
+    "variant_style": "listed",
+    "swatch_enabled": false,
+    "swatch_option_name": "Color",
+    "swatch_images": false,
+    "show_size_chart": true,
+    "size_chart_page": "about-us",
+    "social_twitter_url": "https:\/\/twitter.com\/HeltUsa",
+    "social_facebook_url": "https:\/\/www.facebook.com\/heltusa",
+    "social_pinterest_url": "https:\/\/www.pinterest.com\/heltusa\/",
+    "social_instagram_url": "https:\/\/www.instagram.com\/heltusa\/",
+    "search_type": "product,article,page",
+    "enable_live_search": true,
+    "live_search_show_vendor": false,
+    "live_search_show_price": false,
+    "live_search_search_meta": false,
+    "favicon": "shopify:\/\/shop_images\/helt-studio-favicon.jpg",
+    "cart_type": "drawer",
+    "checkout_accent_color": "#232323",
+    "checkout_button_color": "#232323",
+    "sections": {
+      "header": {
+        "type": "header",
+        "blocks": {
+          "7800683a-c620-446e-8502-a911ad1afd9e": {
+            "type": "menu-promotion",
+            "disabled": true,
+            "settings": {
+              "dropdown_link_title": "Men",
+              "title": "",
+              "link_url": ""
+            }
+          },
+          "f317b452-cb09-4cc1-b879-23c69e95c82f": {
+            "type": "menu-promotion",
+            "disabled": true,
+            "settings": {
+              "dropdown_link_title": "MEN",
+              "title": "",
+              "link_url": ""
+            }
+          },
+          "fc9ced4d-5c4d-437d-9d30-3e688b7bea91": {
+            "type": "menu-promotion",
+            "disabled": true,
+            "settings": {
+              "dropdown_link_title": "MEN",
+              "title": "",
+              "link_url": ""
+            }
+          },
+          "0b953e5e-58da-4392-93d2-abb96aef42be": {
+            "type": "menu-promotion",
+            "disabled": true,
+            "settings": {
+              "dropdown_link_title": "WOMEN",
+              "title": "",
+              "link_url": ""
+            }
+          },
+          "477a513a-25f6-4244-ab57-c8c4e627804a": {
+            "type": "menu-promotion",
+            "disabled": true,
+            "settings": {
+              "dropdown_link_title": "WOMEN",
+              "title": "",
+              "link_url": ""
+            }
+          },
+          "de55d34a-52b4-4817-851c-3f8d6ce8259a": {
+            "type": "menu-promotion",
+            "disabled": true,
+            "settings": {
+              "dropdown_link_title": "WOMEN",
+              "title": "",
+              "link_url": ""
+            }
+          }
+        },
+        "block_order": [
+          "7800683a-c620-446e-8502-a911ad1afd9e",
+          "f317b452-cb09-4cc1-b879-23c69e95c82f",
+          "fc9ced4d-5c4d-437d-9d30-3e688b7bea91",
+          "0b953e5e-58da-4392-93d2-abb96aef42be",
+          "477a513a-25f6-4244-ab57-c8c4e627804a",
+          "de55d34a-52b4-4817-851c-3f8d6ce8259a"
+        ],
+        "settings": {
+          "logo": "shopify:\/\/shop_images\/helt-studio-logo.jpg",
+          "logo_img_width_int": 200,
+          "enable_sticky": true,
+          "menu_linklist": "main-menu",
+          "menu_layout": "underneath",
+          "nav_featured_link": "TEAM ORDER",
+          "nav_mob_products_title": "TEAM ORDER",
+          "nav_mob_products_collection": "",
+          "search_suggestions_title": "APRON",
+          "search_suggestions_menu": ""
+        }
+      },
+      "cross-page-promos": {
+        "type": "cross-page-promos",
+        "blocks": {
+          "1478526632862": {
+            "type": "icon",
+            "settings": {
+              "icon": "delivery",
+              "text": "Free shipping For\nOrders Over $100",
+              "link_url": "https:\/\/www.heltstudio.com\/pages\/shipping-policy"
+            }
+          },
+          "1478526647261": {
+            "type": "icon",
+            "settings": {
+              "icon": "location",
+              "text": "MADE IN LOS\nANGELES",
+              "link_url": "https:\/\/www.heltstudio.com\/pages\/about-us"
+            }
+          },
+          "1478526645605": {
+            "type": "icon",
+            "settings": {
+              "icon": "telephone",
+              "text": "TALK TO REAL\nHUMAN",
+              "link_url": "tel:+12132657185"
+            }
+          },
+          "c73a396f-1cf3-48a0-9ef7-335d5c53c082": {
+            "type": "icon",
+            "settings": {
+              "icon": "returnbox",
+              "text": "FREE 30-DAY\nRETURNS",
+              "link_url": ""
+            }
+          }
+        },
+        "block_order": [
+          "1478526632862",
+          "1478526647261",
+          "1478526645605",
+          "c73a396f-1cf3-48a0-9ef7-335d5c53c082"
+        ],
+        "settings": {
+          "visibility": "all"
+        }
+      },
+      "1480591889144": {
+        "type": "featured-collection",
+        "custom_css": [
+
+        ],
+        "settings": {
+          "title": "Featured Products",
+          "collection": "featured-collection",
+          "collection_list": [
+            "crewtech",
+            "apron",
+            "lifestyle"
+          ],
+          "show_vendor": false,
+          "enable_carousel": true,
+          "grid": 4,
+          "rows": 1,
+          "use_alt_bg": false,
+          "show_view_all": true,
+          "full_width": true
+        }
+      },
+      "1521035976582": {
+        "type": "image-with-text",
+        "settings": {
+          "image": "shopify:\/\/shop_images\/Screenshot_2023-11-02_at_11.37.33_AM.png",
+          "image_width": 700,
+          "subheading": "",
+          "title": "Custom Workwear",
+          "text": "<p>Curate an impeccable corporate image with a workwear collection crafted exclusively for your company. Collaborate with our in-house designers and explore a diverse range of comfortable options. Our goal is to tailor workwear that seamlessly aligns with your needs—a perfect fusion of functionality and style.<\/p>",
+          "button_label": "GET STARTED",
+          "button_link": "shopify:\/\/pages\/contact-us",
+          "button_style": "primary",
+          "image_position": "right",
+          "text_alignment": "center",
+          "use_alt_bg": false
+        }
+      },
+      "footer": {
+        "type": "footer",
+        "blocks": {
+          "375b6d21-41b8-486b-a233-1f734c551992": {
+            "type": "text",
+            "settings": {
+              "title": "",
+              "phone_logo": "shopify:\/\/shop_images\/phone.png",
+              "mail_logo": "shopify:\/\/shop_images\/email.png",
+              "phone-text": "213-265-7185",
+              "mail-text": "info@heltstudio.com",
+              "text": "",
+              "image": "shopify:\/\/shop_images\/helt-studio-footer-logo.png",
+              "image_width": 70,
+              "show_social_icons": false,
+              "soc_icons_large": false,
+              "badge_one": "shopify:\/\/shop_images\/badge_guarantee.png",
+              "badge_two": "shopify:\/\/shop_images\/badge_SSL.png"
+            }
+          },
+          "85476501-c10f-4908-970c-a7eedf17f186": {
+            "type": "menu",
+            "settings": {
+              "title": "Our Company",
+              "menu": "footer-menu-2"
+            }
+          },
+          "d39ec18c-e1d0-4b2e-bbcb-9f24c7018b19": {
+            "type": "menu",
+            "settings": {
+              "title": "Customer Service",
+              "menu": "footer"
+            }
+          }
+        },
+        "block_order": [
+          "375b6d21-41b8-486b-a233-1f734c551992",
+          "85476501-c10f-4908-970c-a7eedf17f186",
+          "d39ec18c-e1d0-4b2e-bbcb-9f24c7018b19"
+        ],
+        "settings": {
+          "lower_menu": "",
+          "show_payment_icons": true,
+          "show_locale_selector": false,
+          "show_currency_selector": false
+        }
+      },
+      "collection-template": {
+        "type": "collection-template",
+        "settings": {
+          "show_image_behind_heading": true,
+          "heading_image_height": "large",
+          "coll_num_per_page_int": 24,
+          "grid": 3,
+          "show_vendor": false,
+          "show_total": false,
+          "coll_desc_pos": "below",
+          "ajax_products": true,
+          "coll_show_sort": true,
+          "coll_show_feat": true,
+          "tag_filtering": "tag_groups",
+          "collapse_tag_sidebar_by_default": false,
+          "subcoll_menu": "",
+          "subcoll_style": "gallery",
+          "subcoll_gall_shape": "l-21",
+          "image_position": "center center",
+          "subcoll_gall_enable_margin": true,
+          "subcoll_gall_full_width": false,
+          "subcoll_gall_overlay_style": "full",
+          "subcoll_gall_text_alignment": "bottom left",
+          "subcoll_gall_mobile_layout": "2"
+        }
+      },
+      "product-template": {
+        "type": "product-template",
+        "settings": {
+          "show_tax_and_shipping": false,
+          "show_vendor": true,
+          "show_sku": false,
+          "show_quantity_selector": true,
+          "enable_payment_button": false,
+          "show_pickup_availability": false,
+          "show_backorder_text": true,
+          "show_inventory_notice": false,
+          "inventory_notice_threshold": 10,
+          "inventory_transfers_enable": true,
+          "show_sharing_links": true,
+          "gallery_size": "medium",
+          "prod_gall_thumbs_under": "under",
+          "enable_sticky_gallery": false,
+          "enable_zoom": true,
+          "enable_video_looping": false,
+          "show_size_chart": false,
+          "show_size_label": "Size Chart",
+          "mens-size-chart-img": "shopify:\/\/shop_images\/mens-size-chart.png",
+          "womens-size-chart-img": "shopify:\/\/shop_images\/mens-size-chart.png",
+          "apron-size-chart-img": "shopify:\/\/shop_images\/mens-size-chart.png",
+          "description_location": "beside",
+          "accordion_description_collapsed": false,
+          "accordion_item1_page": "",
+          "accordion_item2_page": "",
+          "accordion_item3_page": ""
+        }
+      },
+      "product-recommendations": {
+        "type": "product-recommendations",
+        "settings": {
+          "show_product_recommendations": true,
+          "title": "You may also like",
+          "show_vendor": false,
+          "grid": 4
+        }
+      },
+      "page-story-template": {
+        "type": "page-story-template",
+        "blocks": {
+          "1594910075303": {
+            "type": "image-with-text-overlay",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/pexels-elle-hughes-2647937.jpg",
+              "image_position": "center center",
+              "height": "fixed",
+              "height_desktop": 600,
+              "height_mobile": 500,
+              "subheading": "",
+              "title": "CORPORATE SERVICES",
+              "title_size": 54,
+              "text": "<p>Pair text with an image to tell a story<\/p>",
+              "enlarge_text": true,
+              "button_label": "",
+              "text_alignment": "bottom right",
+              "full_width": false,
+              "mobile_overlay_under": true,
+              "overlay_style": "no_background"
+            }
+          },
+          "1594910315975": {
+            "type": "rich-text",
+            "settings": {
+              "subheading": "",
+              "title": "HEADLINE",
+              "text": "<p>At Helt studio, we believe in providing you with a functional uniform that reflects the modern pace of your business. Not only should your uniform look the part (well-designed, stylish, premium fabric), it should also be highly functional (high-performance, breathable, comfortable)<\/p><p><\/p><p>Our ultimate goal is for staff to be happy and comfortable in their uniform and for business to look their best.<\/p>",
+              "button_label": "",
+              "button_style": "primary",
+              "height": "medium",
+              "text_alignment": "center",
+              "enlarge_text": false,
+              "full_width": false,
+              "use_alt_bg": false
+            }
+          },
+          "1594911200272": {
+            "type": "image-with-text",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/pexels-klaus-nielsen-6287572.jpg",
+              "image_width": 700,
+              "subheading": "",
+              "title": "NOT ALL HEROES WEAR CAPES",
+              "text": "<p>You know better than anyone the importance of excellent service. Please allow us to provide you with that experience. We believe good designs puts functionality at its heart, which is why we obsess over every detail, every button, every seams to ensure our uniforms not only look the part, but are high performing. We love what your drive, your passion and your focus at what you do. You are a hero to us, and you deserve to wear something that works for you. At the end of the day, not all heroes wear capes.<\/p>",
+              "button_label": "Read more",
+              "button_style": "secondary",
+              "image_position": "left",
+              "text_alignment": "left",
+              "use_alt_bg": false
+            }
+          },
+          "1594911344727": {
+            "type": "image-with-text",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/pexels-cottonbro-3338538.jpg",
+              "image_width": 700,
+              "subheading": "",
+              "title": "ORIGINAL DESIGN",
+              "text": "<p>With over 10 years of industry experience shared amongst our designers, we are single-minded about evolving the definition of an <strong>ultimate uniform<\/strong>. In fact, we are constantly releasing new products and styles each year to enhance and grow our product range.<\/p>",
+              "button_label": "LEARN MORE",
+              "button_style": "secondary",
+              "image_position": "right",
+              "text_alignment": "left",
+              "use_alt_bg": false
+            }
+          },
+          "9f2bd3bf-e69e-4ab2-ac28-6e29e59e5354": {
+            "type": "image-with-text",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/pexels-klaus-nielsen-6287572.jpg",
+              "image_width": 700,
+              "subheading": "",
+              "title": "DIRECT TO CLIENT VALUE",
+              "text": "<p>As one of the first businesses to sell <a href=\"https:\/\/www.cargocrew.com.au\/wholesale-bulk-order-apron-discounts\"><strong>wholesale priced<\/strong><\/a>, quality uniforms direct to clients online, we helped to move the dinosaur uniform industry into the 21st century (you’re welcome!).<\/p>",
+              "button_label": "LEARN MORE",
+              "button_style": "secondary",
+              "image_position": "left",
+              "text_alignment": "left",
+              "use_alt_bg": false
+            }
+          },
+          "87cd04f7-2372-4c08-90f0-ebf2d24c9bcc": {
+            "type": "image-with-text",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/pexels-cottonbro-3338538.jpg",
+              "image_width": 700,
+              "subheading": "",
+              "title": "WORLD CLASS INNOVATION",
+              "text": "<p>At Helt Studio, we go to obsessive lengths to produce custom fabric solutions that teams love to wear – fabric that’s easy-care, breathable, sweat-masking, non-pilling and holds its shape, wash after wash.<\/p><p>In fact, we spend 10,000 hours on apparel Research & Development each year to ensure we create fabrics and uniforms that are led by innovation.<\/p>",
+              "button_label": "LEARN MORE",
+              "button_style": "secondary",
+              "image_position": "right",
+              "text_alignment": "left",
+              "use_alt_bg": false
+            }
+          },
+          "a337b195-6553-4afa-b923-397f29d859f1": {
+            "type": "image-with-text",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/pexels-klaus-nielsen-6287572.jpg",
+              "image_width": 700,
+              "subheading": "",
+              "title": "CUSTOMER FIRST",
+              "text": "<p>At Helt Studio, our dedicated customer specialist provides the service and excellence that you deserve and rely upon.<\/p><p><\/p><p>Ok, so you’re in charge of finding the perfect uniform that your team will love to wear. And it also needs to encapsulate your brand and company values. Oh, and it needs to be at on time and to budget, but not sacrifice on quality. While it might sound like Mission Ridiculous, don’t be deterred. You’re in the right place – and we promise to make the entire uniform supply process seamless, simple and (dare we say) fun!<\/p><p>For companies requiring a fast turnaround, we offer an extensive capsule collection of over 150 Modern Uniform styles that can be mixed and matched with the help of a highly experienced single-point <a href=\"https:\/\/www.cargocrew.com.au\/client-servicing\"><strong>Customer Care Specialist<\/strong><\/a>.<\/p>",
+              "button_label": "LEARN MORE",
+              "button_style": "secondary",
+              "image_position": "left",
+              "text_alignment": "left",
+              "use_alt_bg": false
+            }
+          }
+        },
+        "block_order": [
+          "1594910075303",
+          "1594910315975",
+          "1594911200272",
+          "1594911344727",
+          "9f2bd3bf-e69e-4ab2-ac28-6e29e59e5354",
+          "87cd04f7-2372-4c08-90f0-ebf2d24c9bcc",
+          "a337b195-6553-4afa-b923-397f29d859f1"
+        ],
+        "settings": {
+          "show_page_content": false
+        }
+      },
+      "announcement-bar": {
+        "type": "announcement-bar",
+        "settings": {
+          "announcement_show": true,
+          "announcement_text": "ENJOY FREE SHIPPING ON ORDERS $100+",
+          "announcement_link": "shopify:\/\/collections",
+          "announcement_bar_col": "#a6353a",
+          "announcement_text_col": "#cfc2b2",
+          "show_social_icons": false,
+          "menu": "",
+          "show_locale_selector": true,
+          "show_currency_selector": true
+        }
+      },
+      "store-messages": {
+        "type": "store-messages",
+        "settings": {
+          "head_not_home_only": false,
+          "head_not_mob_show": false,
+          "head_not_mob_text": "Add important information here",
+          "head_not_mob_url": ""
+        }
+      },
+      "popup": {
+        "type": "popup",
+        "settings": {
+          "mode": "enabled",
+          "popup_delay_seconds": 6,
+          "popup_dismiss_for_days": 2,
+          "position": "center",
+          "title": "Take 15% off",
+          "text": "<p>Subscribe to take 15% OFF your first purchase and stay in the know on exclusive new colors, styles and promotions.<\/p><p><\/p><p>By clicking \"sign up\", you agree to receive emails from Helt Studio and accept our <a href=\"https:\/\/www.heltstudio.com\/pages\/terms-of-service\" title=\"Terms of Use\">Terms of Use<\/a> and our <a href=\"https:\/\/www.heltstudio.com\/pages\/privacy-policy\" title=\"Privacy Policy\">Privacy Policy<\/a>.<\/p>",
+          "image": "shopify:\/\/shop_images\/contact_us_banner.jpg",
+          "show_newsletter": true,
+          "show_social_icons": true
+        }
+      },
+      "blog-template": {
+        "type": "blog-template",
+        "settings": {
+          "layout": "columns",
+          "first-desc": "<p>For almost half a decade, Helt Studio has set out on a mission to support and celebrate our culinary frontline heroes. Our mission to empower the culinary community through producing functional, high-quality, and trendy kitchen apparel has helped culinary workers feel their best and look good doing it. However, improving the landscape for restaurant workers is so much more than creating the right gear — we want to go even further. <br\/><\/p><p>Helt Studio’s chef blog continues that mission by letting you hear directly from expert contributors in the industry. Hospitality is one of the most complex and labor-intensive businesses in the country. Through providing helpful resources and stories, we hope to help chefs and restaurateurs tackle many of the challenges they often face in the field. <\/p>",
+          "second-desc": "<p><\/p><p>Our blog features articles about uniforms and chef wear, culinary tips, restaurant trends, leaders in hospitality, industry advice, anecdotal stories, recipes, and other relevant content. Whether you’re a chef, barista, bartender, busser, server, or restaurant manager — our chef blog serves as a useful and invaluable tool to help you grow in your career. <\/p><p>Culinary workers have been neglected by the industry for far too long. We’re passionate about changing that — giving culinary workers the support, resources, and appreciation they deserve. <br\/><\/p><p>After all, aprons are just capes worn backward. <br\/><\/p>",
+          "big-img": "shopify:\/\/shop_images\/2020_Crew_Apparel_Lifestyle_Shoot_013.jpg",
+          "third-desc": "<p>If you would like to hear about a specific topic or think you might have something helpful to contribute, <a href=\"https:\/\/www.heltstudio.com\/pages\/contact-us\">we’d love to hear from you.<\/a><\/p>",
+          "show_date": true,
+          "show_author": true,
+          "show_article_tags": true,
+          "show_sharing_icons": true,
+          "show_rss_icon": true,
+          "crop_image": true,
+          "crop_style": "16-9"
+        }
+      },
+      "article-template": {
+        "type": "article-template",
+        "settings": {
+          "show_featured_image": true,
+          "show_date": true,
+          "show_author": true,
+          "show_article_tags": true,
+          "show_sharing_icons": true
+        }
+      },
+      "16172860000b0cd55f": {
+        "type": "slideshow",
+        "blocks": {
+          "cdc6b122-75ae-40ee-8067-7774074e2ccb": {
+            "type": "image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/banner_resized_copy_b07e8035-e067-4dbc-a849-0385dfc7487a.jpg",
+              "image_position": "center center",
+              "slide_link": "shopify:\/\/collections\/featured-collection",
+              "subheading": "",
+              "title": "Uniform that works for you",
+              "title_size": 46,
+              "text": "<p>See our newest collections<\/p>",
+              "enlarge_text": false,
+              "button_label": "SHOP NOW",
+              "text_alignment": "bottom left"
+            }
+          },
+          "4f8c6950-51f0-4948-b7e1-d9e0280577f5": {
+            "type": "image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/banner_tee.jpg",
+              "image_position": "center center",
+              "slide_link": "shopify:\/\/collections",
+              "subheading": "",
+              "title": "DWR Denim",
+              "title_size": 46,
+              "text": "",
+              "enlarge_text": false,
+              "button_label": "SHOP NOW",
+              "text_alignment": "bottom left"
+            }
+          },
+          "16172860000b0cd55f-1": {
+            "type": "image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/home_cooking_banner.jpg",
+              "image_position": "center center",
+              "slide_link": "shopify:\/\/collections\/crewtech",
+              "subheading": "",
+              "title": "Crewtech Utility Shirt",
+              "title_size": 32,
+              "text": "",
+              "enlarge_text": false,
+              "button_label": "SHOP NOW",
+              "text_alignment": "bottom left"
+            }
+          },
+          "16172860000b0cd55f-0": {
+            "type": "image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/banner_2_fd4b4403-fe7b-49cf-a758-c0a47a844826.jpg",
+              "image_position": "center center",
+              "slide_link": "shopify:\/\/collections\/men-coats",
+              "subheading": "",
+              "title": "Neue Chef Coat",
+              "title_size": 46,
+              "text": "",
+              "enlarge_text": false,
+              "button_label": "SHOP NOW",
+              "text_alignment": "bottom left"
+            }
+          }
+        },
+        "block_order": [
+          "cdc6b122-75ae-40ee-8067-7774074e2ccb",
+          "4f8c6950-51f0-4948-b7e1-d9e0280577f5",
+          "16172860000b0cd55f-1",
+          "16172860000b0cd55f-0"
+        ],
+        "settings": {
+          "height": "fixed",
+          "height_desktop": 900,
+          "height_mobile": 440,
+          "full_width": true,
+          "mobile_overlay_under": false,
+          "overlay_style": "no_background",
+          "slide_transition": "fade",
+          "slide_navigation": "arrows",
+          "autoplay": true,
+          "autoplay_speed": 7
+        }
+      },
+      "1617287715bc7ff3c2": {
+        "type": "rich-text",
+        "settings": {
+          "subheading": "What you wear to work should work for you.",
+          "title": "",
+          "text": "<p>At Helt Studio, we strive to craft uniforms that epitomize unparalleled comfort. We firmly hold the belief that your work attire should elevate your performance, enabling you to make a substantial impact without being encumbered by discomfort from your workwear.<\/p>",
+          "button_label": "LEARN MORE",
+          "button_link": "shopify:\/\/pages\/about-us",
+          "button_style": "primary",
+          "height": "medium",
+          "text_alignment": "center",
+          "enlarge_text": false,
+          "full_width": false,
+          "use_alt_bg": false
+        }
+      },
+      "1617293273c37b524b": {
+        "type": "rich-text",
+        "settings": {
+          "subheading": "",
+          "title": "Embracing Innovative Design",
+          "text": "<p>Central to each of our uniform creations is a meticulously engineered fabric designed to outperform everything else in your wardrobe. Incorporating elements like sweat-wicking and liquid repellent fabric inspired clothes wear by pro-athletes , along with machine-washable, high-performance Denim and Canvas, our fabrics undergo thorough research and testing, ensuring they're primed to enhance your day with unparalleled comfort and productivity.<\/p>",
+          "button_label": "LEARN MORE",
+          "button_link": "",
+          "button_style": "primary",
+          "height": "medium",
+          "text_alignment": "center",
+          "enlarge_text": false,
+          "full_width": false,
+          "use_alt_bg": false
+        }
+      },
+      "16237785031868d303": {
+        "type": "image-with-text-overlay",
+        "disabled": true,
+        "settings": {
+          "image": "shopify:\/\/shop_images\/hand_sanitizer_banner.jpg",
+          "image_position": "center center",
+          "height": "adapt",
+          "height_desktop": 600,
+          "height_mobile": 500,
+          "subheading": "",
+          "title": "KEEPING YOU SAFE",
+          "title_size": 46,
+          "text": "<p>Introducing Helt's Hand sanitizer. Keeping you safe and clean all the time<\/p>",
+          "enlarge_text": true,
+          "button_label": "Shop Now",
+          "image_link": "shopify:\/\/products\/handsanitizergel",
+          "text_alignment": "center center",
+          "full_width": true,
+          "mobile_overlay_under": true,
+          "overlay_style": "full"
+        }
+      },
+      "16237785816c051655": {
+        "type": "featured-blog",
+        "settings": {
+          "title": "Blog posts",
+          "blog": "news",
+          "post_limit": 3,
+          "show_author": false,
+          "show_date": false,
+          "crop_ratio": "1.0"
+        }
+      },
+      "page-corporate-template": {
+        "type": "page-corporate-template",
+        "blocks": {
+          "a57df14a-d057-424a-a03a-09c21cfdc4fa": {
+            "type": "video",
+            "settings": {
+              "video": "https:\/\/www.youtube.com\/watch?v=9aSrXxlJAH4",
+              "mobile_image": "shopify:\/\/shop_images\/IMG_4425.jpg",
+              "subheading": "",
+              "title": "CREATE A UNIQUE LOOK FOR YOUR TEAM",
+              "title_size": 36,
+              "text": "<p>Design. Innovation. Comfort. Quality<\/p>",
+              "enlarge_text": true,
+              "text_alignment": "bottom right",
+              "height_desktop": 600,
+              "height_mobile": 400,
+              "full_width": true,
+              "overlay_style": "no_background"
+            }
+          },
+          "438f335b-8cc4-4f8b-83d5-7ddff7be1eb8": {
+            "type": "rich-text",
+            "settings": {
+              "subheading": "",
+              "title": "Innovation. Functionality. Style. Comfort.",
+              "text": "<p>As a disruptive corporate apparel design company, we give you corporate uniforms that your employees would love to wear while presenting your professional brand identity. We are trendsetters in the industry, providing meaningful and purposeful apparel reflecting your business at its best.<\/p>",
+              "button_label": "GET STARTED NOW",
+              "button_link": "#contactform",
+              "button_style": "primary",
+              "height": "medium",
+              "text_alignment": "center",
+              "enlarge_text": false,
+              "full_width": false,
+              "use_alt_bg": false
+            }
+          },
+          "45020e19-70a9-4885-ac8c-e0199d9289ed": {
+            "type": "image-with-text",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/5CDCD25E-2143-4057-A4A8-5EB2E173146C_1_105_c.jpg",
+              "image_width": 700,
+              "subheading": "",
+              "title": "Unique Design",
+              "text": "<p>At Helt Studio, we believe in innovation. We understand that your business is unique, and your employees’ attire should reflect that uniqueness and spirit. We infuse life into the essence of your brand through our innovative design. <\/p>",
+              "button_label": "Learn More",
+              "button_link": "shopify:\/\/pages\/unique-design",
+              "button_style": "primary",
+              "image_position": "right",
+              "text_alignment": "left",
+              "use_alt_bg": false
+            }
+          },
+          "4e121718-5220-48eb-8a55-7038ab5048ea": {
+            "type": "image-with-text",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/IMG_5108.jpg",
+              "image_width": 700,
+              "subheading": "",
+              "title": "Fabric Innovation",
+              "text": "<p>Uniform is not just about design. It is much more than that. It delivers comfort, functionality, high performance, and style that become a hallmark of your corporate identity. Helt Studio is a pioneering company that incorporated tech fabric with superior performance into corporate uniform manufacturing. <br\/><br\/><\/p>",
+              "button_label": "Discover More",
+              "button_link": "shopify:\/\/pages\/innovation",
+              "button_style": "primary",
+              "image_position": "left",
+              "text_alignment": "left",
+              "use_alt_bg": false
+            }
+          },
+          "b1df91bf-6c07-4ab5-9ecd-29326888a6be": {
+            "type": "image-with-text",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/19A94272-DCD7-43F8-94C8-EBD14F8298F3.jpg",
+              "image_width": 700,
+              "subheading": "",
+              "title": "Client-Centric Approach",
+              "text": "<p>As a leading corporate uniform designer and manufacturer in the industry, we have a client-centric approach. We deliver direct-to-client value for every project. Our team diligently works with you while focusing on building a long-term relationship via our uniform. For us, clients are just like our family.<\/p>",
+              "button_label": "Explore more",
+              "button_link": "shopify:\/\/pages\/customer-first",
+              "button_style": "primary",
+              "image_position": "right",
+              "text_alignment": "left",
+              "use_alt_bg": false
+            }
+          },
+          "a7a6a20e-ae6a-47c1-961b-20d897e3a45f": {
+            "type": "image-with-text",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/IMG_4425.jpg",
+              "image_width": 700,
+              "subheading": "",
+              "title": "Quality Assurance",
+              "text": "<p>At Helt Studio, we have a strong disliking for poor quality fabric, regular designs, and ill-fitting uniforms. Without the fabric and design quality, it's not possible to make our products shine. You and your workers deserve something unique, and we help you get that. We incorporate functionality and excellent quality into our creations to make your uniform stand apart and fit perfectly. <\/p>",
+              "button_label": "Learn more",
+              "button_link": "shopify:\/\/pages\/quality-assurance",
+              "button_style": "primary",
+              "image_position": "left",
+              "text_alignment": "left",
+              "use_alt_bg": false
+            }
+          }
+        },
+        "block_order": [
+          "a57df14a-d057-424a-a03a-09c21cfdc4fa",
+          "438f335b-8cc4-4f8b-83d5-7ddff7be1eb8",
+          "45020e19-70a9-4885-ac8c-e0199d9289ed",
+          "4e121718-5220-48eb-8a55-7038ab5048ea",
+          "b1df91bf-6c07-4ab5-9ecd-29326888a6be",
+          "a7a6a20e-ae6a-47c1-961b-20d897e3a45f"
+        ],
+        "settings": {
+          "show_page_content": false
+        }
+      },
+      "corporate-contact-form": {
+        "type": "corporate-contact-form",
+        "settings": {
+          "title": "INTERESTED IN WORKING WITH US?",
+          "text": "<p>We are proud to dress crews across America and the world in our premium staff uniforms. We have catered to a wide range of industries including coffee roasters, cafés, restaurants, food franchises, boutique hotels, bakeries, catering companies, wineries, cinemas, car dealerships, butchers... the list goes on!<br\/><\/p><p><br\/><br\/><\/p>"
+        }
+      },
+      "corporate-client-list": {
+        "type": "corporate-client-list",
+        "blocks": {
+          "9b0c77c8-7766-4768-8b96-63c3ff120942": {
+            "type": "Image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/patina.jpg"
+            }
+          },
+          "1d52267f-6894-4fe5-aede-cdcd8c7978f5": {
+            "type": "Image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/for_five.jpg"
+            }
+          },
+          "b5b6f60c-ee9a-4ea9-9810-1019b6ea1bf2": {
+            "type": "Image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/ritz.jpg"
+            }
+          },
+          "b2ac9370-4df6-4886-9ada-035d2e21530e": {
+            "type": "Image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/bar_nine.jpg"
+            }
+          },
+          "eb8b31dd-483a-4ff7-bd47-e9d623b31941": {
+            "type": "Image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/soso.jpg"
+            }
+          },
+          "9d4d858a-4ff6-4f86-b04b-2a9f0cccb9db": {
+            "type": "Image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/sage_bistro.jpg"
+            }
+          },
+          "40dcf982-b631-4c59-b9bd-a72a69567f5a": {
+            "type": "Image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/alfred_coffee.jpg"
+            }
+          },
+          "406acdd6-b98e-4007-9281-5bd8494d4d5d": {
+            "type": "Image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/LAAC.jpg"
+            }
+          },
+          "613b34f5-2ee7-4634-8e16-3f3b8d3f95ac": {
+            "type": "Image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/joey.jpg"
+            }
+          },
+          "2839563e-d949-48e5-800f-0592e6c1a64f": {
+            "type": "Image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/ms_chi.jpg"
+            }
+          },
+          "fa35ce02-effd-4053-91fc-e5f1b6d73767": {
+            "type": "Image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/driscolls.jpg"
+            }
+          },
+          "f20d8350-72de-4bf8-9c73-e042e3705737": {
+            "type": "Image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/siete.jpg"
+            }
+          },
+          "a281b891-cb4b-461c-9919-6d1a0c3c28e4": {
+            "type": "Image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/spartina.jpg"
+            }
+          },
+          "8afa2a86-eae4-4e4b-8f19-16d4e712eac9": {
+            "type": "Image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/panda_logo.jpg"
+            }
+          }
+        },
+        "block_order": [
+          "9b0c77c8-7766-4768-8b96-63c3ff120942",
+          "1d52267f-6894-4fe5-aede-cdcd8c7978f5",
+          "b5b6f60c-ee9a-4ea9-9810-1019b6ea1bf2",
+          "b2ac9370-4df6-4886-9ada-035d2e21530e",
+          "eb8b31dd-483a-4ff7-bd47-e9d623b31941",
+          "9d4d858a-4ff6-4f86-b04b-2a9f0cccb9db",
+          "40dcf982-b631-4c59-b9bd-a72a69567f5a",
+          "406acdd6-b98e-4007-9281-5bd8494d4d5d",
+          "613b34f5-2ee7-4634-8e16-3f3b8d3f95ac",
+          "2839563e-d949-48e5-800f-0592e6c1a64f",
+          "fa35ce02-effd-4053-91fc-e5f1b6d73767",
+          "f20d8350-72de-4bf8-9c73-e042e3705737",
+          "a281b891-cb4b-461c-9919-6d1a0c3c28e4",
+          "8afa2a86-eae4-4e4b-8f19-16d4e712eac9"
+        ],
+        "settings": {
+          "title": "BE PART OF THE TEAM",
+          "text": "<p>We work with passionate folks at all scales, from international chains to local favorites to mom and pop shops. You imagine it, we will build it.<\/p>"
+        }
+      },
+      "product-story": {
+        "type": "product-story",
+        "settings": {
+        }
+      },
+      "1625091019a7a4ebcb": {
+        "type": "rich-text",
+        "disabled": true,
+        "settings": {
+          "subheading": "",
+          "title": "",
+          "text": "<p>We are committed to making all kitchen workers feel celebrated. Contact us today to buy modern, amazing chef uniforms for your workforce.<\/p>",
+          "button_label": "",
+          "button_link": "",
+          "button_style": "primary",
+          "height": "medium",
+          "text_alignment": "center",
+          "enlarge_text": false,
+          "full_width": false,
+          "use_alt_bg": false
+        }
+      },
+      "16251669285769c922": {
+        "type": "image-with-text-overlay",
+        "disabled": true,
+        "settings": {
+          "image": "shopify:\/\/shop_images\/Rectangle_22100.jpg",
+          "image_position": "center center",
+          "height": "fixed",
+          "height_desktop": 720,
+          "height_mobile": 440,
+          "subheading": "",
+          "title": "Look Good. Feel Good. Work Better.",
+          "title_size": 40,
+          "text": "<p>Avoid discomfort with the right chef uniforms and kitchen staff apparel by Helt Studio.<\/p>",
+          "enlarge_text": true,
+          "button_label": "SHOP NOW",
+          "image_link": "",
+          "text_alignment": "bottom center",
+          "full_width": true,
+          "mobile_overlay_under": false,
+          "overlay_style": "full"
+        }
+      },
+      "16276009917af46fac": {
+        "type": "background-video",
+        "disabled": true,
+        "settings": {
+          "video": "https:\/\/youtu.be\/KYn6hwMISZQ",
+          "subheading": "",
+          "title": "Your uniform can do much more",
+          "title_size": 34,
+          "text": "<p>ALL NEW CREWTECH COLLECTION<\/p>",
+          "enlarge_text": false,
+          "button_label": "SHOP NOW",
+          "button_link": "shopify:\/\/collections\/crewtech",
+          "text_alignment": "bottom center",
+          "height_desktop": 600,
+          "height_mobile": 340,
+          "full_width": true,
+          "overlay_style": "no_background"
+        }
+      },
+      "newsletter": {
+        "type": "newsletter",
+        "settings": {
+          "title": "NEWSLETTER",
+          "subheading": "<p>Sign up for exclusive offers, original stories, activism awareness, events and more.<\/p>",
+          "note": "<p>Note: You can opt-out at any time. See our <a href=\"\/pages\/privacy-policy\" title=\"Privacy Policy\">Privacy Policy<\/a> and <a href=\"\/pages\/return-policy\" title=\"Return Policy\">Terms<\/a>.<\/p>",
+          "color_bg": "#f4f6f5"
+        }
+      },
+      "3cb803f1-5522-4b9e-adf0-525302e1f694": {
+        "type": "image-with-text",
+        "settings": {
+          "image": "shopify:\/\/shop_images\/27AB567F-1E8C-4EFC-AB73-9E9BA2880DA0.jpg",
+          "image_width": 700,
+          "subheading": "",
+          "title": "MADE FOR YOUR TEAM",
+          "text": "<p>Stand out instead of blending in! If you have a vision for how your team should look, delve into our Apron Customization program. Choose from a selection of over 200 fabric options, incorporate your logo and corporate colors, and craft something uniquely tailored to your team. Our designer will work with you to make your vision come true.<\/p>",
+          "button_label": "Contact US",
+          "button_link": "shopify:\/\/pages\/contact-us",
+          "button_style": "primary",
+          "image_position": "left",
+          "text_alignment": "center",
+          "use_alt_bg": false
+        }
+      },
+      "2499d4a8-006d-4489-a487-22fd3d1db07b": {
+        "type": "featured-collection",
+        "settings": {
+          "title": "NEW ARRIVALS",
+          "collection": "new-arrivals",
+          "collection_list": [
+
+          ],
+          "show_vendor": false,
+          "enable_carousel": true,
+          "grid": 4,
+          "rows": 1,
+          "use_alt_bg": false,
+          "show_view_all": true,
+          "full_width": true
+        }
+      },
+      "d8077c59-e478-4d74-8d75-18af113cb515": {
+        "type": "featured-collections-gallery",
+        "blocks": {
+          "d8077c59-e478-4d74-8d75-18af113cb515-1680698152f775b0a3-0": {
+            "type": "image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/stephany-coat.jpg",
+              "headline": "CHEF COAT",
+              "description": "Made with Crewtech Fabric. Sweat-wicking, water & stain-repellent, 4 way stretch. Ultimate comfort",
+              "button_label": "EXPLORE",
+              "link": "shopify:\/\/collections\/featured-collection"
+            }
+          },
+          "d8077c59-e478-4d74-8d75-18af113cb515-1680698152f775b0a3-1": {
+            "type": "image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/ranch-bib-apron.jpg",
+              "headline": "DWR DENIM APRON",
+              "description": "The denim that is water & stain-repellent, without the waxy coating.",
+              "button_label": "EXPLORE",
+              "link": "shopify:\/\/collections\/apron"
+            }
+          },
+          "d8077c59-e478-4d74-8d75-18af113cb515-1680698152f775b0a3-2": {
+            "type": "image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/utility-work-shirt.jpg",
+              "headline": "UTILITY SHIRT",
+              "description": "Made with Crewtech Lite. Breathable, lightweight, water-repellent and 4 way stretch",
+              "button_label": "EXPLORE",
+              "link": "shopify:\/\/products\/utility-work-shirt"
+            }
+          },
+          "f9cfec83-ecdb-4372-858b-3ff939130dad": {
+            "type": "image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/732a36f9d002575613cd737c1ef7cdeb_2x_02cb8eb5-7a62-47b1-9a3f-dffa100c2332.jpg",
+              "headline": "Headline",
+              "description": "Descripitoin",
+              "button_label": "EXPLORE",
+              "link": "shopify:\/\/collections\/men"
+            }
+          }
+        },
+        "block_order": [
+          "d8077c59-e478-4d74-8d75-18af113cb515-1680698152f775b0a3-0",
+          "d8077c59-e478-4d74-8d75-18af113cb515-1680698152f775b0a3-1",
+          "d8077c59-e478-4d74-8d75-18af113cb515-1680698152f775b0a3-2",
+          "f9cfec83-ecdb-4372-858b-3ff939130dad"
+        ],
+        "settings": {
+          "sectionheadline": "SHOP THE COLLECTIONS"
+        }
+      },
+      "about-hero": {
+        "type": "about-hero",
+        "settings": {
+          "hero_image": "shopify:\/\/shop_images\/Rectangle_22100_2ff5dee4-e873-4042-9200-87945d445eea.jpg",
+          "about_headline": "OUR STORY",
+          "about_description": "<p>Helt Studio, a modern chef uniform store, began with one simple idea — what you wear to work should work for you.<\/p>"
+        }
+      },
+      "about-text": {
+        "type": "about-text",
+        "settings": {
+          "about_headline": "Built for comfort, style, and functionality.",
+          "about_description": "<p>Helt Studio’s uniforms are built for comfort, style, and functionality, using technologically advanced fabrics that make our customers and their teams proud to go to work. Our chef uniform store elevates uniforms from mediocrity and creates products that our customers are excited to wear every day for both their quality and the brand they represent.<\/p>"
+        }
+      },
+      "about-image-with-text": {
+        "type": "about-image-with-text",
+        "settings": {
+          "about_image": "shopify:\/\/shop_images\/Rectangle_22491.jpg",
+          "about_text": "<p>We reimagined uniform design from the ground up with performance fabrics sourced from around the world and designs made right here in Los Angeles. When we began, we saw that many apparel brands didn’t care enough to offer uniforms that are targeted to the everyday life of the ordinary kitchen worker. After years of their disruption in the field, we believe that our uniforms have changed the space for the better.<\/p>"
+        }
+      },
+      "about-highlights": {
+        "type": "about-highlights",
+        "blocks": {
+          "50ddec90-172f-4c1b-ac44-21de831a1919": {
+            "type": "image_picker",
+            "settings": {
+              "single_image": "shopify:\/\/shop_images\/Mask_Group_24_2x_c1f62219-5b94-4e85-9c57-62be10b1108a.jpg",
+              "highlight_headline": "SIMPLICITY IN DESIGN",
+              "highlight_description": "No flashy logos. No senseless details. Just the world’s most comfortable shoes, made naturally and designed practically. It’s that simple."
+            }
+          },
+          "37a4ff65-4afe-4bbc-a21f-dffd88e284a5": {
+            "type": "image_picker",
+            "settings": {
+              "single_image": "shopify:\/\/shop_images\/Mask_Group_27_2x_02c68237-abf8-488d-866c-88508824c403.jpg",
+              "highlight_headline": "CONFIDENCE IN COMFORT",
+              "highlight_description": "Trying is believing. Give our shoes a shot for 30 days, and if you’re not walking on cloud nine, we’ll take them back—no questions asked."
+            }
+          },
+          "8233deda-0374-45c7-a168-b900e6245b0f": {
+            "type": "image_picker",
+            "settings": {
+              "single_image": "shopify:\/\/shop_images\/Mask_Group_28_2x_497f4d79-d987-4a31-a30d-2c20a64da468.jpg",
+              "highlight_headline": "MADE FROM NATURE",
+              "highlight_description": "The footwear industry often overlooks Mother Nature’s materials in favor of cheaper, synthetic alternatives. We think it’s time to change that."
+            }
+          }
+        },
+        "block_order": [
+          "50ddec90-172f-4c1b-ac44-21de831a1919",
+          "37a4ff65-4afe-4bbc-a21f-dffd88e284a5",
+          "8233deda-0374-45c7-a168-b900e6245b0f"
+        ],
+        "settings": {
+        }
+      },
+      "about-second-highlights": {
+        "type": "about-second-highlights",
+        "blocks": {
+          "44af610c-e589-4916-862b-204adce2d51d": {
+            "type": "image_picker",
+            "settings": {
+              "single_image": "shopify:\/\/shop_images\/Rectangle_22505_2x_229e42a0-682a-44c2-87e2-a168baebc0ce.jpg",
+              "highlight_headline": "B CORP",
+              "highlight_description": "As a certified B Corp, we do business differently. The environment is a stakeholder here, and how we treat it is just as important as the bottom line."
+            }
+          },
+          "79edddcd-43fb-40df-981c-6fad40615ec2": {
+            "type": "image_picker",
+            "settings": {
+              "single_image": "shopify:\/\/shop_images\/Rectangle_22507_2x_09a04b47-4d48-4272-8d73-e8eaeabc7c33.jpg",
+              "highlight_headline": "SOLES4SOULS®",
+              "highlight_description": "Thanks to our friends at Soles4Souls®, lightly used Allbirds find new life all around the world, helping communities in need thrive in the process."
+            }
+          },
+          "0ee5b5a2-85a7-4de4-a6f7-2e72fd4ef150": {
+            "type": "image_picker",
+            "settings": {
+              "single_image": "shopify:\/\/shop_images\/Path_51497_2x_31b5a6fb-2058-476f-b268-b853c493c070.jpg",
+              "highlight_headline": "RECYCLED PACKAGING",
+              "highlight_description": "We reimagined shoe packaging, using 90% post-consumer recycled cardboard that serves as a shoebox, shopping bag, and mailer all in one."
+            }
+          }
+        },
+        "block_order": [
+          "44af610c-e589-4916-862b-204adce2d51d",
+          "79edddcd-43fb-40df-981c-6fad40615ec2",
+          "0ee5b5a2-85a7-4de4-a6f7-2e72fd4ef150"
+        ],
+        "settings": {
+          "highlight_main_description": "The journey to making better things in a better way is a long one, and we’re just getting started. Here are a few of our proudest moments so far:"
+        }
+      },
+      "science": {
+        "type": "science",
+        "blocks": {
+          "f1148d7c-6a97-45bc-9211-934321ead9ff": {
+            "type": "image_picker",
+            "settings": {
+              "single_image": "shopify:\/\/shop_images\/732a36f9d002575613cd737c1ef7cdeb_2x_6ca5db4b-6f97-478f-b074-388755f9cdef.jpg",
+              "collection_headline": "CREWTECH",
+              "collection_description": "Our first innovative uniform solution featuring a water-repelling, 4-way stretch, sweat-wicking material that keeps the wearer cool, moisture-free, and clean. With that, Helt’s first chef coat was born.",
+              "button_label": "SHOP COLLECTION",
+              "button_link": "shopify:\/\/collections\/crewtech"
+            }
+          },
+          "93a4991c-efd3-41a4-9c3f-e414eb52b1fd": {
+            "type": "image_picker",
+            "settings": {
+              "single_image": "shopify:\/\/shop_images\/732a36f9d002575613cd737c1ef7cdeb_2x_02cb8eb5-7a62-47b1-9a3f-dffa100c2332.jpg",
+              "collection_headline": "CREWTECH LITE",
+              "collection_description": "The lighter version of our original CrewTech Fabric. Offering the same function and performance, CrewTech Lite was the lighter, more breathable innovative uniform solution and little brother of our flagship CrewTech Fabric.",
+              "button_label": "SHOP COLLECTION",
+              "button_link": "shopify:\/\/collections\/crossback"
+            }
+          },
+          "391d01a6-80cf-444e-8c58-d46f0f80a482": {
+            "type": "image_picker",
+            "settings": {
+              "single_image": "shopify:\/\/shop_images\/732a36f9d002575613cd737c1ef7cdeb_2x_aedeb400-1c1d-4b2d-9b6b-3a25101787fd.jpg",
+              "collection_headline": "DWR CANVAS",
+              "collection_description": "Unlike traditional canvas aprons sold by other chef uniform companies that stain and absorb liquids through to the wearer’s clothes, our Durable Water-Repellent Coating added a protective barrier. This offered added protection from liquids seeping through like grease, sauces, and other messy liquids encountered in the kitchen — keeping chefs lookin’ fresh even after the messiest shift.",
+              "button_label": "SHOP COLLECTION",
+              "button_link": "shopify:\/\/collections\/custom-chef-uniforms"
+            }
+          },
+          "84f2d7fa-8370-4173-b41b-dc966e87568e": {
+            "type": "image_picker",
+            "settings": {
+              "single_image": "shopify:\/\/shop_images\/732a36f9d002575613cd737c1ef7cdeb_2x_66a2ef3f-cab9-49bf-90ac-3542b78a6a60.jpg",
+              "collection_headline": "DWR DENIM",
+              "collection_description": "Unlike traditional canvas aprons sold by other chef uniform companies that stain and absorb liquids through to the wearer’s clothes, our Durable Water-Repellent Coating added a protective barrier. This offered added protection from liquids seeping through like grease, sauces, and other messy liquids encountered in the kitchen — keeping chefs lookin’ fresh even after the messiest shift.",
+              "button_label": "SHOP COLLECTION",
+              "button_link": "shopify:\/\/collections\/men-coats"
+            }
+          }
+        },
+        "block_order": [
+          "f1148d7c-6a97-45bc-9211-934321ead9ff",
+          "93a4991c-efd3-41a4-9c3f-e414eb52b1fd",
+          "391d01a6-80cf-444e-8c58-d46f0f80a482",
+          "84f2d7fa-8370-4173-b41b-dc966e87568e"
+        ],
+        "settings": {
+          "science_headline": "OUR FABRIC TECHNOLOGY",
+          "science_description": "Unlike other chef uniform companies, it has always been Helt’s mission to celebrate chefs and kitchen workers as the frontline heroes they are. Having been neglected by the industry for far too long, we are committed to producing uniform solutions that make frontline workers look and feel their best shift after shift — all made ethically in the U.S.A."
+        }
+      }
+    },
+    "content_for_index": [
+      "16276009917af46fac",
+      "16172860000b0cd55f",
+      "1617287715bc7ff3c2",
+      "1480591889144",
+      "3cb803f1-5522-4b9e-adf0-525302e1f694",
+      "2499d4a8-006d-4489-a487-22fd3d1db07b",
+      "1521035976582",
+      "16251669285769c922",
+      "d8077c59-e478-4d74-8d75-18af113cb515",
+      "1617293273c37b524b",
+      "16237785816c051655",
+      "16237785031868d303",
+      "1625091019a7a4ebcb"
+    ],
+    "blocks": {
+      "13672250894428551832": {
+        "type": "shopify:\/\/apps\/qikify-sticky-cart-slide-cart\/blocks\/app-embed\/39da5d6e-3e04-4687-bc69-e23fafb93294",
+        "disabled": false,
+        "settings": {
+        }
+      },
+      "855628211100114053": {
+        "type": "shopify:\/\/apps\/klaviyo-email-marketing-sms\/blocks\/klaviyo-onsite-embed\/2632fe16-c075-4321-a88b-50b567f42507",
+        "disabled": false,
+        "settings": {
+        }
+      }
+    }
+  }
+}

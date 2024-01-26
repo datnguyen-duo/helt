@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="{{ shop.locale }}">
+  <head>
+    {% include "starapps-core" %}
+
+    <!-- Symmetry 4.11.12 -->
+
+    <link
+      rel="preload"
+      href="{{ 'styles.css' | asset_url }}"
+      as="style">
+    {% render 'head-tag' %}
+    <meta name="theme-color" content="{{ settings.btn_col }}">
+
+    {% if template contains 'blog' and current_tags %}
+      <meta name="robots" content="noindex" />
+    {% endif %}
+
+    <link
+      rel="icon"
+      href="{{ 'favicon.ico' | asset_url }}"
+      sizes="16x16">
+    <title>
+      {{ page_title }}{% if current_tags %}
+        {% assign meta_tags = current_tags | join: ', ' %} &ndash; {{ 'general.meta.tags' | t: tags: meta_tags }}{% endif %}
+      {% if current_page != 1 %}
+        &ndash; {{ 'general.meta.page' | t: page: current_page }}{% endif %}
+      {% unless page_title contains shop.name %}
+        &ndash; {{ shop.name }}{% endunless %}
+    </title>
+
+    {% render 'social-meta-tags' %}
+
+    {{ 'styles.css' | asset_url | stylesheet_tag }}
+    {{ 'global.css' | asset_url | stylesheet_tag }}
+
+    <!-- Google Tag Manager -->
+    <script>
+      (function(w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({'gtm.start': new Date().getTime(), event: 'gtm.js'});
+        var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s),
+          dl = l != 'dataLayer'
+            ? '&l=' + l
+            : '';
+        j.async = true;
+        j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+        f.parentNode.insertBefore(j, f);
+      })(window, document, 'script', 'dataLayer', 'GTM-NCJDGRK');
+    </script>
+    <!-- End Google Tag Manager -->
+
+    <script>
+      window.theme = window.theme || {};
+      theme.money_format = {{ shop.money_format | json }};
+      theme.strings = {
+        previous: {{ 'general.accessibility_labels.previous' | t | json }},
+        next: {{ 'general.accessibility_labels.next' | t | json }},
+        addressError: {{ 'map.errors.address_error' | t | json }},
+        addressNoResults: {{ 'map.errors.address_no_results' | t | json }},
+        addressQueryLimit: {{ 'map.errors.address_query_limit_html' | t | json }},
+        authError: {{ 'map.errors.auth_error' | t | json }},
+        icon_labels_left: {{ 'general.icon_labels.left' | t | escape | json }},
+        icon_labels_right: {{ 'general.icon_labels.right' | t | escape | json }},
+        icon_labels_down: {{ 'general.icon_labels.down' | t | escape | json }},
+        icon_labels_close: {{ 'general.icon_labels.close' | t | escape | json }},
+        icon_labels_plus: {{ 'general.icon_labels.plus' | t | escape | json }},
+        cart_terms_confirmation: {{ 'cart.terms.confirmation' | t | json }},
+        products_listing_from: {{ 'products.listing.from' | t | json }},
+        layout_live_search_see_all: {{ 'layout.live_search.see_all' | t | json }},
+        products_product_add_to_cart: {{ 'products.product.add_to_cart' | t | json }},
+        products_variant_no_stock: {{ 'products.variant.no_stock' | t | json }},
+        products_variant_non_existent: {{ 'products.variant.non_existent' | t | json }},
+        onlyXLeft: {{ 'products.labels.only_x_left' | t: quantity: '[[ quantity ]]' | json }},
+        products_product_unit_price_separator: {{ 'products.product.unit_price_separator' | t | json }},
+        general_navigation_menu_toggle_aria_label: {{ 'general.navigation.menu_toggle_aria_label' | t | json }},
+        products_added_notification_title: {{ 'products.added_notification.title' | t | json }},
+        products_added_notification_item: {{ 'products.added_notification.item' | t | json }},
+        products_added_notification_unit_price: {{ 'products.added_notification.unit_price' | t | json }},
+        products_added_notification_quantity: {{ 'products.added_notification.quantity' | t | json }},
+        products_added_notification_total_price: {{ 'products.added_notification.total_price' | t | json }},
+        products_added_notification_shipping_note: {{ 'products.added_notification.shipping_note' | t | json }},
+        products_added_notification_keep_shopping: {{ 'products.added_notification.keep_shopping' | t | json }},
+        products_added_notification_cart: {{ 'products.added_notification.cart' | t | json }},
+        products_product_adding_to_cart: {{ 'products.product.adding_to_cart' | t | json }},
+        products_product_added_to_cart: {{ 'products.product.added_to_cart' | t | json }},
+        products_added_notification_subtotal: {{ 'products.added_notification.subtotal' | t | json }},
+        products_labels_sold_out: {{ 'products.labels.sold_out' | t | json }},
+        products_labels_sale: {{ 'products.labels.sale' | t | json }},
+        products_labels_percent_reduction: {{ 'products.labels.percent_reduction' | t: amount: '[[ amount ]]' | json }},
+        products_labels_value_reduction_html: {{ 'products.labels.value_reduction_html' | t: amount: '[[ amount ]]' | json }},
+        products_product_preorder: {{ 'products.product.preorder' | t | json }},
+        general_quick_search_pages: {{ 'general.quick_search.pages' | t | json }},
+        general_quick_search_no_results: {{ 'general.quick_search.no_results' | t | json }},
+        collections_general_see_all_subcollections: {{ 'collections.general.see_all_subcollections' | t | json }}
+      };
+      theme.routes = {
+        search_url: '{{ routes.search_url }}',
+        cart_url: '{{ routes.cart_url }}',
+        cart_add_url: '{{ routes.cart_add_url }}',
+        cart_change_url: '{{ routes.cart_change_url }}'
+      };
+      theme.settings = {
+        cart_type: {{ settings.cart_type | json }},
+        quickbuy_style: {{ settings.quickbuy_style | json }},
+        show_size_chart: {{ settings.show_size_chart | json }}
+      };
+      document.documentElement.classList.add('js');
+    </script>
+
+    {{ content_for_header }}
+
+    <script type="text/javascript">
+      (function(c,l,a,r,i,t,y){
+      c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+                                                        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+                                                        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+                                                    })(window, document, "clarity", "script", "8yjox3deqi");
+    </script>
+
+    {%- if page.handle == 'contact-us' -%}
+      <script type="application/ld+json">
+        {
+        "@context": "https://schema.org",
+                                                                  "@type": "LocalBusiness",
+                                                                  "name": "Helt Studio",
+                                                                  "image": "https://cdn.shopify.com/s/files/1/0553/4656/1217/files/helt-studio-logo_400x.jpg?v=1617296014",
+                                                                  "@id": "",
+                                                                  "url": "https://www.heltstudio.com/",
+                                                                  "telephone": "213-265-7185",
+                                                                  "email": "eugene@heltstudio.com",
+                                                                  "priceRange": "$$",
+                                                                  "address": {
+                                                                    "@type": "PostalAddress",
+                                                                    "streetAddress": "719 S Los Angeles St Suite 1120",
+                                                                    "addressLocality": "Los Angeles",
+                                                                    "addressRegion": "CA",
+                                                                    "postalCode": "90014",
+                                                                    "addressCountry": "US"
+                                                                  },
+                                                                  "geo": {
+                                                                    "@type": "GeoCoordinates",
+                                                                    "latitude": 34.0429875,
+                                                                    "longitude": -118.2510799
+                                                                  },
+                                                                  "openingHoursSpecification": {
+                                                                    "@type": "OpeningHoursSpecification",
+                                                                    "dayOfWeek": [
+                                                                      "Monday",
+                                                                      "Tuesday",
+                                                                      "Wednesday",
+                                                                      "Thursday",
+                                                                      "Friday"
+                                                                    ],
+                                                                    "opens": "09:00",
+                                                                    "closes": "15:00"
+                                                                  },
+                                                                  "sameAs": [
+                                                                    "https://www.facebook.com/heltusa",
+                                                                    "https://twitter.com/HeltUsa",
+                                                                    "https://www.instagram.com/heltusa/",
+                                                                    "https://www.pinterest.com/heltusa/"
+                                                                  ] 
+                                                                }
+      </script>
+
+    {% endif %}
+
+    {% if request.path contains '/pages/faq' %}
+      <script type="application/ld+json">
+        {
+        "@context": "https://schema.org",
+                                                                  "@type": "FAQPage",
+                                                                  "mainEntity": [{
+                                                                    "@type": "Question",
+                                                                    "name": "How is CrewTech fabric different from others?",
+                                                                    "acceptedAnswer": {
+                                                                      "@type": "Answer",
+                                                                      "text": "We engineered our CrewTech fabric to be durable, breathable, water-repellent, and stretchable. Our uniforms are tailored to give you a sharp look while providing maximum comfort and cooling for optimal performance at work."
+                                                                    }
+                                                                  },{
+                                                                    "@type": "Question",
+                                                                    "name": "Is the sizing the same between collections?",
+                                                                    "acceptedAnswer": {
+                                                                      "@type": "Answer",
+                                                                      "text": "Yes. The size you wear in one collection will be the same for the others. Please check out our size guide for more details."
+                                                                    }
+                                                                  },{
+                                                                    "@type": "Question",
+                                                                    "name": "Can I get embroidery done?",
+                                                                    "acceptedAnswer": {
+                                                                      "@type": "Answer",
+                                                                      "text": "Yes! Embroidery is available on orders of 10 or more for an additional charge. Email us at info@heltstudio.com to find out more.
+                                                                
+                                                                Text – Up to 2 lines – $10 per item
+                                                                Logo – $25 per placement per item, plus $50 one-time setup fee
+                                                                Embroidered items can’t be returned or exchanged: Get a sample kit for your group order to make sure everyone finds their perfect style, size, and color. (Embroidery will add up to two additional weeks for delivery.)"
+                                                                    }
+                                                                  },{
+                                                                    "@type": "Question",
+                                                                    "name": "Can I customize my uniform?",
+                                                                    "acceptedAnswer": {
+                                                                      "@type": "Answer",
+                                                                      "text": "Some of our products are ready for full customization such as our Aprons, Chef Coats, and Shirts. For more info, contact info@heltstudio.com.
+                                                                
+                                                                Our product selection is also constantly expanding. Your feedback helps us decide what's next in our collection. Let us know what you’re looking for at info@heltstudio.com!"
+                                                                    }
+                                                                  },{
+                                                                    "@type": "Question",
+                                                                    "name": "Are there minimum order requirements?",
+                                                                    "acceptedAnswer": {
+                                                                      "@type": "Answer",
+                                                                      "text": "There is no minimum unless you are doing a customized embroidery design. Full Customization has a minimum requirement of 25 units. Contact us for more info."
+                                                                    }
+                                                                  },{
+                                                                    "@type": "Question",
+                                                                    "name": "Is there a bulk order discount?",
+                                                                    "acceptedAnswer": {
+                                                                      "@type": "Answer",
+                                                                      "text": "Our apron prices are based on style and quantity. Each apron has its own price and is adjusted according to how many aprons are in your order. The price break starts at 25 units and goes down from there — meaning the more you order, the larger the discount."
+                                                                    }
+                                                                  },{
+                                                                    "@type": "Question",
+                                                                    "name": "Collaboration",
+                                                                    "acceptedAnswer": {
+                                                                      "@type": "Answer",
+                                                                      "text": "We are always interested to hear your thoughts and ideas! Shoot us an email at info@heltstudio.com and we will make it happen."
+                                                                    }
+                                                                  },{
+                                                                    "@type": "Question",
+                                                                    "name": "Do you have a storefront?",
+                                                                    "acceptedAnswer": {
+                                                                      "@type": "Answer",
+                                                                      "text": "Yes, we are appointment-only and located at:
+                                                                
+                                                                719 S. Los Angeles St #612
+                                                                
+                                                                Los Angeles, CA 90014"
+                                                                    }
+                                                                  },{
+                                                                    "@type": "Question",
+                                                                    "name": "How much is shipping? How long does shipping take?",
+                                                                    "acceptedAnswer": {
+                                                                      "@type": "Answer",
+                                                                      "text": "For all shipping questions, please go to our shipping information page."
+                                                                    }
+                                                                  },{
+                                                                    "@type": "Question",
+                                                                    "name": "I want my order quick. Can you help?",
+                                                                    "acceptedAnswer": {
+                                                                      "@type": "Answer",
+                                                                      "text": "Of course, we are here to help. If you need your order quickly, just request one-day shipping when you place your order before 1 p.m. PST and we will get your order shipped out as soon as possible!"
+                                                                    }
+                                                                  },{
+                                                                    "@type": "Question",
+                                                                    "name": "Do you accept returns?",
+                                                                    "acceptedAnswer": {
+                                                                      "@type": "Answer",
+                                                                      "text": "We understand sometimes things just don’t work out perfectly. If you are not fully satisfied with any of our products when you receive them, you may return them for a repair, replacement, or refund within 30 days.*
+                                                                
+                                                                *Custom Orders (including embroideries) and sales orders are not returnable."
+                                                                    }
+                                                                  },{
+                                                                    "@type": "Question",
+                                                                    "name": "How do I make a return?",
+                                                                    "acceptedAnswer": {
+                                                                      "@type": "Answer",
+                                                                      "text": "Start by requesting the return on our site:
+                                                                
+                                                                Enter your email and order number on our returns page.
+                                                                Find the item you’d like to return, and select Return if the item is eligible.
+                                                                Complete the form and click submit.
+                                                                Use the same package your order came in (or feel free to use your own if you’d like).
+                                                                Include your items with the original packaging material and hang tags.
+                                                                Print out return labels and stick them tight to the package.
+                                                                Drop off your return at a local FedEx location."
+                                                                    }
+                                                                  },{
+                                                                    "@type": "Question",
+                                                                    "name": "How do I make an exchange?",
+                                                                    "acceptedAnswer": {
+                                                                      "@type": "Answer",
+                                                                      "text": "Start by requesting the exchange on our site:
+                                                                
+                                                                Enter your email and order number on our returns page.
+                                                                Find the item you’d like to return, and select Exchange if the item is eligible.
+                                                                Complete the form, noting the product you’d like to receive in exchange, and click submit.
+                                                                Use the same package your order came in (or feel free to use your own if you’d like).
+                                                                Include your items with the original packaging material and hang tags.
+                                                                Print out return labels and stick them tight to the package.
+                                                                Drop off your return at a local FedEx location."
+                                                                    }
+                                                                  },{
+                                                                    "@type": "Question",
+                                                                    "name": "How long will it take to receive my refund?",
+                                                                    "acceptedAnswer": {
+                                                                      "@type": "Answer",
+                                                                      "text": "Once we receive your return, we will process your refund as soon as possible. Generally, it will take 7 - 10 business days and some banks will take an additional 5 days to apply the refund to your account."
+                                                                    }
+                                                                  },{
+                                                                    "@type": "Question",
+                                                                    "name": "I can’t find what I’m looking for here.",
+                                                                    "acceptedAnswer": {
+                                                                      "@type": "Answer",
+                                                                      "text": "Don’t be shy — send us an email at info@heltstudio.com and we will get those questions answered. Or, you can always give us a call at (213) 265-7185."
+                                                                    }
+                                                                  }]
+                                                                }
+      </script>
+
+    {% endif %}
+
+    {% if template == 'index' or page.url == '/pages/about-us' %}
+      <script type="application/ld+json">
+        {
+        "@context": "https://schema.org",
+                                                                  "@type": "Organization",
+                                                                  "name": "Helt Studio",
+                                                                  "url": "https://www.heltstudio.com/",
+                                                                  "logo": "https://cdn.shopify.com/s/files/1/0553/4656/1217/files/helt-studio-logo_400x.jpg?v=1617296014",
+                                                                "address": { "@type": "PostalAddress",
+                                                                    "streetAddress": "719 S Los Angeles St Suite 1120",
+                                                                    "addressLocality": "Los Angeles,",
+                                                                    "addressRegion": "CA",
+                                                                    "postalCode": "90014"
+                                                                 },
+                                                                 "contactPoint": [{
+                                                                    "@type": "ContactPoint",
+                                                                    "contactType": "Customer Service",
+                                                                    "telephone": "+1 213-265-7185",
+                                                                    "email": "info@heltstudio.com"
+                                                                 }]
+                                                                  },
+                                                                  "sameAs": [
+                                                                    "https://www.facebook.com/heltusa",
+                                                                    "https://twitter.com/HeltUsa",
+                                                                    "https://www.instagram.com/heltusa/",
+                                                                    "https://www.pinterest.com/heltusa/"
+                                                                  ]
+                                                                }
+      </script>
+
+    {% endif %}
+
+    {% if template == 'index' %}
+      <script type="application/ld+json">
+        {
+        "@context": "https://schema.org/",
+                                                                  "@type": "WebSite",
+                                                                  "name": "Helt Studio",
+                                                                  "url": "https://www.heltstudio.com/",
+                                                                  "potentialAction": {
+                                                                    "@type": "SearchAction",
+                                                                    "target": "https://www.heltstudio.com/search?type=product&q={search_term_string}",
+                                                                    "query-input": "required name=search_term_string"
+                                                                  }
+                                                                }
+      </script>
+
+
+    {% endif %}
+
+    {% render 'qikify-apps' %}
+  </head>
+
+  <body class="template-{{ template | split: '.' | first }}{% if template.suffix %} template-suffix-{{ template.suffix }}{% endif %}" data-cc-animate-timeout="0">
+
+    <!-- Google Tag Manager (noscript) -->
+    <noscript>
+      <iframe
+        src="https://www.googletagmanager.com/ns.html?id=GTM-NCJDGRK"
+        height="0"
+        width="0"
+        style="display:none;visibility:hidden"></iframe>
+    </noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
+    {%- if settings.animations_enabled_desktop -%}
+      <script>
+        if ('IntersectionObserver' in window) {
+          document.body.classList.add("cc-animate-enabled");
+        }
+      </script>
+    {%- endif -%}
+
+    <a class="skip-link visually-hidden" href="#content">{{ 'general.accessibility_labels.skip_to_content' | t }}</a>
+
+    {% section 'announcement-bar' %}
+    {% section 'header' %}
+    {% section 'store-messages' %}
+
+    <main id="content" role="main">
+      <div class="container cf">
+
+        {{ content_for_layout }}
+
+      </div>
+      <!-- /.container -->
+    </main>
+    <!-- /#content -->
+
+    {% if request.path != '/challenge' %}
+      <div id="pagefooter">
+        {% section 'newsletter' %}
+        {% section 'cross-page-promos' %}
+        {% section 'footer' %}
+      </div>
+
+      {% section 'popup' %}
+    {% endif %}
+
+    <button id="goTop">
+      <svg
+        data-name="1-Arrow Up"
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 32 32"><path d="m26.71 10.29-10-10a1 1 0 0 0-1.41 0l-10 10 1.41 1.41L15 3.41V32h2V3.41l8.29 8.29z" /></svg>
+    </button>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    {{ 'global.js' | asset_url | script_tag }}
+    {{ 'vendor.js' | asset_url | script_tag }}
+    {{ 'theme.js' | asset_url | script_tag }}
+
+    {% if template contains "product" %}
+      {% render "product-personalizer" %}{% endif %}
+    {% render 'globo.preorder.script' %}{{ '//cdn.shopify.com/s/files/1/0194/1736/6592/t/1/assets/booster-page-speed-optimizer.js?23' | script_tag }}
+  </body>
+</html>

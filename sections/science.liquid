@@ -1,0 +1,84 @@
+<div class="science-container">
+  <div class="text-section">
+    <h1>{{ section.settings.science_headline }}</h1>
+    <p>
+      {{ section.settings.science_description }}
+    </p>
+  </div>
+  <div class="collections-section">
+    {% for block in section.blocks %}
+      <div class="single-collection">
+        <div class="image-holder">
+          <img src="{{ block.settings.single_image | image_url }}" alt="">
+          <h2>{{ block.settings.collection_headline }}</h2>
+          <a href="{{ block.settings.button_link }}" class="btn btn--secondary">
+            {{ block.settings.button_label }}
+          </a>
+        </div>
+        <div class="description">
+          <p>
+            {{ block.settings.collection_description }}
+          </p>
+          <a href="{{ block.settings.button_link }}" class="btn btn--primary">
+            {{ block.settings.button_label }}
+          </a>
+        </div>
+      </div>
+
+    {% endfor %}
+  </div>
+</div>
+
+{% schema %}
+  {
+    "name": "Story Section",
+    "settings": [
+      {
+        "type": "text",
+        "id": "science_headline",
+        "label": "Page Headline"
+      }, {
+        "type": "textarea",
+        "id": "science_description",
+        "label": "Description"
+      }
+    ],
+    "blocks": [
+      {
+        "type": "image_picker",
+        "name": "Single Collection",
+        "settings": [
+          {
+            "type": "image_picker",
+            "id": "single_image",
+            "label": "Image"
+          },
+          {
+            "type": "text",
+            "id": "collection_headline",
+            "label": "Collection Headline"
+          },
+          {
+            "type": "textarea",
+            "id": "collection_description",
+            "label": "Collection Description"
+          },
+          {
+            "type": "text",
+            "id": "button_label",
+            "label": "Button Label"
+          }, {
+            "type": "url",
+            "id": "button_link",
+            "label": "Button Link"
+          }
+        ]
+      }
+    ],
+    "presets": [
+      {
+        "name": "Story Section"
+      }
+    ]
+  }
+{% endschema %}
